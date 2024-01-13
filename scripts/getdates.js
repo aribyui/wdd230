@@ -5,5 +5,5 @@ let lastModif = document.lastModified;
 const date = new Date();
 const currentYear = date.getFullYear();
 
-document.getElementById("currentYear").textContent = currentYear;
+document.getElementById("current-year").textContent = currentYear;
 document.getElementById("lastModified").textContent = `Last modified: ${lastModif}`;
