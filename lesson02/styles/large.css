@@ -1,0 +1,19 @@
+@media screen and (min-width: 65em) {
+  header {
+    padding: 1.5rem;
+  }
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  section:nth-child(1) {
+    grid-column: 1/2;
+  }
+  section:nth-child(2) {
+    grid-column: 2/3;
+  }
+  section:nth-child(3) {
+    grid-column: 3/4;
+  }
+}
