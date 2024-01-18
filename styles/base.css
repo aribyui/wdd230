@@ -21,67 +21,81 @@ h1, h2, h3 {
 }
 
 header {
+  /* border: 1px solid red; */
   background-color: #171717;
   display: flex;
-  justify-content: start;
   align-items: center;
-  padding: 1em;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;  
 }
 
 header img {
-  background-color: #ddf842;
-  width: 10em;   
+  /* border: 1px solid red; */
+  background-color: #DDF842;
+  width: 5rem;   
+  border-radius: 8px;
 }
 
 header h1 {
-  color: #ddf842;
-  font-size: 2.8em;
-  margin-left: .5em;
+  color: #DDF842;
 }
 
 nav {
-  background-color: #ddf842;
-  padding: .5em;
+  background-color: #DDF842;
 }
 
 nav ul {
   list-style-type: none;
   text-align: center;
-  
 }
 
-nav ul li {
-  line-height: 2em;
-}
-
-nav ul li a {
+nav ul li a {  
+  /* border: 1px solid red; */
+  display: block;
   color: #171717;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.3rem;
+  padding: 1rem; 
+  border-bottom: 1px solid #17171730;
+}
+
+nav ul li a:hover {
+  background-color: #171717; 
+  color: #E1E1E1;   
+}
+
+main {  
+  margin: 1rem;  
 }
 
 main h2 {
   text-align: center;
   color: #171717;
-  margin-top: 1em;
+  border-bottom: 1px solid #17171730;  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-hr {
-  color: #171717;
+main div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr;
+  border-radius: 8px;
   text-align: left;
   border: 1px solid #171717;
-  background-color: #e1e1e1;
+  background-color: #E1E1E1;
 }
 
 .card h3 {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   background-color: #171717;
-  color: #ddf842; 
-  padding: .9em;
+  color: #DDF842; 
+  padding: .9rem;
 }
 
 .card ul li a, p {
@@ -90,27 +104,35 @@ hr {
 
 .card ul {
   list-style-type: none;  
-  padding: 1em;
-  line-height: 1.7em;
+  padding: 1rem;
+  line-height: 1.7rem;
 }
 
 .card p {
   text-align: center;
-  padding: 1em;
 }
 
 footer {
   background-color: #171717;
-  padding: 1em;
+  text-align: center;
+  padding: 1rem;
 }
 
 footer p {
+  color: #E1E1E1; 
+}
+
+footer p:nth-child(1) {
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  line-height: 2em;
+  margin-bottom: 1rem;
 }
+
+/* footer p:nth-child(2) {
+  border: 1px solid red;
+} */
 
 footer img {
   width: 3em;

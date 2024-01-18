@@ -1,0 +1,35 @@
+@media screen and (min-width: 65em) {
+  header {
+    justify-content: start;
+  }
+  header img {
+    width: 8rem;
+  }
+  nav ul  {
+    /* Espacio distribuido dentro de los elementos: http://tinyurl.com/msvpnwbn */
+    display: flex;
+    /* justify-content: space-evenly; */
+  }
+  nav li {
+    flex: auto;
+  }
+  nav ul li a {
+    border-bottom: none;
+  }
+  main {
+    margin: 1rem 3rem;
+  }
+  main div {
+    grid-template-columns: 65% 1fr;
+  }
+  main h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .card {
+    box-shadow: rgb(95, 95, 95) 10px 10px 10px;
+  }
+  .card h3 {
+    text-align: center;
+  }
+}
