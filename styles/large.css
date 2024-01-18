@@ -1,6 +1,6 @@
 @media screen and (min-width: 65em) {
   header {
-    justify-content: start;
+    justify-content: center;
   }
   header img {
     width: 8rem;
@@ -11,6 +11,7 @@
     /* justify-content: space-evenly; */
   }
   nav li {
+    /* Espacio distribuido dentro de los elementos: http://tinyurl.com/msvpnwbn */
     flex: auto;
   }
   nav ul li a {
