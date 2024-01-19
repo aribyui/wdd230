@@ -10,12 +10,12 @@ h1, h2, h3 {
 
 p, a {
   font-family: 'Hind Siliguri', sans-serif;
-  line-height: 2rem;
+  font-size: 1.2rem; 
 }
 
 header {   
   background-color: #242423;  
-  color: #E6EBE0;    
+  color: #E6EBE0;
   line-height: 3rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -35,7 +35,7 @@ main {
 } 
 
 section {  
-  background-color: #CFDBD5;
+  background-color: #CFDBD5; 
   border: 1px solid #9E9E9E;
   border-radius: 10px; 
 }
@@ -49,8 +49,8 @@ section h2 {
 }
 
 section p, section a, section div  {
-  /* border: 1px solid red; */
-  margin: 1rem; 
+  /* border: 1px solid red;  */
+  margin: 1rem;  
 }
 
 section div {  
@@ -62,15 +62,11 @@ section div img {
   height: 100%;
   object-fit: cover;
   display: block; 
-  font-family: 'Hind Siliguri', sans-serif;;
 }
 
-section p, section a  {
-  font-size: 1.3rem;  
-}
-
-section p {
+section p, section a  { 
   color: #242423;
+  line-height: 2rem;
 }
 
 .format-italic {
@@ -84,5 +80,5 @@ footer {
   margin-top: 1rem;
   padding: 2rem;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
