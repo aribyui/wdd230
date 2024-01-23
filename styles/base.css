@@ -13,12 +13,17 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Rubik', sans-serif;;
+  font-family: 'Rubik', sans-serif;
 }
 
  p, a, ul {
   font-family: 'Roboto', sans-serif;
 }
+
+/* CSS text-shadow Property: http://tinyurl.com/2n64rer7 */
+/* header h1, .card h3 {  
+  text-shadow: 0 0 10px #DDF842;
+} */
 
 header {
   /* border: 1px solid red; */
@@ -61,11 +66,6 @@ header h1 {
   display: none;
 }
 
-/* .navigation li > a::before {
-  content: "</> ";
-  font-size: 1.3rem;   
-} */
-
 .show li {
   display: block;
 }
@@ -80,10 +80,10 @@ header h1 {
 } */
 
 .navigation .active::before {
-  content: "< ";  
+  content: "<";  
 }
 .navigation .active::after {
-  content: " >";
+  content: ">";
 } 
 
 /* */
@@ -109,7 +109,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #171717; 
-  color: #E1E1E1;   
+  color: #E1E1E1;  
 }
 
 main {  
