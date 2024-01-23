@@ -76,7 +76,12 @@ header h1 {
 
 .navigation .active {
   background-color: #171717;
-  color: #E1E1E1;
+  color: #DDF842;
+}
+
+.navigation .active::before {
+  content: "</> ";
+  
 }
 
 /* */
@@ -97,7 +102,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.3rem;
   padding: 1rem; 
-  /* border-bottom: 1px solid #17171730; */
+  border-bottom: 1px solid #49494920;
 }
 
 nav ul li a:hover {
