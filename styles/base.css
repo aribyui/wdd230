@@ -16,7 +16,7 @@ h1, h2, h3 {
   font-family: 'Noto Sans', sans-serif;
 }
 
- p, a {
+ p, a, ul {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -40,6 +40,46 @@ header img {
 header h1 {
   color: #DDF842;
 }
+
+/* hamburger button */
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .2rem 1rem;
+  background-color: #DDF842;
+  color: #171717;  
+} 
+
+#menu::before {
+  content: "≡";      
+}
+
+.navigation li {
+  display: none;
+}
+
+/* .navigation li > a::before {
+  content: "</> ";
+  font-size: 1.3rem;   
+} */
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "x";
+}
+
+.navigation .active {
+  background-color: #171717;
+  color: #E1E1E1;
+}
+
+/* */
 
 nav {
   background-color: #DDF842;
@@ -73,7 +113,7 @@ main h2 {
   text-align: center;
   color: #171717;
   border-bottom: 1px solid #17171730;  
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -103,7 +143,7 @@ main div {
 }
 
 .card ul {
-  list-style-type: none;  
+  list-style-type: none; 
   padding: 1rem;
   line-height: 1.7rem;
 }
@@ -111,6 +151,31 @@ main div {
 .card p {
   text-align: center;
 }
+
+.card ul li::before {
+  content: "📎 "; 
+}
+
+/* How to responsive iframes: http://tinyurl.com/3mxvpus6 */ 
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* */
 
 footer {
   background-color: #171717;
@@ -129,10 +194,6 @@ footer p:nth-child(1) {
   align-items: center;
   margin-bottom: 1rem;
 }
-
-/* footer p:nth-child(2) {
-  border: 1px solid red;
-} */
 
 footer img {
   width: 3em;

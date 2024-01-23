@@ -31,8 +31,9 @@
     <h1>Lizandro Arizpe</h1>
   </header>
   <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
+    <a href="#" id="menu"></a>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
       <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
       <li><a href="chamber/">Chamber</a></li>
       <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
@@ -67,6 +68,9 @@
         <p>[Number of visits]</p>
         <br>
       </section>
+      <div class="iframe-container">
+        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.51572731716!2d-100.62083002186195!3d25.64874622556449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20Nuevo%20Leon!5e0!3m2!1sen!2smx!4v1705967165045!5m2!1sen!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+      </div>
     </div>
   </main>
   <footer>
@@ -75,6 +79,7 @@
     <p>Last modification:&nbsp;<span id="lastModified"></span></p>
   </footer>
   <script src="scripts/getdates.js"></script>
+  <script src="scripts/hamburgerButton.js"></script>
 </body>
 
 </html>
