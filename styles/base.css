@@ -62,7 +62,7 @@ header h1 {
   content: "≡";      
 }
 
-.navigation li {
+nav ul li {
   display: none;
 }
 
@@ -74,18 +74,6 @@ header h1 {
   content: "x";
 }
 
-/* .navigation .active {
-  background-color: #171717;
-  color: #DDF842;
-} */
-
-.navigation .active::before {
-  content: "<";  
-}
-.navigation .active::after {
-  content: ">";
-} 
-
 /* */
 
 nav {
@@ -96,7 +84,6 @@ nav ul {
   list-style-type: none;
   text-align: center;
 }
-
 
 nav ul li a {  
   /* border: 1px solid red; */
@@ -112,6 +99,14 @@ nav ul li a:hover {
   background-color: #171717; 
   color: #E1E1E1;  
 }
+
+nav ul .active::before {
+  content: "<";  
+}
+nav ul .active::after {
+  content: ">";
+} 
+
 
 main {  
   margin: 1rem;  

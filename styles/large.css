@@ -10,7 +10,7 @@
   #menu {
     display: none;
   }
-  .navigation li {
+  nav ul li {
     display: block;
   }
   /*  */
