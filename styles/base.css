@@ -13,11 +13,11 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;;
 }
 
  p, a, ul {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -74,15 +74,17 @@ header h1 {
   content: "x";
 }
 
-.navigation .active {
+/* .navigation .active {
   background-color: #171717;
   color: #DDF842;
-}
+} */
 
 .navigation .active::before {
-  content: "</> ";
-  
+  content: "< ";  
 }
+.navigation .active::after {
+  content: " >";
+} 
 
 /* */
 
