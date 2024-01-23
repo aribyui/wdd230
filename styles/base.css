@@ -2,8 +2,7 @@
   /* border: 1px solid rgb(10, 169, 205); */
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
 }
 
 body {
@@ -16,7 +15,7 @@ h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
 }
 
- p, a, ul {
+ p, a, ul, button {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -49,17 +48,30 @@ header h1 {
 /* hamburger button */
 
 #menu {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  text-decoration: none;
-  padding: .2rem 1rem;
-  background-color: #DDF842;
-  color: #171717;  
+  background-color: #171717;
+  font-size: 1.3rem; 
+  font-weight: 700; 
+  color: #DDF842; 
+  width: 3rem;
+  border-radius: 15px;
+  border: 2px solid #171717;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: .6rem;
+  top: .6rem;
 } 
 
 #menu::before {
-  content: "≡";      
+  content: "≡";   
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 nav ul li {
@@ -71,7 +83,7 @@ nav ul li {
 }
 
 #menu.show::before {
-  content: "x";
+  content: "X";
 }
 
 /* */
@@ -92,7 +104,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.3rem;
   padding: 1rem; 
-  border-top: 1px solid #17171725;
+  /* border-top: 1px solid #17171725; */
 }
 
 nav ul li a:hover {
@@ -106,7 +118,6 @@ nav ul .active::before {
 nav ul .active::after {
   content: ">";
 } 
-
 
 main {  
   margin: 1rem;  
