@@ -44,7 +44,7 @@ h1 {
     en el encabezado de la página.
     2. Se comento la siguiente propiedad con fines de prueba y error.
   */
-  margin: 0.67em 0;
+  /* margin: 0.67em 0; */
 }
 
 /* Grouping content
