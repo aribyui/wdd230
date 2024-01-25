@@ -20,8 +20,8 @@ p, li, tr, .colors-container {
 
 header, footer {
   background-color: #023E8A;
-  color: #FFFFFF;
-  padding: 1rem; 
+  color: #FFFFFF; 
+  padding: 2rem;
   text-align: center;
 }
 
@@ -150,7 +150,6 @@ main img {
 }
 
 main img + figcaption {
-  font-family: 'Rubik', sans-serif;
   color: #023E8A;
+  font-family: 'Rubik', sans-serif;
 }
-
