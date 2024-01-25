@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;   
+}
+
+body {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, li, tr, button {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+}
+
+header, footer {
+  background-color: #023E8A;
+  color: #FFFFFF;
+  padding: 2rem; 
+  text-align: center;
+}
+
+nav {
+  background-color: #CAF0F8; /* #FCF300 */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav ul a {
+  color: #023E8A;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav ul a:hover {
+  background-color: #023E8A;
+  color: #FFFFFF;
+}
+
+main {
+  margin: 2rem;
+  /* border: 2px dashed red; */
+}
+
+main h1, main h2, main h3, main hr, main p, main li {
+  margin-bottom: 1.5rem;
+}
+
+main h1, main h2, main h3, main p, main li, main table th {
+  color: #004480;
+}
+
+main table {
+  /* margin: 0 auto 1rem auto; */
+  margin-bottom: 1.5rem;
+}
+
+main table, main table th, main table td {
+  border: 1px solid #004480;
+  border-spacing: .5rem; 
+}
+
+main table th, main table td {
+  padding: 1rem;
+}
+
+main table tr td:nth-child(1) {
+  background-color: #023E8A;
+}
+
+main table tr td:nth-child(2) {
+  background-color: #CAF0F8;
+}
+
+main table tr td:nth-child(3) {
+  background-color: #CAF0F83A;
+}
+
+
+main table tr td:nth-child(4) {
+  background-color: #FF8000;
+}
+
+main hr {
+  border: 1px solid #0044805e;
+}
+
+main p {
+  line-height: 2rem;
+}
+
+main ol {
+  margin-left: 1rem;
+}
+
+div {
+  background-color: #CAF0F83A; /* CAF0F8*/
+  border: 1px solid #023E8A;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main h2::before {
+  content: "📝 ";
+}
+
+div h2::before {
+  content: none;
+}
+
+button {
+  background-color: #FF8000;
+  padding: .8rem 2rem;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023E8A;
+  color: #FFFFFF;
+}
+
+
