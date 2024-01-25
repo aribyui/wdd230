@@ -13,7 +13,7 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
-p, li, tr, button {
+p, li, tr, .colors-container {
   font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
 }
@@ -49,40 +49,54 @@ nav ul a:hover {
 
 main {
   margin: 2rem;
+  text-align: center;
   /* border: 2px dashed red; */
 }
 
-main h1, main h2, main h3, main hr, main p, main li, main button {
+main h1, main h2, main h3, main hr, main p, main li {
   margin-bottom: 1.5rem;
 }
 
-main h1, main h2, main h3, main p, main li, main table th {
+main h1, main h2, main h3, main p, main li {
   color: #004480;
 }
 
-main table {
+.colors-container {
+  display: grid;
+  grid-template-columns: 1fr;
   margin-bottom: 1.5rem;
+  gap: .5rem;
+  
 }
 
-main table, main table th, main table td {
-  border: 1px solid #004480;
-  border-spacing: .5rem; 
-}
-
-main table th, main table td {
+.colors-container > div {
+  border: 1px solid #0044805e; 
   padding: 1rem;
 }
 
-main table tr td:nth-child(1) {
+.colors-container div:nth-child(1) {
   background-color: #023E8A;
+  color: #FFFFFF;
 }
 
-main table tr td:nth-child(2) {
+.colors-container div:nth-child(2) {
+  background-color: #023E8A;
+  color: #FFFFFF;
+}
+
+.colors-container div:nth-child(3) {
   background-color: #F6FEFF;
+  color: #023E8A;
 }
 
-main table tr td:nth-child(3) {
+.colors-container div:nth-child(4) {
+  background-color: #FFFFFF;
+  color: #023E8A;
+}
+
+.colors-container div:nth-child(5) {
   background-color: #E5FF24;
+  color: #023E8A;
 }
 
 main hr {
@@ -93,23 +107,23 @@ main p {
   line-height: 2rem;
 }
 
-main ol {
-  margin-left: 1rem;
+main ol > li {
+  /* CSS list-style-position Property - http://tinyurl.com/2p9nxteh*/
+  list-style-position: inside;
 }
 
-div {
+.typography-section {
   background-color: #F6FEFF;
   border: 1px solid #023E8A;
   padding: 1rem 1rem 0 1rem;
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 main h2::before {
   content: "📝 ";
 }
 
-div h2::before {
+.typography-section h2::before {
   content: none;
 }
 
