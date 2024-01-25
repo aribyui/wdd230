@@ -142,4 +142,8 @@ button:hover {
   color: #FFFFFF;
 }
 
+img + figcaption {
+  font-family: 'Rubik', sans-serif;
+  color: #023E8A;
+}
 
