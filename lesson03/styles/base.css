@@ -120,7 +120,7 @@ main ol > li {
 }
 
 main h2::before {
-  content: "📝 ";
+  content: "📝 "; 
 }
 
 .typography-section h2::before {
