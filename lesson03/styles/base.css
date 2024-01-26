@@ -99,7 +99,12 @@ main h1, main h2, main h3, main p, main li {
 }
 
 .colors-container div:nth-child(5) {
-  background-color: #E5FF24;
+  background-color: #FED906; /*fbff00*/
+  color: #023E8A;
+}
+
+.colors-container div:nth-child(6) {
+  background-color: #FFE600; /*fbff00*/
   color: #023E8A;
 }
 
