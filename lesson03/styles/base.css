@@ -25,6 +25,10 @@ header, footer {
   text-align: center;
 }
 
+#city-name {
+  font-weight: 700;
+}
+
 nav {
   background-color: #CAF0F8; /* #FCF300 */
   padding: 1rem;
