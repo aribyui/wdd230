@@ -142,14 +142,22 @@ button:hover {
   color: #FFFFFF;
 }
 
-main div img {
+.wireframe-mobile-container img {
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wireframe-large-container img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   display: block;
-}
-
-main img + figcaption {
-  color: #023E8A;
-  font-family: 'Rubik', sans-serif;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }

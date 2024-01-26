@@ -2,5 +2,12 @@
   .colors-container {
     grid-template-columns: repeat(5, 1fr);
   }
-  
+  .wireframe-mobile-container img  {
+    width: 20%;
+    height: 20%;
+  }
+  .wireframe-large-container img {
+    width: 40%;
+    height: 40%;
+  }
 }
