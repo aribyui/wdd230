@@ -29,11 +29,11 @@
   main div {
     grid-template-columns: 65% 1fr;
   }
-  main h2 {
-    /* margin-top: 1.5rem;
-    margin-bottom: 1rem; */
-    /* text-align: left;  */
-  }
+  /*main h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }*/
   .card {
     box-shadow: rgb(52, 52, 52) 5px 5px 10px;
   }
