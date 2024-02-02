@@ -27,7 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: var(--headerFooterBackground);
   color: var(--text2);
 }
