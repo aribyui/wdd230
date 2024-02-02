@@ -1,0 +1,17 @@
+@media screen and (min-width: 65em) {
+  #menu {
+    display: none;
+  }
+  .navigation {
+    position: inherit;
+    display: flex;
+    width: auto;
+  }
+  .navigation li {
+    display: block;
+  }
+  .navigation a:hover {
+    border-radius: 3px;
+    transition: .3s ease;
+  }
+}

@@ -16,11 +16,11 @@
   <!-- styles -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/larger.css">
   <!-- google fonts -->
-
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
   <!-- favicon -->
   <link rel="icon" href="favicon.ico">
   <title>Monterrey Chamber of Commerce</title>
@@ -28,18 +28,105 @@
 
 <body>
   <header>
-
+    <div>
+      <img src="#" alt="chamber logo">
+      <div>
+        <h1>Monterrey</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+    </div>
+    <nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-
-  </nav>
   <main>
+    <!-- hero banner section -->
+    <!-- <div id="hero-banner">
+      
+      <div>
+        <h2>Monterrey</h2>
+        <p>Chamber of Commerce</p>
+      </div>
+      <p>Enjoy the benefits of being affiliate!</p>
+      <button>Join Now</button>
+    </div>
+    </div> -->
+    <!-- spotlights section -->
+    <div id="spotlights">
+      <h2>Affiliated Members</h2>
+      <div>
+        affiliated member
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+      <div>
+        affiliated member
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+      <div>
+        affiliated member
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+    </div>
+    <!-- events section -->
+    <div id="events">
+      <h2>Events</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sit possimus soluta labore, ducimus, nisi assumenda
+        blanditiis nihil nesciunt magni quod? Excepturi soluta animi natus inventore molestiae nisi eaque tempora!</p>
+      <div>events</div>
+    </div>
+    <!-- weather section -->
+    <div id="weather">
 
+      <div>
+        <h2>Weather</h2>
+        <div>weather</div>
+        <h3>71F</h3>
+        <p>Clear Sky</p>
+      </div>
+
+      <div>
+        <p>Wind Chill</p>
+        <p>N/A</p>
+      </div>
+
+      <div>
+        <p>Humidity</p>
+        <p>35%</p>
+      </div>
+
+    </div>
   </main>
   <footer>
-
+    <!-- logo -->
+    <div>
+      <img src="#" alt="monterrey chamber of commerce logo">
+      <h3>Monterrey</h3>
+      <p>Chamber of Commerce</p>
+    </div>
+    <!-- address -->
+    <div>
+      <h3>Location</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <!-- social media -->
+    <div>
+      <h3>Follow us</h3>
+      <img src="" alt="facebook logo"><img src="" alt="linkedin logo"><img src="" alt="twitter logo">
+    </div>
+    <!-- <hr> -->
+    <p>&copy;<span id="current-year"></span> Monterrey Chamber | Lizandro Arizpe | WDD 230 Project | Last modified:
+      <span id="last-modified"></span>
+    </p>
   </footer>
-  <script src=""></script>
+  <script src="scripts/hamburgerButton.js"></script>
+  <script src="scripts/get-dates.js"></script>
 </body>
 
 </html>
