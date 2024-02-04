@@ -119,36 +119,33 @@ main {
 }
 
 /* hero banner */
-#hero-banner {
-  background-color: var(--background2);  
-  padding: 2rem ;
+#hero-image {
+  background-color: var(--background2);   
+  padding: 2rem 1rem;
   color: var(--text1);
 }
 
-#hero-banner button {
-  display: block;
-}
-
-#hero-banner > div  { /* analizar si esta bien o no */
+#hero-image > div p {
   margin-bottom: 2rem;
 }
 
-#hero-banner button { 
+#hero-image button { 
   background-color: var(--accent1); 
   color: var(--text1);
   padding: .7rem 2rem;
   border: 0;
 }
 
-#hero-banner button:hover {
+#hero-image button:hover {
   background-color: var(--accent2);
 }
+
 
 /* affiliated members */
 #affiliated-members {  
   background-color: var(--background2);  
   color: var(--text1);
-  padding: 2rem; 
+  padding: 2rem 1rem;
   border-top: 1px solid var(--headerFooterBackground); 
 }
 
@@ -185,7 +182,7 @@ main {
 #events {
   background-color: var(--headerFooterBackground);
   color: var(--text2);
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 #events h2, #events p {
@@ -250,7 +247,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: var(--headerFooterBackground);
   color: var(--background2);text-align: center;
 }
