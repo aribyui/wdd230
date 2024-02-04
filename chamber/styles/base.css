@@ -121,7 +121,7 @@ main {
 /* hero banner */
 #hero-banner {
   background-color: var(--background2);  
-  padding: 2rem;
+  padding: 2rem 1rem;
   color: var(--text1);
 }
 
@@ -148,7 +148,7 @@ main {
 #affiliated-members {  
   background-color: var(--background2);  
   color: var(--text1);
-  padding: 2rem; 
+  padding: 2rem 1rem; 
   border-top: 1px solid var(--headerFooterBackground); 
 }
 
@@ -185,7 +185,7 @@ main {
 #events {
   background-color: var(--headerFooterBackground);
   color: var(--text2);
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 #events h2, #events p {
@@ -198,8 +198,7 @@ main {
   aspect-ratio: 1/1;
   
 
-  /* the following properties are just temporal */
-  
+  /* the following properties are just temporal */  
   margin: 0 auto;
   color: var(--text1);
   font-style: italic;
@@ -211,7 +210,7 @@ main {
 #weather {
   background-color: var(--background2);
   color: var(--text1);
-  padding: 2rem;  
+  padding: 2rem 1rem;  
 }
 
 #weather h2 {
@@ -251,7 +250,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: var(--headerFooterBackground);
   color: var(--background2);text-align: center;
 }
