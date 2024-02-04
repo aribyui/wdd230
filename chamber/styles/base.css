@@ -86,7 +86,7 @@ p, a, button {
 
 .navigation li a {
   display: block;
-  padding: 2rem;
+  padding: 1rem 2rem;
   color: var(--text2);
   text-decoration: none; 
 }
