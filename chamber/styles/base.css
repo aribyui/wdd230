@@ -75,7 +75,7 @@ p, a, button {
   top: 5.4rem;
   left: -100%;
   height: 100vh;
-  width: 50vw;
+  width: 40vw;
   transition: left 0.3s ease-in-out; 
   cursor: pointer;
 }
@@ -210,6 +210,37 @@ main {
   background-color: var(--background2);
   color: var(--text1);
   padding: 2rem 1rem;  
+}
+
+#weather h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#weather div:nth-child(2) {
+  aspect-ratio: 1/1;
+  border: 1px solid var(--headerFooterBackground);
+  background-color: var(--background1);
+  width: 10rem;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  font-style: italic;
+  font-family: var(--paragraphs);
+}
+
+#weather div:nth-child(3) {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#weather div:nth-child(4), #weather div:nth-child(5) {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+#weather div:nth-child(5) {
+  margin: 0;
 }
 
 /* footer */
