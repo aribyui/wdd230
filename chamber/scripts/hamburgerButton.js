@@ -1,7 +1,13 @@
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-hamButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
-  hamButton.classList.toggle("open");
+hamButton.addEventListener('click', () => {
+  hamButton.classList.toggle('open');
+  navigation.classList.toggle('open');
+
+  if (navigation.classList.contains('open')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
 });

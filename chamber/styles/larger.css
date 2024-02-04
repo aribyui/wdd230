@@ -3,15 +3,20 @@
     display: none;
   }
   .navigation {
+    border-top: 0;
     position: inherit;
     display: flex;
     width: auto;
+    height: auto;
   }
   .navigation li {
     display: block;
   }
+  .navigation li a {
+    margin-left: 1rem;
+    padding: .7rem 2rem;
+  }
   .navigation a:hover {
-    border-radius: 3px;
     transition: .3s ease;
   }
 }
