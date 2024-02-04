@@ -146,9 +146,10 @@ main {
 
 /* affiliated members */
 #affiliated-members {  
-  background-color: var(--headerFooterBackground);  
-  color: var(--text2);
-  padding: 2rem 1rem;  
+  background-color: var(--background2);  
+  color: var(--text1);
+  padding: 2rem 1rem; 
+  border-top: 1px solid var(--headerFooterBackground); 
 }
 
 #affiliated-members h2 {
@@ -158,6 +159,7 @@ main {
 
 #affiliated-members > div > div {  
   aspect-ratio: 1/1;
+  border: 1px solid var(--headerFooterBackground);
   background-color: var(--background1);
   width: 15rem;
   margin: 0 auto 2rem auto;
@@ -181,8 +183,8 @@ main {
 
 /* events */
 #events {
-  background-color: var(--background2);
-  color: var(--text1);
+  background-color: var(--headerFooterBackground);
+  color: var(--text2);
   padding: 2rem 1rem;
 }
 
@@ -192,10 +194,9 @@ main {
 }
 
 #events div + div {
-  border: 1px solid var(--headerFooterBackground);
+  background-color: var(--background1);
   aspect-ratio: 1/1;
-  width: auto;
-  margin: 0 auto 2rem auto;
+  
 
   /* the following properties are just temporal */
   color: var(--text1);
@@ -208,7 +209,7 @@ main {
 #weather {
   background-color: var(--background2);
   color: var(--text1);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem;  
 }
 
 /* footer */
