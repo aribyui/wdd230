@@ -121,7 +121,7 @@ main {
 /* hero banner */
 #hero-banner {
   background-color: var(--background2);  
-  padding: 2rem 1rem;
+  padding: 2rem ;
   color: var(--text1);
 }
 
@@ -148,7 +148,7 @@ main {
 #affiliated-members {  
   background-color: var(--background2);  
   color: var(--text1);
-  padding: 2rem 1rem; 
+  padding: 2rem; 
   border-top: 1px solid var(--headerFooterBackground); 
 }
 
@@ -185,7 +185,7 @@ main {
 #events {
   background-color: var(--headerFooterBackground);
   color: var(--text2);
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 
 #events h2, #events p {
@@ -250,7 +250,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 2rem;
   background-color: var(--headerFooterBackground);
   color: var(--background2);text-align: center;
 }
