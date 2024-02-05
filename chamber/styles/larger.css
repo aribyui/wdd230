@@ -1,4 +1,18 @@
 @media screen and (min-width: 65em) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #023E8A;
+  }
+  header {
+    padding: 2rem;
+  }
+  #hero-image {
+    height: 50vh;
+  }
+  #hero-image > div {
+    margin-top: 13rem;
+  }
   #menu {
     display: none;
   }
@@ -19,4 +33,18 @@
   .navigation a:hover {
     transition: .3s ease;
   }
+  #affiliated-members > div > div {
+    width: 15rem;
+  }
+  #events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #events div + div {
+    aspect-ratio: 1/1;
+    margin-left: 2rem;
+    width: 60rem;
+  }
+
 }
