@@ -1,5 +1,6 @@
 @media screen and (min-width: 32.5em) {
   .navigation {
+    top: 6rem;
     width: 23vw;
   }
   #hero-image {

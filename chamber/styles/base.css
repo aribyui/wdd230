@@ -72,7 +72,7 @@ p, a, button {
   background-color: var(--headerFooterBackground);
   border-top: 2px solid var(--accent1);
   position: absolute;
-  top: 6rem;
+  top: 8rem;
   left: -100%;
   height: 100vh;
   width: 50vw;
