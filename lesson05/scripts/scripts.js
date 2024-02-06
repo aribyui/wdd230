@@ -26,6 +26,6 @@ addChapterBtn.addEventListener("click", () => {
     }); 
   } else {
     input.focus();
-    alert("error");
+    alert("Error: you have to add a book.");
   }
 });
