@@ -18,8 +18,10 @@ addChapterBtn.addEventListener("click", () => {
 
     input.focus();
     input.value = "";    
-  
+
     deleteBtn.addEventListener("click", () => {
+      deleteBtn.setAttribute("aria-label", "Delete added book");
+      /* console.log(deleteBtn.getAttribute("aria-Label")) */
       unorderedList.removeChild(li);
       input.focus();
       input.value = "";
