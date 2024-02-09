@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,7 @@ h1 {
 	font-size: 1.5rem;
 }
 
-main {
+form {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
@@ -63,7 +64,7 @@ li {
 		font-size: 2rem;
 	}
 
-	main {
+	form {
 		width: 320px;
 	}
 }
