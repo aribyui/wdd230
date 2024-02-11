@@ -56,16 +56,17 @@ modeButton.addEventListener("click", () => {
   }
 
   // paragraphs - primera parte
-  for (let i = 1; i < paragraphsList.length; i++) {
-    if (i === 4) {
+  for (let i = 0; i < paragraphsList.length; i++) {
+    console.log(paragraphsList[i])
+    if (i === 3) {
       break;
     }
     paragraphsList[i].style.color = "var(--text2)";
   }
   
   // paragraphs - segunda parte
-  for (let i = 5; i < paragraphsList.length; i++) {
-    if (i === 10) {
+  for (let i = 4; i < paragraphsList.length; i++) {
+    if (i === 9) {
       break;
     }
     paragraphsList[i].style.color = "var(--text2)";
@@ -116,16 +117,16 @@ modeButton.addEventListener("click", () => {
     }
 
     // paragraphs - primera parte
-    for (let i = 1; i < paragraphsList.length; i++) {
-      if (i === 4) {
+    for (let i = 0; i < paragraphsList.length; i++) {
+      if (i === 3) {
         break;
       }
       paragraphsList[i].style.color = "var(--text1)";
     }
 
     // paragraphs - segunda parte
-    for (let i = 5; i < paragraphsList.length; i++) {
-      if (i === 10) {
+    for (let i = 4; i < paragraphsList.length; i++) {
+      if (i === 9) {
         break;
       }
       paragraphsList[i].style.color = "var(--text1)";
