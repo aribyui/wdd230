@@ -28,81 +28,89 @@
 
 <body>
   <header>
+
     <div>
-      <img src="#" alt="chamber logo">
+      <img src="#" alt="#">
       <div>
-        <h1>Monterrey<br>Chamber of Commerce</h1>
+        <h1>Monterrey</h1>
+        <p>Chamber of Commerce</p>
       </div>
     </div>
+
     <nav>
-      <button id="menu" aria-label="menu"></button>
+      <div id="mode">🌞</div>
       <ul class="navigation">
-        <li><a href="#">Home</a></li>
+        <li><a id="active" href="index.html">Home</a></li>
         <li><a href="#">Discover</a></li>
         <li><a href="#">Directory</a></li>
         <li><a href="#">Join</a></li>
       </ul>
+      <button id="menu" aria-label="menu"></button>
     </nav>
+
   </header>
   <main>
-    <!-- hero banner section -->
+
     <div id="hero-image">
       <div>
         <h2>Enjoy the benefits of being an affiliate!</h2>
-        <button>Join Now</button>
+        <br>
+        <button class="cta-button">Join Now</button>
       </div>
     </div>
-    <!-- affiliated members -->
+
     <div id="affiliated-members">
-
       <h2>Affiliated Members</h2>
-      <!-- 1 -->
       <div>
-        <div>member</div>
-        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <h3>Member</h3>
+        <div></div>
+        <p>ghandi@email.com<br>+999-9999-9999<br><a href="https://www.gandhi.com.mx/">Website</a></p>
       </div>
-      <!-- 2 -->
       <div>
-        <div>member</div>
-        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <h3>Member</h3>
+        <div></div>
+        <p>porrua@email.com<br>+999-9999-9999<br><a href="https://porrua.mx/">Website</a></p>
       </div>
-      <!-- 3 -->
       <div>
-        <div>member</div>
-        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <h3>Member</h3>
+        <div></div>
+        <p>elsotano@email.com<br>+999-9999-9999<br><a href="https://www.elsotano.com/">Website</a></p>
       </div>
-
     </div>
-    <!-- events -->
+
     <div id="events">
       <div>
         <h2>Events</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempora exercitationem sint suscipit itaque,
-          dolores dolorum eos perferendis animi repellendus deserunt tenetur aliquam aut sapiente quaerat, amet culpa.
-          Nesciunt, temporibus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum minus facere expedita. Minus, illum natus.
+          Pariatur minus ducimus cum vitae facere omnis aperiam voluptatem reiciendis, beatae veritatis dolorem
+          architecto optio!
+          Nostrum placeat laudantium pariatur officiis, architecto, magnam harum dolorem ducimus deserunt molestias
+          impedit? Vero nihil, neque ipsam consequatur quis consectetur itaque quam laboriosam excepturi magni,
+          repellendus ab minus quo ullam!</p>
+        <button class="cta-button">Learn More</button>
       </div>
-      <div>event</div>
+      <div></div>
     </div>
-    <!-- weather -->
+
     <div id="weather">
 
-      <div>
-        <h2>Weather</h2>
-        <div>
-          weather
-        </div>
-        <h3>71 °F</h3>
-        <p>Clear Sky</p>
-      </div>
+      <h2>Weather</h2>
+
+      <div></div>
 
       <div>
-        <p>Humidity</p>
-        <p>35%</p>
+        <h2>71 °F</h2>
+        <p>Clear Sky</p>
       </div>
 
       <div>
         <p>Wind Chill</p>
         <p>N/A</p>
+      </div>
+
+      <div>
+        <p>Humidity</p>
+        <p>35%</p>
       </div>
 
     </div>
@@ -129,6 +137,7 @@
       <span id="last-modified"></span>
     </p>
   </footer>
+  <!-- script -->
   <script src="scripts/hamburgerButton.js"></script>
   <script src="scripts/get-dates.js"></script>
 </body>
