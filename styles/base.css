@@ -148,14 +148,11 @@ main {
 	opacity: 0.75;
 }
 
-.hero-label p {
-  margin: 0;
-  padding: .25rem;
-  font-weight: 700;
-  font-size: 1.5rem;  
+.hero-label h2 {
+  padding: .25rem;   
 }
 
-main h2 {
+main > h2 {
   text-align: left;
   color: #171717;
   border-bottom: 1px solid #17171730;  
