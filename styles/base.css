@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: white;
 }
@@ -36,9 +36,10 @@ header {
 
 header img {
   /* border: 1px solid red; */
-  background-color: #DDF842;
+  background-color: #DDF842; 
   width: 5rem;   
   border-radius: 8px;
+  
 }
 
 header h1 {
@@ -46,7 +47,6 @@ header h1 {
 }
 
 /* hamburger button */
-
 #menu {
   background-color: #171717;
   font-size: 1.3rem; 
@@ -86,8 +86,6 @@ nav ul li {
   content: "X";
 }
 
-/* */
-
 nav {
   background-color: #DDF842;
 }
@@ -110,31 +108,58 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #171717; 
   color: #E1E1E1;  
+  transition: 0.3s;
 }
 
 nav ul .active::before {
-  content: "<";  
+  content: "💻 ";  
 }
-nav ul .active::after {
-  content: ">";
-} 
 
-main {  
-  margin: 1rem;  
+.active {
+  background-color: #171717;
+  color: #E1E1E1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero {
+  position: relative; 
+}
+
+.hero img {  
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.hero-label {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: radial-gradient(#fff, #518FBA);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.hero-label p {
+  margin: 0;
+  padding: .25rem;
+  font-weight: 700;
+  font-size: 1.5rem;  
 }
 
 main h2 {
   text-align: left;
   color: #171717;
   border-bottom: 1px solid #17171730;  
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-main div {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  margin: 1rem; 
 }
 
 .card {
@@ -142,6 +167,7 @@ main div {
   text-align: left;
   border: 1px solid #171717;
   background-color: #E1E1E1;
+  margin: 0 1rem;
 }
 
 .card h3 {
@@ -187,14 +213,14 @@ main div {
   bottom: 0;
   width: 100%;
   height: 100%;
+  padding: 0 1rem;
 }
-
-/* */
 
 footer {
   background-color: #171717;
   text-align: center;
   padding: 1rem;
+  margin-top: 3rem;
 }
 
 footer p {

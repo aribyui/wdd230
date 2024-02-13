@@ -31,7 +31,7 @@
     <h1>Lizandro Arizpe</h1>
   </header>
   <nav>
-    <!-- The aria-label: http://tinyurl.com/4jrsrmwr-->
+    <!-- aria-label: http://tinyurl.com/4jrsrmwr-->
     <button id="menu" aria-label="menu">
       <span class="visually-hidden">Menu</span>
     </button>
@@ -44,50 +44,56 @@
     </ul>
   </nav>
   <main>
-    <h2>WDD 230: Web Frontend Development</h2>
-    <div>
-      <section class="card">
-        <h3>Activity and Assingment Links</h3>
-        <ul>
-          <li><a href="lesson01/holygrail.html">Holy Layout</a> | <a href="https://codepen.io/aribyui/pen/NWJbOey">JS
-              Pen</a></li>
-          <li><a href="lesson01/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design
-              Principles Document</a></li>
-          <li><a href="images/combinator-exercises.webp">Combinators</a> | <a
-              href="https://codepen.io/aribyui/pen/ExMXWpP">Pseudo-Elements</a> | <a
-              href="https://codepen.io/aribyui/pen/vYPJBKR">Responsive Menu</a> | <a
-              href="lesson03/chamber-site-plan.html">Chamber Site Plan</a></li>
-          <li><a href="https://codepen.io/aribyui/pen/eYXVWgL">CSS Pseudo-classes</a> | <a href="chamber/">Chamber Home
-              Page Build</a></li>
-          <li><a href="lesson05/bom.html">Book of Mormon</a> | <a href="chamber/">Chamber Home Page Continued</a> | <a
-              href="lesson03/images/landscape-compressed.webp">WebP</a></li>
-          <li><a href="lesson06/responsive-images.html">Responsive images</a></li>
-          <li><a href="#">Week 07</a></li>
-          <li><a href="#">Week 08</a></li>
-          <li><a href="#">Week 09</a></li>
-          <li><a href="#">Week 10</a></li>
-        </ul>
-      </section>
-      <section class="card">
-        <h3>Information</h3>
-        <br>
-        <p>[Country]</p>
-        <br>
-        <p>[Weather]</p>
-        <br>
-        <p>[Number of visits]</p>
-        <br>
-      </section>
-      <div class="iframe-container">
-        <iframe class="responsive-iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.51572731716!2d-100.62083002186195!3d25.64874622556449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20Nuevo%20Leon!5e0!3m2!1sen!2smx!4v1705967165045!5m2!1sen!2smx"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- hero image -->
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 960px)" srcset="images/hero-large.webp">
+        <img src="images/hero-large.webp" alt="Monterrey Mexico Temple" width="960" height="480">
+      </picture>
+      <div class="hero-label">
+        <p>Monterrey México Temple</p>
       </div>
+    </div>
+    <!-- end hero image -->
+
+    <h2>WDD 230: Web Frontend Development</h2>
+   
+    <section class="card">
+      <h3>Activity and Assingment Links</h3>
+      <ul>
+        <li><a href="lesson01/holygrail.html">Holy Layout</a> | <a href="https://codepen.io/aribyui/pen/NWJbOey">JS Pen</a></li>
+        <li><a href="lesson01/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design Principles Document</a></li>
+        <li><a href="images/combinator-exercises.webp">Combinators</a> | <a href="https://codepen.io/aribyui/pen/ExMXWpP">Pseudo-Elements</a> | <a href="https://codepen.io/aribyui/pen/vYPJBKR">Responsive Menu</a> | <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a></li>
+        <li><a href="https://codepen.io/aribyui/pen/eYXVWgL">CSS Pseudo-classes</a> | <a href="chamber/">Chamber Home Page Build</a></li>
+        <li><a href="lesson05/bom.html">Book of Mormon</a> | <a href="chamber/">Chamber Home Page Continued</a> | <a href="lesson03/images/landscape-compressed.webp">WebP</a></li>
+        <li><a href="lesson06/responsive-images.html">Responsive images</a></li>
+        <li><a href="#">Week 07</a></li>
+        <li><a href="#">Week 08</a></li>
+        <li><a href="#">Week 09</a></li>
+        <li><a href="#">Week 10</a></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>Information</h3>
+      <br>
+      <p>[Country]</p>
+      <br>
+      <p>[Weather]</p>
+      <br>
+      <p>[Number of visits]</p>
+      <br>
+    </section>
+    
+    <div class="iframe-container">
+      <iframe class="responsive-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.51572731716!2d-100.62083002186195!3d25.64874622556449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20Nuevo%20Leon!5e0!3m2!1sen!2smx!4v1705967165045!5m2!1sen!2smx"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
   <footer>
-    <p>&copy;<span id="current-year"></span>&nbsp;| Lizandro Arizpe | México&nbsp;&nbsp;<img src="images/flag.png"
+    <p>&copy;<span id="current-year"></span>&nbsp;| Lizandro Arizpe | México&nbsp;&nbsp;<img src="images/flag.webp"
         alt=""></p>
     <p>Last modification:&nbsp;<span id="lastModified"></span></p>
   </footer>
