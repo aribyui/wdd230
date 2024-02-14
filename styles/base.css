@@ -124,7 +124,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 .hero {
@@ -162,7 +161,7 @@ main > h2 {
 }
 
 .card {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   text-align: left;
   border: 1px solid #171717;
   background-color: #E1E1E1;
@@ -170,8 +169,8 @@ main > h2 {
 }
 
 .card h3 {
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  /* border-top-right-radius: 6px;
+  border-top-left-radius: 6px; */
   background-color: #171717;
   color: #DDF842; 
   padding: .9rem;
@@ -198,28 +197,25 @@ main > h2 {
 /* How to responsive iframes: http://tinyurl.com/3mxvpus6 */ 
 
 .iframe-container {
+  border: 1px solid #171717;
+  aspect-ratio: 16/9;
+  margin: 0 1rem;
   position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 75%;
 }
 
 .responsive-iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
-  padding: 0 1rem;
+  object-fit: cover;
 }
+
 
 footer {
   background-color: #171717;
   text-align: center;
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 footer p {
