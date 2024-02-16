@@ -1,5 +1,5 @@
 :root {
-  --headerFooterBackground: #023E8A;
+  --headerNavFooterBackground: #023E8A;
   --text1: #023E8A;
   --text2: #FFFFFF;
   --background1: #F6FEFF;
@@ -10,7 +10,7 @@
   --paragraphs: 'Rubik', sans-serif;
   /* dark-mode */
   --mainDark: #202020;
-  --secondaryDark: #404040;
+  --secondaryDark: #303030;
   --thirdDark: #555555;
   --fourthDark: #888888; 
 }
@@ -25,80 +25,74 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
-p, ul, #menu, img, button {
-  font-family: 'Rubik', sans-serif;  
+a, p, button, img {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.15rem;
 }
 
-p, ul, #menu, button {
-  font-size: 1.2rem;
-}
-
-/* header */
-header {  
-  background-color: var(--headerFooterBackground);
+header {
+  background-color: var(--headerNavFooterBackground);
   color: var(--text2);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
-header > div {
+.header-logo {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
-.logo img {
-  width: 7rem;
+.header-logo img {
+  width: 80px;  
+  height: 80px;
   border-radius: 50%;
-  /* border: 2px solid var(--accent2); */
+  margin-right: 1rem;
+  /* border: 3px solid var(--accent2); */
 }
 
-.logo h1 {
-  font-size: 1.2rem;
-}
-
-header div img + div {
-  margin-left: 1rem;
-  /* line-height: 2.5rem; */
-}
-
-/* toggle switch */
-header nav {
+header div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100px;
-  /* border: 1px solid red; */
 }
 
-/* hamburger button*/
+header div:nth-child(2) > div:first-child {
+  margin-bottom: 1rem;
+}
+
+header div:nth-child(2) > p:last-child {
+  color: yellow;
+}
+
 #menu {
-  font-size: 1.2rem;
-  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid var(--background2);
+  color: var(--text2);
+  font-size: 1.5rem;
   width: 2rem;
   height: 2rem;
-  background-color: inherit;
-  color: white;
-  border: 2px solid white;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 #menu::before {
   content: '≡';
 }
 
-.navigation {  
-  background-color: var(--headerFooterBackground);
+.navigation {
+  background-color: var(--headerNavFooterBackground);
   list-style: none;
-  position: absolute;
-  top: 0rem;
+  position:  absolute;
+  top: 0;
   left: -100%;
-  height: 100vh;
+  height: 100vh;  
   width: 50vw;
   transition: left 0.3s ease-in-out;
   z-index: 1;
+}
+
+.open {
+  left: 0;
 }
 
 .navigation li {
@@ -109,261 +103,343 @@ header nav {
   display: block;
   color: var(--text2);
   text-decoration: none;
-  text-align: left;
-  padding: 1rem 2rem;
-  border: 0;
+  padding: 0.7rem 2rem;
 }
 
 .navigation a:hover {
-  background-color: var(--accent2); 
-  color: var(--text1);  
+  background-color: var(--accent2);
+  color: var(--text1);
+  transition: 0.3s;
 }
 
 .navigation a:active {
   background-color: var(--accent1);
 }
 
-#active {
-  background-color: var(--accent2);
-  color: var(--text1);  
-}
-
-.open {
-  left: 0;
-}
-
 .navigation.open li {
-  display: block;
+  display: block;  
 }
 
 #menu.open::before {
   content: 'X';
 }
 
-/* hero-image */
-.hero-image {
-  position: relative;
-  /* height: 300px; */
+#active {
+  background-color: var(--accent2);
+  color: var(--text1);
 }
 
-.hero-image img {
-  object-fit: cover;
-  height: 100%;
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  height: auto;
+}
+
+.hero img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
   display: block;
 }
 
-.hero-label  {
+.hero-label {
   position: absolute;
-  top:  90px;
-  left: 16px;  
+  top: 0px;
+  left: 0px;
+  background-color: #f6feffa8;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
-.hero-label h2 {
-  color: var(--text2);  
+.hero-label h2, .hero-label p {
+  color: var(--text1);
 }
- 
+
 .hero-label button {
-  padding: 0.7rem 2rem;
-  border-radius: 3px;
-  border: 0;
   background-color: var(--accent2);
-  color: var(--text1)
+  color: var(--text1);
+  border: 0;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
 }
 
 .hero-label button:hover {
   background-color: var(--accent1);
-} 
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* end hero */
 
-
-
-
-
-/* affiliated-members */
-#affiliated-members {
-  padding: 3rem 1rem; 
+/* affiliated members*/
+.affiliated-members {
+  padding: 2rem 1rem; 
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem
 }
 
-#affiliated-members h2::before {
-  content: '🤝 '
-}
-
-#affiliated-members h3, #affiliated-members h2, #affiliated-members p {
+.affiliated-members h2, .affiliated-members h3, .affiliated-members p {
   color: var(--text1);
 }
 
-#affiliated-members h3 {
+.affiliated-members h3 {
   margin-bottom: 2rem;
 }
 
-#affiliated-members div > div {
+.affiliated-members div {
   background-color: var(--background1);
-  border: 1px solid var(--headerFooterBackground);
+  border: 1px solid var(--headerNavFooterBackground);
   aspect-ratio: 1/1;
   width: 14rem;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
 }
 
-#affiliated-members p {
+.affiliated-members p {
   line-height: 2rem;
 }
 
+.affiliated-members p > a {
+  text-decoration: none;
+}
+
+.affiliated-members p > a:hover {
+  text-decoration: underline;
+}
+/* end affiliated members*/
+
 /* events */
-#events {
-  background-color: var(--headerFooterBackground);
+.events {
+  background-color: var(--headerNavFooterBackground);
   padding: 3em 1rem;
   text-align: center;
 }
 
-#events h2, #events p {
+.events h2, .events p {
   color: var(--text2);
   margin-bottom: 2rem;
 }
 
-#events p {
+.events p {
   line-height: 2rem;
 }
 
-#events h2::before {
+.events h2::before {
   content: '📅 '
 }
 
-#events button {
+.events button {
   padding: 0.7rem 2rem;
-  border-radius: 3px;
   border: 0;
   background-color: var(--accent2);
   color: var(--text1);
   margin-bottom: 2rem; 
+  border-radius: 5px;
 }
 
-#events button:hover {
+.events button:hover {
   background-color: var(--accent1);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-#events div + div {
+.events div + div {
   background-color: var(--background1);
   border: 0;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1;  
   width: auto;
 }
+/* end events */
 
 /* weather */
-#weather {
+.weather {
   padding: 3em 1rem;
   text-align: center;
 }
 
-#weather h2, #weather p {
+.weather h2, .weather p {
   color: var(--text1)
 }
 
-#weather h2:nth-child(1) {
+.weather h2:nth-child(1) {
   margin-bottom: 2rem;
 }
 
-#weather > h2:first-of-type::before {
+/* .weather > h2:first-of-type::before {
   content: '🌞 ';
-}
+} */
 
-#weather h2 + div {
+.weather h2 + div {
   aspect-ratio: 1/1;
   background-color: var(--background1);
-  border: 1px solid var(--headerFooterBackground);
+  border: 1px solid var(--headerNavFooterBackground);
   width: 7rem;
   margin: 0 auto 2rem auto;
 }
 
-#weather div:nth-child(3) {
+.weather div:nth-child(3) {
   line-height: 2rem;
   margin-bottom: 2rem;
 }
 
-#weather div:nth-child(3) h2 {
+.weather div:nth-child(3) h2 {
   margin-bottom: 0;
 }
 
-#weather div:nth-child(4) {
+.weather div:nth-child(4) {
   margin-bottom: 2rem;
 }
 
-#weather div:nth-child(4), #weather div:nth-child(5) {
+.weather div:nth-child(4), .weather div:nth-child(5) {
   display: flex;
   align-items: center;
   justify-content: space-around; 
 }
+/* end weather */
 
 /* footer */
 footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  background-color: var(--headerFooterBackground);
+  flex-direction: column;  
+  align-items: center; 
+  justify-content: center; 
+  background-color: var(--headerNavFooterBackground);
   color: var(--background2);text-align: center;
   padding: 3rem 1rem;
 }
 
+.footer-logo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* border: 4px solid var(--accent2); */
+}
+
 footer div:nth-child(1) img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer div {  
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer p {
   line-height: 2rem;
 }
 
+footer div:nth-child(2) a {
+  text-decoration: none;
+  line-height: 2em;
+  color: var(--text2);
+}
+
+footer div:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+/* footer div:nth-child(2) a::before {
+  content: "📌 ";
+} */
+
+footer div:nth-child(4) img {
+  width: 2.5rem;
+  margin-left: 1rem;
+}
+
 footer hr {
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 1rem;
+  border: 1px solid var(--accent2);
 }
 
 #last-modified {
   color: var(--accent2);
 }
+/* end footer */
 
 /* dark mode */
 #mode {
-  font-size: 1.2rem;
   cursor: pointer;
+  font-size: 1.15rem;
+  text-align: center;
 }
 
-.dark-mode {
-	background-color: var(--mainDark);	 
+.dark-mode-backgroundPrimary {
+  background-color: var(--mainDark);
+  transition: 0.3s;
 }
 
-.dark-mode-secondary {
+.dark-mode-backgroundSecondary {
   background-color: var(--secondaryDark);
+  transition: 0.3s;
 }
 
-.dark-mode-text {
-  color: var(--text2);
-}
-
-.dark-mode .navigation a {
-  color: white;
-}
-
-.dark-mode .navigation a:hover {
-  background-color: var(--secondaryDark);
-}
-
-.dark-mode .navigation a:active {
+.dark-mode-backgroundThird {
   background-color: var(--thirdDark);
 }
 
-.dark-mode .navigation #active {
-  background-color: var(--secondaryDark);
+#dark-mode-text-1 {
+  color: var(--mainDark);
+}
+
+#dark-mode-text-2 {
   color: var(--text2);
 }
+
+#dark-mode-hero-label {
+  background-color: #888888c2;
+}
+
+#dark-mode-hero-button {
+  background-color: var(--mainDark);
+  color: var(--background2);
+  transition: 0.3s;
+}
+
+#dark-mode-hero-button:hover {
+  background-color: var(--thirdDark);
+}
+
+#dark-mode-event-button {
+  background-color: var(--thirdDark);
+  color: var(--text2);
+}
+
+#dark-mode-event-button:hover {
+  background-color: var(--fourthDark);
+}
+
+.dark-mode-backgroundPrimary .navigation a:hover {
+  background-color: var(--thirdDark);
+  color: var(--text2);
+}
+
+.dark-mode-backgroundPrimary .navigation a:active {
+  background-color: var(--fourthDark);
+  color: var(--text2);
+}
+
+.dark-mode-backgroundPrimary #active {
+  background-color: var(--thirdDark);
+  color: var(--text2);
+  transition: 0.3s;
+}
+
+.dark-mode-hr {
+  border: 1px solid var(--thirdDark)
+}
+
+/* light mode elements */
+header, h2, h3, p, body, .navigation, main, .events, hr, footer {
+  transition: 0.3s;
+} 
