@@ -11,7 +11,7 @@ body {
   background-color: white;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Rubik', sans-serif;
 }
 
@@ -168,7 +168,7 @@ main > h3 {
   margin: 0 1rem;
 }
 
-.card h3 {
+.card h4 {
   /* border-top-right-radius: 6px;
   border-top-left-radius: 6px; */
   background-color: #171717;
