@@ -11,7 +11,7 @@ body {
   background-color: white;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
 }
 
@@ -147,13 +147,13 @@ main {
 	opacity: 0.75;
 }
 
-.hero-label h2 {
+.hero-label p {
   padding: .25rem;  
-  /* font-size: 1.5rem; 
-  font-weight: 700; */
+  font-size: 1.5rem; 
+  font-weight: 700;
 }
 
-main > h3 {
+main > h2 {
   text-align: left;
   color: #171717;
   border-bottom: 1px solid #17171730;  
@@ -168,7 +168,7 @@ main > h3 {
   margin: 0 1rem;
 }
 
-.card h4 {
+.card h3 {
   /* border-top-right-radius: 6px;
   border-top-left-radius: 6px; */
   background-color: #171717;
