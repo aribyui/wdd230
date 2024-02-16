@@ -29,8 +29,8 @@
 <body>
   <header>
 
-    <div>
-      <img src="#" alt="#">
+    <div class="logo">
+      <img src="images/monterrey.png" alt="monterrey chamber of commerce logo">
       <div>
         <h1>Monterrey Chamber of Commerce</h1>
       </div>
@@ -50,8 +50,13 @@
   </header>
   <main>
 
-    <div id="hero-image">
-      <div>
+    <div class="hero-image">
+      <picture>
+        <source media="(max-width: 520px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 1039px)" srcset="images/hero-medium.webp">
+        <img src="images/hero-large.webp" alt="hero image" width="1560" height="780">
+      </picture>
+      <div class="hero-label">
         <h2>Enjoy the benefits of being an affiliate!</h2>
         <br>
         <button class="cta-button">Join Now</button>

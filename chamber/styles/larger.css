@@ -1,4 +1,21 @@
 @media screen and (min-width: 65em) {
+  /* body {
+    max-width: 1200px;
+    margin: 0 auto;
+  } */
+  .logo img {
+    width: 5rem;
+    border-radius: 50%;
+    /* border: 2px solid var(--accent2); */
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .hero-image {
+    position: relative;
+    height: 500px;
+  }
   #mode {
     position: absolute;
     top: 18px;

@@ -48,9 +48,19 @@ header > div {
   align-items: center;  
 }
 
+.logo img {
+  width: 7rem;
+  border-radius: 50%;
+  /* border: 2px solid var(--accent2); */
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+}
+
 header div img + div {
   margin-left: 1rem;
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
 }
 
 /* toggle switch */
@@ -83,7 +93,7 @@ header nav {
   background-color: var(--headerFooterBackground);
   list-style: none;
   position: absolute;
-  top: 8.25rem;
+  top: 0rem;
   left: -100%;
   height: 100vh;
   width: 50vw;
@@ -131,30 +141,29 @@ header nav {
 }
 
 /* hero-image */
-#hero-image {
+.hero-image {
   position: relative;
-  height: 300px;
-  /* temporal */
-  border-bottom: 1px dashed var(--text1); 
+  /* height: 300px; */
 }
 
-#hero-image img {
+.hero-image img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  display: block;
 }
 
-#hero-image div {
+.hero-label  {
   position: absolute;
-  top:  140px;
-  left: 16px;
+  top:  90px;
+  left: 16px;  
 }
 
-#hero-image h2 {
-  color: var(--text1);  
+.hero-label h2 {
+  color: var(--text2);  
 }
-
-#hero-image button {
+ 
+.hero-label button {
   padding: 0.7rem 2rem;
   border-radius: 3px;
   border: 0;
@@ -162,9 +171,13 @@ header nav {
   color: var(--text1)
 }
 
-#hero-image button:hover {
+.hero-label button:hover {
   background-color: var(--accent1);
-}
+} 
+
+
+
+
 
 /* affiliated-members */
 #affiliated-members {
