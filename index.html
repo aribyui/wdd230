@@ -27,7 +27,7 @@
 
 <body>
   <header>
-    <img src="images/lizandro.webp" alt="a photo of lizandro, he smiles at the camera and wears a white shirt">
+    <img src="images/lizandro.webp" alt="a photo of lizandro, he smiles at the camera and wears a white shirt" loading="lazy">
     <h1>Lizandro Arizpe</h1>
   </header>
   <nav>
@@ -47,9 +47,9 @@
     <!-- hero image -->
     <div class="hero">
       <picture>
-        <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 400px)" srcset="images/hero-small.webp" loading="lazy">
         <source media="(max-width: 960px)" srcset="images/hero-large.webp">
-        <img src="images/hero-large.webp" alt="Monterrey Mexico Temple" width="960" height="480">
+        <img src="images/hero-large.webp" alt="Monterrey Mexico Temple" width="960" height="480" loading="lazy">
       </picture>
       <div class="hero-label">
         <p>Monterrey México Temple</p>
@@ -79,7 +79,7 @@
       <br>
       <p>[Weather]</p>
       <br>
-      <p>[Number of visits]</p>
+      <p>Number of visits: <span class="visits"></span></p>
       <br>
     </section>
 
@@ -92,12 +92,13 @@
 
   </main>
   <footer>
-    <p>&copy;<span id="current-year"></span>&nbsp;| Lizandro Arizpe | WDD 230 Project | México&nbsp;&nbsp;<img
-        src="images/flag.webp" alt=""></p>
+    <p>&copy;<span id="current-year"></span>&nbsp;| Lizandro Arizpe | lizandro.arizpe@gmail.com | WDD 230 Project | México&nbsp;&nbsp;<img
+        src="images/flag.webp" alt="mexico flag" loading="lazy"></p>
     <p>Last modification:&nbsp;<span id="lastModified"></span></p>
   </footer>
   <script src="scripts/getdates.js"></script>
   <script src="scripts/hamburgerButton.js"></script>
+  <script src="scripts/getVisits.js"></script>
 </body>
 
 </html>
