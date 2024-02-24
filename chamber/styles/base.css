@@ -269,10 +269,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* .weather > h2:first-of-type::before {
-  content: '🌞 ';
-} */
-
 .weather h2 + div {
   aspect-ratio: 1/1;
   background-color: var(--background1);
