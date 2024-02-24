@@ -20,9 +20,6 @@
     display: block;
     margin-left: 1rem;
   }
-  .navigation a {
-    border-radius: 5px;
-  }
   .affiliated-members {
     padding: 2rem 3rem;
     grid-template-columns: 1fr 1fr 1fr;
