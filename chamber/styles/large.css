@@ -69,14 +69,15 @@
   aside > div {
     padding: 2rem 3rem;
   }
-  aside div:nth-child(2) figure img:hover, aside div:nth-child(3) figure img:hover {
+  /* aside div:nth-child(2) figure img:hover, aside div:nth-child(3) figure img:hover {
     box-shadow: 0 0 20px var(--headerNavFooterBackground);
     transition: 0.3s ease-in-out;
     border-radius: 3px;  
-  }
+  } */
   aside + div > div figure > picture > img:hover {
     box-shadow: 0 0 20px var(--headerNavFooterBackground);
-    transition: 0.3s ease-in-out;
+    transform: scale(1.02);
+    transition: 0.5s ease-out;
     border-radius: 3px;    
   }
   /* end discoger page */
