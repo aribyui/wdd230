@@ -62,6 +62,9 @@
   .weather {
     padding: 2rem 3rem;
   }
+  /* discoger page */
+
+  /* end discoger page */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

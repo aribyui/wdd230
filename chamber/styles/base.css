@@ -319,13 +319,6 @@ body {
   color: var(--text1);
 }
 
-aside {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  color: var(--text1);
-}
-
 aside hr {
   margin-bottom: 1rem;
   border: 1px solid var(--ligthHrColor);
@@ -335,55 +328,47 @@ aside div {
   background-color: var(--background1);
   border: 1px solid var(--headerNavFooterBackground);  
   padding: 1rem;
-}
-
-aside div h3, aside div > div{
   margin-bottom: 1rem;
 }
 
+aside div:nth-child(3) {
+  margin-bottom: 0;
+}
+
 aside div:nth-child(1) > h3::before {
-  content: "📊 "; /* 📈 */
+  content: "📊 "
 }
 
 aside div:nth-child(2) > h3::before {
   content: "📚 "
 }
 
-aside div:nth-child(2) > h4 {
-  margin-bottom: 1rem;
-}
-
-aside div:nth-child(2) figure > div {
-  position: relative;
-  padding: 0;
-}
-
-aside div:nth-child(2) figure > div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 aside div:nth-child(3) > h3::before {
-  content: "🏛️ "
+  content: "🏛️ "; 
 }
 
-aside div:nth-child(3) figure > div {
+aside div > h3, aside div:nth-child(1) h4, aside div:nth-child(2) h4, aside div:nth-child(3) > h4 {
+  margin-bottom: 1rem;
+}
+
+aside div:nth-child(2) figure > div, aside div:nth-child(3) figure > div {
   position: relative;
   padding: 0;
+  border: 1px solid var(--headerNavFooterBackground);
 }
 
-aside div:nth-child(3) figure > div img {
+aside div:nth-child(2) figure img, aside div:nth-child(3) figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-aside div:nth-child(3) h4 {
-  margin-bottom: 1rem;
-}
+
+
+
+
+
+
 
 figure h3 {  
   margin-bottom: 1rem;
