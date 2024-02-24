@@ -65,16 +65,16 @@
   }
   aside {
     grid-column: 1/2;    
-    }
+  }
   aside + div {
     grid-column: 2/4;  
-    margin: 0 2rem;    
+    padding: 0 3rem;    
   } 
-  /* } */
-  /* aside + div > div figure > div > img {
-    width: 60%;
-    height: 60%;
-    
-  } */
+  aside > div {
+    padding: 2rem 3rem;
+  }
+  aside + div figure  h2 {
+    margin-top: 2rem;
+  }
   /* end discoger page */
 }
