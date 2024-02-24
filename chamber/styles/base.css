@@ -304,6 +304,14 @@ body {
 }
 /* end weather */
 
+
+
+
+
+
+
+
+
 /* discoger page */
 .discover-section {
   display: grid;
@@ -315,40 +323,37 @@ body {
   color: var(--text1)
 }
 
-.discover-section h2 {
-  color: var(--text1);
-}
-
-aside hr {
-  margin-bottom: 1rem;
-  border: 1px solid var(--ligthHrColor);
-}
-
-aside div {
+/* discoger page - aside start */
+aside > div {
   background-color: var(--background1);
   border: 1px solid var(--headerNavFooterBackground);  
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
-aside div:nth-child(3) {
-  margin-bottom: 0;
+aside div > h2, aside div:nth-child(1) h3, aside div:nth-child(2) h3, aside div:nth-child(3) > h3 {
+  margin-bottom: 1rem;
+} 
+
+aside hr {
+  margin-bottom: 1rem;
+  border: 1px solid var(--ligthHrColor);
 }
 
-aside div:nth-child(1) > h3::before {
+aside div:nth-child(1) > h2::before {
   content: "📊 "
 }
 
-aside div:nth-child(2) > h3::before {
+aside div:nth-child(2) > h2::before {
   content: "📚 "
 }
 
-aside div:nth-child(3) > h3::before {
+aside div:nth-child(3) > h2::before {
   content: "🏛️ "; 
 }
 
-aside div > h3, aside div:nth-child(1) h4, aside div:nth-child(2) h4, aside div:nth-child(3) > h4 {
-  margin-bottom: 1rem;
+aside div:nth-child(3) {
+  margin-bottom: 0;
 }
 
 aside div:nth-child(2) figure > div, aside div:nth-child(3) figure > div {
@@ -361,39 +366,34 @@ aside div:nth-child(2) figure img, aside div:nth-child(3) figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-
-
-
-
-
-
-
-figure h3 {  
-  margin-bottom: 1rem;
-}
-
-figure > div {
-  position: relative;
-  border: 1px solid var(--headerNavFooterBackground);
-  margin-bottom: .5rem;
-}
-
-figure div > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   display: block;
+  margin-bottom: 1rem;
+} 
+
+/* discoger page - div start*/
+aside + div {
+
 }
 
-figcaption, figcaption a {
-  font-size: .90rem;
-  font-style: italic;
+ aside + div figure  h2 {
   margin-bottom: 1rem;
 }
 
-aside + div > div {
+aside + div > div figure > picture > img {
+  border: 1px solid var(--headerNavFooterBackground);
+  width: 100%;
+  height: 100%; 
+  display: block;
+  margin-bottom: 1rem;
+}
+
+figcaption  {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+aside + div  p {
   margin-bottom: 2rem;
 }
 /* end discoger page */
