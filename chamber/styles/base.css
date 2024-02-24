@@ -304,14 +304,6 @@ body {
 }
 /* end weather */
 
-
-
-
-
-
-
-
-
 /* discoger page */
 .discover-section {
   display: grid;
@@ -372,6 +364,7 @@ aside div:nth-child(2) figure img, aside div:nth-child(3) figure img {
 
 /* discoger page - div start*/
 aside + div {
+  background-color: var(--background1);
   border: 1px solid var(--headerNavFooterBackground);
   padding: 1rem;
 }
