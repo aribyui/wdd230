@@ -28,11 +28,11 @@ thead tr:first-child th {
   color: white;
 }
 
-thead tr:nth-child(2) th:first-child {
+thead tr:nth-child(2) td:first-child {
   background-color: #030301;
 }
 
-thead tr:nth-child(2) th:first-child ~ th {
+thead tr:nth-child(2) td:first-child ~ th {
   background-color: #E4022C;
   color: white;
 }
