@@ -9,7 +9,7 @@ form fieldset {
   background-color: #E1E1E1;
   border-style: solid; 
   border: 2px solid #171717;
-  padding: 1rem
+  padding: 2rem
 }
 
 form fieldset legend {
@@ -24,8 +24,9 @@ form label {
 form label > input {
   display: block;
   margin-top: .5rem;
-  padding: .5rem;
+  padding: .7rem;
   width: 100%;
+  max-width: 20rem;
   color: #171717;
 }
 
@@ -64,8 +65,8 @@ form label > input:required:valid {
   border: 2px solid #171717;
   color: #171717;
   padding: 0.7rem 1.5rem;
-  max-width: 100%;
-  width: 93%;
+  max-width: 20rem;
+  width: 96%;
   margin: 1rem 0 0 1rem;
 }
 
