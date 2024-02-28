@@ -199,7 +199,7 @@ main > h2 {
 .iframe-container {
   border: 1px solid #171717;
   aspect-ratio: 16/9;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
   position: relative;
 }
 
@@ -215,7 +215,6 @@ footer {
   background-color: #171717;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
 }
 
 footer p {

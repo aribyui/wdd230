@@ -1,0 +1,79 @@
+
+
+form {
+  font-family: 'Rubik', sans-serif;
+  margin: 1rem;
+}
+
+form fieldset {
+  background-color: #E1E1E1;
+  border-radius: 8px;
+  border-style: solid; 
+  border: 2px solid #171717;
+  padding: 1rem
+}
+
+form fieldset legend {
+  padding: 0 .3rem
+}
+
+form label {
+  display: block;
+  margin-top: 1.8rem;
+}
+
+form label > input {
+  display: block;
+  margin-top: .5rem;
+  padding: .5rem;
+  max-width: 100%;
+  width: 100%;
+  color: #171717;
+}
+
+form label > input:required {
+  border: 2px solid #171717; 
+}
+
+form label > input:required:valid {
+  background-color: #DDF842;
+}
+
+#message {
+  display: none;
+  font-size: .9rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: .5rem;
+}
+
+#pageRating {  
+  width: 280px;  
+}
+
+#range-values {
+  display: flex;
+  width: 280px;
+  margin-left: 10px;
+}
+
+#range-values option {
+  flex: 1 1 auto;  
+}
+
+.submitBtn {
+  background-color: #DDF842;
+  border: 2px solid #171717;
+  border-radius: 8px;
+  color: #171717;
+  padding: 0.7rem 1.5rem;
+  max-width: 100%;
+  width: 93%;
+  margin: 1rem 0 0 1rem;
+}
+
+.submitBtn:hover {
+  background-color: #171717;
+  color: white;
+  cursor: pointer;
+}
