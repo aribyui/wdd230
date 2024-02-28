@@ -6,7 +6,7 @@ passwordConfirmation.addEventListener("focusout", checkSame);
 
 function checkSame() {
   if (password.value !== passwordConfirmation.value) {
-    message.textContent = "Passwords do not match. Try again"
+    message.textContent = "❗ Passwords do not match. Try again"
     message.style.display = "block";
     password.value = "";
     passwordConfirmation.value = "";

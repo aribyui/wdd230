@@ -41,8 +41,8 @@ form label > input:required:valid {
 
 #message {
   display: none;
-  font-size: .9rem;
-  font-style: italic;
+  /* font-size: .9rem; */
+  /* font-style: italic; */
   font-weight: 600;
   margin-top: .5rem;
 }
