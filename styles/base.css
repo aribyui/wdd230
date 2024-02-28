@@ -1,3 +1,10 @@
+:root {  
+  --accent: #DDF842;
+  --backgroundColor: #E1E1E1;
+  --bodyBackgroundColor: #FFFFFF;
+  --textBackground: #171717;
+}
+
 * {
   /* border: 1px solid rgb(10, 169, 205); */
   box-sizing: border-box;
@@ -8,7 +15,7 @@
 body {
   max-width: 960px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--bodyBackgroundColor);
 }
 
 h1, h2, h3 {
@@ -26,7 +33,7 @@ h1, h2, h3 {
 
 header {
   /* border: 1px solid red; */
-  background-color: #171717;
+  background-color: var(--textBackground);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -35,26 +42,24 @@ header {
 }
 
 header img {
-  /* border: 1px solid red; */
-  background-color: #DDF842; 
+  background-color: var(--accent); 
   width: 5rem;   
-  border-radius: 8px;
-  
+  /* border-radius: 8px;   */
 }
 
 header h1 {
-  color: #DDF842;
+  color: var(--accent);
 }
 
 /* hamburger button */
 #menu {
-  background-color: #171717;
+  background-color: var(--textBackground);
   font-size: 1.3rem; 
   font-weight: 700; 
-  color: #DDF842; 
+  color: var(--accent); 
   width: 3rem;
   border-radius: 15px;
-  border: 2px solid #171717;
+  border: 2px solid var(--textBackground);
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -87,7 +92,7 @@ nav ul li {
 }
 
 nav {
-  background-color: #DDF842;
+  background-color: var(--accent);
 }
 
 nav ul {
@@ -98,7 +103,7 @@ nav ul {
 nav ul li a {  
   /* border: 1px solid red; */
   display: block;
-  color: #171717;
+  color: var(--textBackground);
   text-decoration: none;
   font-size: 1.3rem;
   padding: 1rem; 
@@ -106,8 +111,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #171717; 
-  color: #E1E1E1;  
+  background-color: var(--textBackground); 
+  color: var(--backgroundColor);  
   transition: 0.3s;
 }
 
@@ -116,8 +121,8 @@ nav ul .active::before {
 }
 
 .active {
-  background-color: #171717;
-  color: #E1E1E1;
+  background-color: var(--textBackground);
+  color: var(--backgroundColor);
 }
 
 main {
@@ -140,10 +145,10 @@ main {
   position: absolute;
   top: 30px;
   left: 30px;
-  background: radial-gradient(#fff, #518FBA);
+  background: radial-gradient(var(--bodyBackgroundColor), #518FBA);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  box-shadow: 0 0 3rem #fff;
+  box-shadow: 0 0 3rem var(--bodyBackgroundColor);
 	opacity: 0.75;
 }
 
@@ -156,28 +161,28 @@ main {
 main > h2 {
   text-align: left;
   color: #171717;
-  border-bottom: 1px solid #17171730;  
+  border-bottom: 1px solid var(--textBackground);  
   margin: 1rem; 
 }
 
 .card {
   /* border-radius: 8px; */
   text-align: left;
-  border: 1px solid #171717;
-  background-color: #E1E1E1;
+  border: 1px solid var(--textBackground);
+  background-color: var(--backgroundColor);
   margin: 0 1rem;
 }
 
 .card h3 {
   /* border-top-right-radius: 6px;
   border-top-left-radius: 6px; */
-  background-color: #171717;
-  color: #DDF842; 
+  background-color: var(--textBackground);
+  color: var(--accent); 
   padding: .9rem;
 }
 
 .card ul li a, p {
-  color: #171717;
+  color: var(--textBackground);
 }
 
 .card ul {
@@ -197,7 +202,7 @@ main > h2 {
 /* How to responsive iframes: http://tinyurl.com/3mxvpus6 */ 
 
 .iframe-container {
-  border: 1px solid #171717;
+  border: 1px solid var(--textBackground);
   aspect-ratio: 16/9;
   margin: 0 1rem 1rem;
   position: relative;
@@ -211,12 +216,12 @@ main > h2 {
 }
 
 #record-message { 
-  background-color: #E1E1E1;
-  color: #171717;
+  background-color: var(--backgroundColor);
+  color: var(--textBackground);
   text-align: center;
   padding: 1rem;
   margin: 1rem;
-  border: 2px solid #171717;
+  border: 2px solid var(--textBackground);
 }
 
 #record-message h2 {
@@ -224,13 +229,13 @@ main > h2 {
 }
 
 footer {
-  background-color: #171717;
+  background-color: var(--textBackground);
   text-align: center;
   padding: 1rem;
 }
 
 footer p {
-  color: #E1E1E1; 
+  color: var(--backgroundColor); 
 }
 
 footer p:nth-child(1) {
@@ -246,5 +251,5 @@ footer img {
 }
 
 #lastModified {
-  color: #ddf842;
+  color: var(--accent);
 }
