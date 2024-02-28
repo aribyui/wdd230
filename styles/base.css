@@ -178,25 +178,35 @@ main > h2 {
   border-top-left-radius: 6px; */
   background-color: var(--textBackground);
   color: var(--accent); 
-  padding: .9rem;
+  padding: 1rem;
 }
 
-.card ul li a, p {
+.card ul li a {
   color: var(--textBackground);
+  line-height: 2rem;
+  text-decoration: none;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
 }
 
 .card ul {
   list-style-type: none; 
   padding: 1rem;
-  line-height: 1.7rem;
 }
 
 .card p {
   text-align: center;
+  line-height: 2rem;
 }
 
 .card ul li::before {
-  content: "📎 "; 
+  content: "🔗 "; 
+}
+
+main .card:nth-child(4) h3 {
+  margin-bottom: 1rem;  
 }
 
 /* How to responsive iframes: http://tinyurl.com/3mxvpus6 */ 
