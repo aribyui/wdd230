@@ -224,8 +224,17 @@ main > h2 {
   border: 2px solid var(--textBackground);
 }
 
-#record-message h2 {
+#record-message h2, #record-message p{
   margin-bottom: 1rem;
+}
+
+#record-message a {
+  color: var(--textBackground);
+  text-decoration: none;
+}
+
+#record-message a:hover {
+  text-decoration: underline;
 }
 
 footer {
