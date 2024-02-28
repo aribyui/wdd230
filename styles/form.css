@@ -7,7 +7,6 @@ form {
 
 form fieldset {
   background-color: #E1E1E1;
-  border-radius: 8px;
   border-style: solid; 
   border: 2px solid #171717;
   padding: 1rem
@@ -26,7 +25,6 @@ form label > input {
   display: block;
   margin-top: .5rem;
   padding: .5rem;
-  max-width: 100%;
   width: 100%;
   color: #171717;
 }
@@ -64,7 +62,6 @@ form label > input:required:valid {
 .submitBtn {
   background-color: #DDF842;
   border: 2px solid #171717;
-  border-radius: 8px;
   color: #171717;
   padding: 0.7rem 1.5rem;
   max-width: 100%;

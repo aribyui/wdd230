@@ -210,6 +210,18 @@ main > h2 {
   object-fit: cover;
 }
 
+#record-message { 
+  background-color: #E1E1E1;
+  color: #171717;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid #171717;
+}
+
+#record-message h2 {
+  margin-bottom: 1rem;
+}
 
 footer {
   background-color: #171717;
