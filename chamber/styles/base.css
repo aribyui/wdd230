@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
 }
 
-a, p, button, img, figcaption {
+a, p, button, img, figcaption, li, legend, label, textarea {
   font-family: 'Rubik', sans-serif;
   /* font-size: 1.15rem; */
 }
@@ -389,6 +389,138 @@ div:nth-child(6) p {
   margin-bottom: 0;
 }
 /* end discoger page */
+
+/* join page start */
+.membership-container  {  
+  color: var(--text1);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;  
+}
+
+.membership-container div:nth-child(1) div {
+  background-color: var(--headerNavFooterBackground);
+  border: 2px solid var(--headerNavFooterBackground);
+  color: var(--text2);
+  margin-bottom: 1rem;
+  padding: 1rem; 
+}
+
+/* memberships */
+.membership-container div:nth-child(1) div h2, .membership-container hr {
+  margin-bottom: 1rem;
+}
+
+.membership-container div:nth-child(1) div:nth-child(2) h2::after {
+  content: " ⭐";
+}
+
+.membership-container div:nth-child(1) div:nth-child(3) h2::after {
+  content: " ⭐⭐";
+}
+
+.membership-container div:nth-child(1) div:nth-child(4) h2::after {
+  content: " ⭐⭐⭐";
+}
+
+.membership-container hr {
+  border: 1px solid var(--accent2);
+}
+
+.membership-container ul {
+  margin-left: 1.8rem;
+}
+
+.membership-container li {
+  line-height: 2rem;
+}
+
+.membership-container div:nth-child(1) div:nth-child(4) {
+  margin-bottom: 0;
+}
+
+/* form */
+.membership-container div:nth-child(2) {
+  background-color: var(--background1);
+  border: 2px solid var(--headerNavFooterBackground);
+  margin-bottom: 1rem;
+  padding: 1rem; 
+}
+
+.membership-container div:nth-child(2) form fieldset {
+  border: 2px solid var(--headerNavFooterBackground);
+}
+
+.membership-container div:nth-child(2) form fieldset legend {
+  padding: 0 .5rem;
+}
+
+.top, .top > input, .sbs  {
+  display: block;
+}
+
+.top, .sbs, .low {  
+  margin: 1rem 0 1rem 1rem;
+}
+
+.top > input {
+  padding: .75rem;
+  margin: .5rem 0 2rem 0;
+  width: 100%;
+  max-width: 15rem;
+  border: 2px solid var(--headerNavFooterBackground); 
+  color: var(--text1); 
+}
+
+.top > input:required {
+  border-left: 7px solid var(--accent2);
+}
+
+.top > input:required:valid {
+  
+  border-left: 7px solid var(--headerNavFooterBackground);
+  
+}
+
+.sbs {
+  line-height: 2rem;
+}
+
+form fieldset {
+  margin-bottom: 1rem;
+}
+
+.business-description {
+  border: 2px solid var(--headerNavFooterBackground);
+  margin: 1rem;
+}
+
+.membership-container div:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.becomeAMemberBtn {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: var(--accent2);
+  border: 2px solid var(--headerNavFooterBackground);
+  color: var(--text1)
+}
+
+.becomeAMemberBtn:hover {
+  background-color: var(--accent1);
+}
+
+textarea {
+  width: 100%;
+  max-width: 250px;
+  resize: none;
+  color: var(--text1);
+  padding: 1rem;
+}
+
+/* end join page */
 
 /* footer */
 footer {

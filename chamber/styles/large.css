@@ -81,6 +81,11 @@
     border-radius: 3px;    
   }
   /* end discoger page */
+  /* join page */
+  .membership-container {
+    margin: 1rem 0;
+  }
+  /* end join page  */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

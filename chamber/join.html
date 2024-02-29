@@ -50,81 +50,92 @@
   </header>
   <main>
 
-    <div>
-      <div>
-        <h2>NP Membership</h2>
-        <ul>
-          <li>Ideal for non-profit organizations and charitable entities.</li>
-          <li>Access to resources and tools specific to the non-profit sector.</li>
-          <li>Discounts on chamber events and programs.</li>
-          <li>Networking opportunities with similar organizations.</li>
-          <li>Personalized support and guidance for projects and campaigns.</li>
-          <li>Inclusion in the directory of affiliated non-profit organizations.</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Bronze Membership</h2>
-        <ul>
-          <li>Perfect for small businesses and startups.</li>
-          <li>Access to exclusive networking events.</li>
-          <li>Newsletters and regular updates on business opportunities.</li>
-          <li>Ability to promote the company on the chamber website and social media.</li>
-          <li>Discounts on services and training programs.</li>
-          <li>Participation in sectoral committees and working groups.</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Silver Membership</h2>
-        <ul>
-          <li>Designed for growing medium-sized businesses.</li>
-          <li>Additional benefits from Bronze membership.</li>
-          <li>Access to educational sessions and specialized workshops.</li>
-          <li>Invitations to VIP events and exclusive dinners.</li>
-          <li>Business consultancy and technical assistance.</li>
-          <li>Opportunities for event sponsorship and chamber programs.</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Gold Membership</h2>
-        <ul>
-          <li>The highest level of membership for outstanding companies.</li>
-          <li>All benefits of Silver membership.</li>
-          <li>Priority seating at roundtable discussions and executive forums.</li>
-          <li>Exclusive access to international events and trade delegations.</li>
-          <li>Strategic consultancy services and legal advice.</li>
-          <li>Special recognition at events and chamber publications.</li>
-        </ul>
-      </div>
-    </div>
+    <div class="membership-container">
 
-    <form action="thankyou.html">
-      <fieldset>
-        <legend>User Registration</legend>
-        <label for="fname">First Name: <input type="text" name="fname" id="fname" required></label>
-        <label for="lname">Last Name: <input type="text" name="lname" id="lname" required></label>
-        <label for="business-position">Business Position: <input type="text" name="business-position"
-            id="business-position" required pattern="[a-zA-Z--_ ]{7}"></label>
-        <label for="email-address">Email Address: <input type="email" name="email-address" id="email-address"
-            placeholder="example@email.com"></label>
-        <label for="mobile-phone-number">Mobile Phone Number: <input type="tel" name="mobile-phone-number"
-            id="mobile-phone-number" required></label>
-        <label for="business-organization-name">Business Organization Name: <input type="text"
-            name="business-organization-name" id="business-organization-name" required></label>
-      </fieldset>
-      <fieldset>
-        <legend>Membership Level</legend>
-        <label for="non-profit-membership"><input type="radio"> NP Membership is for non profit organizations and there
-          is no fee</label>
-        <label for="bronze-membership"><input type="radio"> Bronze Membership</label>
-        <label for="silver-membership"><input type="radio"> Silver Membership</label>
-        <label for="gold-membership"><input type="radio"> Gold Membership</label>
-      </fieldset>
-      <fieldset>
-        <legend>Business/Organization Description</legend>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </fieldset>
-      <button type="submit">Become a Member</button>
-    </form>
+      <!-- column 1 - memberships -->
+      <div>
+        <!-- non profit -->
+        <div>
+          <h2>NP Membership</h2>
+          <hr>
+          <ul>
+            <li>Access to resources and tools specific to the non-profit sector.</li>
+            <li>Discounts on chamber events and programs.</li>
+            <li>Ideal for non-profit organizations and charitable entities.</li>
+            <li>Inclusion in the directory of affiliated non-profit organizations.</li>
+            <li>Networking opportunities with similar organizations.</li>
+            <li>Personalized support and guidance for projects and campaigns.</li>
+          </ul>
+        </div>
+        <!-- bronze -->
+        <div>
+          <h2>Bronze Membership</h2>
+          <hr>
+          <ul>
+            <li>Ability to promote the company on the chamber website and social media.</li>
+            <li>Access to exclusive networking events.</li>
+            <li>Discounts on services and training programs.</li>
+            <li>Newsletters and regular updates on business opportunities.</li>
+            <li>Participation in sectoral committees and working groups.</li>
+            <li>Perfect for small businesses and startups.</li>
+          </ul>
+        </div>
+        <!-- silver -->
+        <div>
+          <h2>Silver Membership</h2>
+          <hr>
+          <ul>
+            <li>Access to educational sessions and specialized workshops.</li>
+            <li>Additional benefits from Bronze membership.</li>
+            <li>Business consultancy and technical assistance.</li>
+            <li>Designed for growing medium-sized businesses.</li>
+            <li>Invitations to VIP events and exclusive dinners.</li>
+            <li>Opportunities for event sponsorship and chamber programs.</li>
+          </ul>
+        </div>
+        <!-- gold -->
+        <div>
+          <h2>Gold Membership</h2>
+          <hr>
+          <ul>
+            <li>All benefits of Silver membership.</li>
+            <li>Exclusive access to international events and trade delegations.</li>
+            <li>Priority seating at roundtable discussions and executive forums.</li>
+            <li>Strategic consultancy services and legal advice.</li>
+            <li>Special recognition at events and chamber publications.</li>
+            <li>The highest level of membership for outstanding companies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- column 2 - form -->
+      <div>
+        <form action="thankyou.html">
+          <fieldset>
+            <legend>User Registration</legend>
+            <label for="fname" class="top">First Name* <input type="text" name="fname" id="fname" required autofocus></label>
+            <label for="lname" class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+            <label for="business-position" class="top">Business Position* <input type="text" name="business-position" id="business-position" required pattern="[a-zA-Z--_ ]{7}"></label>
+            <label for="email-address" class="top">Email Address <input type="email" name="email-address" id="email-address" placeholder="example@email.com"></label>
+            <label for="mobile-phone-number" class="top">Mobile Phone Number* <input type="tel" name="mobile-phone-number" id="mobile-phone-number" required></label>
+            <label for="business-name" class="top">Business Organization Name* <input type="text" name="business-name" id="business-name" required></label>
+          </fieldset>
+          <fieldset>
+            <legend>Membership Level</legend>
+            <label for="non-profit-membership" class="sbs"><input type="radio" name="memLevel"> NP Membership is for non profit organizations and there is no fee</label>
+            <label for="bronze-membership" class="sbs"><input type="radio" name="memLevel"> Bronze Membership</label>
+            <label for="silver-membership" class="sbs"><input type="radio" name="memLevel"> Silver Membership</label>
+            <label for="gold-membership" class="sbs"><input type="radio" name="memLevel"> Gold Membership</label>
+          </fieldset>
+          <fieldset>
+            <legend>Business/Organization Description</legend>
+            <textarea name="business-description" class="business-description" cols="30" rows="10" class="low"></textarea>
+          </fieldset>
+          <button type="submit" class="becomeAMemberBtn">Become a Member</button>
+        </form>
+      </div>
+
+    </div>
 
   </main>
   <footer>
