@@ -404,7 +404,7 @@ div:nth-child(6) p {
   border: 2px solid var(--headerNavFooterBackground);
   color: var(--text2);
   margin-bottom: 1rem;
-  padding: 1rem; 
+  padding: 2rem 1rem; 
 }
 
 /* memberships */
@@ -430,10 +430,15 @@ div:nth-child(6) p {
 
 .membership-container ul {
   margin-left: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .membership-container li {
   line-height: 2rem;
+}
+
+.membership-container div:nth-child(1) h3 {
+  text-align: right;
 }
 
 .membership-container div:nth-child(1) div:nth-child(4) {
@@ -444,8 +449,12 @@ div:nth-child(6) p {
 .membership-container div:nth-child(2) {
   background-color: var(--background1);
   border: 2px solid var(--headerNavFooterBackground);
+  margin-bottom: 0;
+  padding: 2rem 1rem; 
+}
+
+.membership-container div:nth-child(2) h2 {
   margin-bottom: 1rem;
-  padding: 1rem; 
 }
 
 .membership-container div:nth-child(2) form fieldset {
@@ -468,7 +477,7 @@ div:nth-child(6) p {
   padding: .75rem;
   margin: .5rem 0 2rem 0;
   width: 100%;
-  max-width: 15rem;
+  max-width: 90%;
   border: 2px solid var(--headerNavFooterBackground); 
   color: var(--text1); 
 }
@@ -477,10 +486,8 @@ div:nth-child(6) p {
   border-left: 7px solid var(--accent2);
 }
 
-.top > input:required:valid {
-  
+.top > input:required:valid {  
   border-left: 7px solid var(--headerNavFooterBackground);
-  
 }
 
 .sbs {
@@ -488,21 +495,21 @@ div:nth-child(6) p {
 }
 
 form fieldset {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .business-description {
   border: 2px solid var(--headerNavFooterBackground);
+  box-sizing: border-box;
   margin: 1rem;
-}
-
-.membership-container div:nth-child(2) {
-  margin-bottom: 0;
+  width: 100%;
+  max-width: 85%;  
 }
 
 .becomeAMemberBtn {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 2rem;
   width: 100%;
+  max-width: 100%;
   background-color: var(--accent2);
   border: 2px solid var(--headerNavFooterBackground);
   color: var(--text1)
@@ -513,13 +520,10 @@ form fieldset {
 }
 
 textarea {
-  width: 100%;
-  max-width: 250px;
-  resize: none;
   color: var(--text1);
-  padding: 1rem;
+  padding: 0.75rem;
+  resize: none;
 }
-
 /* end join page */
 
 /* footer */

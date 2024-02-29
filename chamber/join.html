@@ -66,6 +66,7 @@
             <li>Networking opportunities with similar organizations.</li>
             <li>Personalized support and guidance for projects and campaigns.</li>
           </ul>
+          <h3>$50 / year</h3>
         </div>
         <!-- bronze -->
         <div>
@@ -79,6 +80,7 @@
             <li>Participation in sectoral committees and working groups.</li>
             <li>Perfect for small businesses and startups.</li>
           </ul>
+          <h3>$100 / year</h3>
         </div>
         <!-- silver -->
         <div>
@@ -92,6 +94,7 @@
             <li>Invitations to VIP events and exclusive dinners.</li>
             <li>Opportunities for event sponsorship and chamber programs.</li>
           </ul>
+          <h3>$250 / year</h3>
         </div>
         <!-- gold -->
         <div>
@@ -105,15 +108,17 @@
             <li>Special recognition at events and chamber publications.</li>
             <li>The highest level of membership for outstanding companies.</li>
           </ul>
+          <h3>$500 / year</h3>
         </div>
       </div>
 
       <!-- column 2 - form -->
       <div>
+        <h2>Join the Monterrey Chamber of Commerce</h2>
         <form action="thankyou.html">
           <fieldset>
             <legend>User Registration</legend>
-            <label for="fname" class="top">First Name* <input type="text" name="fname" id="fname" required autofocus></label>
+            <label for="fname" class="top">First Name* <input type="text" name="fname" id="fname" required></label>
             <label for="lname" class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
             <label for="business-position" class="top">Business Position* <input type="text" name="business-position" id="business-position" required pattern="[a-zA-Z--_ ]{7}"></label>
             <label for="email-address" class="top">Email Address <input type="email" name="email-address" id="email-address" placeholder="example@email.com"></label>
@@ -122,14 +127,14 @@
           </fieldset>
           <fieldset>
             <legend>Membership Level</legend>
-            <label for="non-profit-membership" class="sbs"><input type="radio" name="memLevel"> NP Membership is for non profit organizations and there is no fee</label>
+            <label for="non-profit-membership" class="sbs"><input type="radio" name="memLevel"> NP Membership</label>
             <label for="bronze-membership" class="sbs"><input type="radio" name="memLevel"> Bronze Membership</label>
             <label for="silver-membership" class="sbs"><input type="radio" name="memLevel"> Silver Membership</label>
             <label for="gold-membership" class="sbs"><input type="radio" name="memLevel"> Gold Membership</label>
           </fieldset>
           <fieldset>
             <legend>Business/Organization Description</legend>
-            <textarea name="business-description" class="business-description" cols="30" rows="10" class="low"></textarea>
+            <label for="business-description"><textarea name="business-description" class="business-description" cols="30" rows="10" class="low"></textarea></label>
           </fieldset>
           <button type="submit" class="becomeAMemberBtn">Become a Member</button>
         </form>

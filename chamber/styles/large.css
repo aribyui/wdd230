@@ -85,6 +85,18 @@
   .membership-container {
     margin: 1rem 0;
   }
+  .membership-container div:nth-child(1) div {
+    padding: 2rem 3rem;
+  }
+  .membership-container div:nth-child(2)  {
+    padding: 2rem 3rem;
+  }
+  .top > input {
+    max-width: 80%;
+  }
+  .becomeAMemberBtn {
+    max-width: 87%;
+  }
   /* end join page  */
   footer {
     display: grid;
