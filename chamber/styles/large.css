@@ -86,6 +86,10 @@
     grid-template-columns: 1fr 1fr;
     margin: 1rem 0;
   }
+  .becomeAMemberButton {
+    width: 92%;
+    margin: 0 8%;
+  }
   .membership-container div:nth-child(1) > div,
   .membership-container div:nth-child(2) form fieldset {
     padding: 2rem 3rem;
