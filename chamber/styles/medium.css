@@ -72,8 +72,4 @@
   aside > div {
     padding: 1rem 2rem;
   }
-  /* join page */
-  .membership-container {
-    grid-template-columns: 1fr 1fr;
-  }
 }

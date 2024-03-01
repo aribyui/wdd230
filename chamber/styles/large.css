@@ -81,21 +81,14 @@
     border-radius: 3px;    
   }
   /* end discoger page */
-  /* join page */
+  /* join page */ 
   .membership-container {
+    grid-template-columns: 1fr 1fr;
     margin: 1rem 0;
   }
-  .membership-container div:nth-child(1) div {
+  .membership-container div:nth-child(1) > div,
+  .membership-container div:nth-child(2) form fieldset {
     padding: 2rem 3rem;
-  }
-  .membership-container div:nth-child(2)  {
-    padding: 2rem 3rem;
-  }
-  .top > input {
-    max-width: 80%;
-  }
-  .becomeAMemberBtn {
-    max-width: 87%;
   }
   /* end join page  */
   footer {

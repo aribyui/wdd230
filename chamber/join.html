@@ -56,7 +56,7 @@
       <div>
         <!-- non profit -->
         <div>
-          <h2>NP Membership</h2>
+          <h2>Non Profit Membership</h2>
           <hr>
           <ul>
             <li>Access to resources and tools specific to the non-profit sector.</li>
@@ -114,29 +114,32 @@
 
       <!-- column 2 - form -->
       <div>
-        <h2>Join the Monterrey Chamber of Commerce</h2>
-        <form action="thankyou.html">
+        <form method="get" action="thankyou.html">
           <fieldset>
-            <legend>User Registration</legend>
-            <label for="fname" class="top">First Name* <input type="text" name="fname" id="fname" required></label>
-            <label for="lname" class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
-            <label for="business-position" class="top">Business Position* <input type="text" name="business-position" id="business-position" required pattern="[a-zA-Z--_ ]{7}"></label>
-            <label for="email-address" class="top">Email Address <input type="email" name="email-address" id="email-address" placeholder="example@email.com"></label>
-            <label for="mobile-phone-number" class="top">Mobile Phone Number* <input type="tel" name="mobile-phone-number" id="mobile-phone-number" required></label>
-            <label for="business-name" class="top">Business Organization Name* <input type="text" name="business-name" id="business-name" required></label>
+            <h2>User registration</h2>
+            <label>First name* <input type="text" id="fname" name="fname" required></label>
+            <label>Last name* <input type="text" id="lname" name="lname" required></label>
+            <label>Position* <input type="text" id="position" name="position" required></label>
+            <label>Email address* <input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                required></label>
+            <label>Mobile phone number* <input type="tel" id="mobile" name="mobile" required></label>
+            <label>Business/organization's name* <input type="text" id="bsorganization" name="bsorganization"
+                required></label>
           </fieldset>
           <fieldset>
-            <legend>Membership Level</legend>
-            <label for="non-profit-membership" class="sbs"><input type="radio" name="memLevel"> NP Membership</label>
-            <label for="bronze-membership" class="sbs"><input type="radio" name="memLevel"> Bronze Membership</label>
-            <label for="silver-membership" class="sbs"><input type="radio" name="memLevel"> Silver Membership</label>
-            <label for="gold-membership" class="sbs"><input type="radio" name="memLevel"> Gold Membership</label>
+            <h2>Membership Level</h2>
+            <label><input type="radio" name="membership" value="npmembership">Non profit membership</label>
+            <label><input type="radio" name="membership" value="bronzemembership">Bronze membership</label>
+            <label><input type="radio" name="membership" value="silvermembership">Silver membership</label>
+            <label><input type="radio" name="membership" value="goldmembership">Gold membership</label>
           </fieldset>
           <fieldset>
-            <legend>Business/Organization Description</legend>
-            <label for="business-description"><textarea name="business-description" class="business-description" cols="30" rows="10" class="low"></textarea></label>
+            <h2>Business/organization description</h2>
+            <label>Describe your business<textarea name="description" id="description" cols="30"
+                rows="10"></textarea></label>
+
           </fieldset>
-          <button type="submit" class="becomeAMemberBtn">Become a Member</button>
+          <input type="submit" value="Become a Member" class="becomeAMemberButton">
         </form>
       </div>
 
