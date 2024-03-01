@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
 
 a, p, button, img, figcaption, li, label, textarea, input {
   font-family: 'Rubik', sans-serif;
-  /* font-size: 1.15rem; */
+  font-size: 1.1rem;
 }
 
 header {
@@ -414,6 +414,10 @@ div:nth-child(6) p {
   margin-bottom: 1rem;
 }
 
+.membership-container div:nth-child(1) > div:nth-child(1) > h2:after {
+  content: " 🤝🏽";
+}
+
 .membership-container div:nth-child(1) > div:nth-child(2) > h2:after {
   content: " ⭐";
 }
@@ -432,7 +436,7 @@ div:nth-child(6) p {
 
 .membership-container div:nth-child(1) div > ul {
   margin-bottom: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .membership-container div:nth-child(1) div > h3 {
@@ -444,17 +448,28 @@ div:nth-child(6) p {
 }
 
 /* join page - column 2 */
-.membership-container div:nth-child(2) form {
+.membership-container div:nth-child(2) form fieldset {
   background-color: var(--background1);
   color: var(--text1);
 }
+
+.membership-container div:nth-child(2) form fieldset:nth-child(1) > h2::after {
+  content: " 📝";
+} 
+ 
+.membership-container div:nth-child(2) form fieldset:nth-child(2) > h2::after {
+  content: " 🏆";
+} 
+
+.membership-container div:nth-child(2) form fieldset:nth-child(3) > h2::after {
+  content: " 📄";
+} 
 
 .membership-container div:nth-child(2) form fieldset {
   padding: 2rem 1rem;
   border: 2px solid var(--headerNavFooterBackground);
   margin-bottom: 1rem;
-}
- 
+} 
 
 .membership-container div:nth-child(2) form fieldset:nth-child(1) label,
 .membership-container div:nth-child(2) form fieldset:nth-child(2) label,

@@ -90,10 +90,14 @@
     width: 92%;
     margin: 0 8%;
   }
-  .membership-container div:nth-child(1) > div,
-  .membership-container div:nth-child(2) form fieldset {
+  .membership-container div:nth-child(1) > div {
     padding: 2rem 3rem;
   }
+
+  .membership-container div:nth-child(2) form fieldset {
+    padding: 2rem 3rem 4rem 3rem;
+  }
+  
   /* end join page  */
   footer {
     display: grid;
