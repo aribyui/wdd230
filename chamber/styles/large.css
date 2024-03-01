@@ -88,7 +88,7 @@
   }
   .becomeAMemberButton {
     width: 92%;
-    margin: 0 8%;
+    margin: 0 50px;
   }
   .membership-container div:nth-child(1) > div {
     padding: 2rem 3rem;
