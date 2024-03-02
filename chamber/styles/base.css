@@ -446,6 +446,7 @@ div:nth-child(6) p {
 .membership-container div:nth-child(1) div:nth-child(4) {
   margin-bottom: 0;
 }
+/* end join page - column 1*/
 
 /* join page - column 2 */
 .membership-container div:nth-child(2) form fieldset {
@@ -510,7 +511,6 @@ div:nth-child(6) p {
 
 .becomeAMemberButton {
   border: 0;
-  /* border-radius: 6px; */
   background-color: var(--accent2);
   color: var(--headerNavFooterBackground);  
   padding: 0.8rem;
@@ -532,7 +532,67 @@ div:nth-child(6) p {
 .becomeAMemberButton:hover {
   background-color: var(--accent1);
 }
+/* end join page - column 2*/
 /* end join page */
+
+/* thank you page start */
+.thank-you {   
+  background-color: var(--background1);  
+  color: var(--text1); 
+  line-height: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+  
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.thank-you picture {
+  position: relative;
+}
+
+.thank-you div {
+  /* border: 2px solid red; */
+  padding: 1rem; 
+}
+
+.thank-you picture img {
+  /* border: 2px solid red; */
+  background-color: var(--background1);
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  display: block;  
+  /* z-index: -1; */
+}
+
+.thank-you h2, .thank-you p {
+  margin-bottom: 1rem;
+}
+
+
+.thank-you a {
+  background-color: var(--accent2);
+  text-decoration: none;  
+  color: var(--text1);
+  padding: .75rem;
+}
+
+.thank-you a:hover {
+  background-color: var(--accent1);
+  color: var(--text1); 
+}
+
+.thank-you a:link {
+  color: var(--text1);
+}
+
+thank-you a:visited {
+  color: var(--text2);
+} 
+/* end thank you page */
 
 /* footer */
 footer {
