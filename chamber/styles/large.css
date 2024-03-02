@@ -97,15 +97,11 @@
     padding: 2rem 3rem 4rem 3rem;
   }  
   /* end join page  */
-  /*  */
-  .thank-you {
-    padding: 0 1rem 0 1rem;
-    text-align: left;
-  }
+  /*  thank you page */
   .thank-you div {
-    padding: 0 0 0 7rem;
+    padding: 0 0 0 8rem;
   }
-  /*  */
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
