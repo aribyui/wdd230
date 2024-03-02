@@ -515,7 +515,6 @@ div:nth-child(6) p {
 
 .membership-container div:nth-child(2) form input:required {  
   border: 2px solid var(--required);
-  
 }
 
 .membership-container div:nth-child(2) form input:required:valid {  
