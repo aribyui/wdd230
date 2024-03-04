@@ -1,0 +1,43 @@
+{
+  "familyName": "Arizpe",
+  "moveInDate": "1970",
+  "numberOfMembersFamily": 7,
+  "visitedByBishopric": false,
+  "familyMembers": [
+    {
+      "name": "Miguel Arizpe",
+      "gender": "male",
+      "birthdate": "February, 27, 1941"
+    },
+    {
+      "name": "Alejandra Martínez",
+      "gender": "female",
+      "birthdate": "July, 17, 1944"
+    },
+    {
+      "name": "Alejandra Arizpe",
+      "gender": "female",
+      "birthdate": "July, 14, 1968"
+    },
+    {
+      "name": "Claudia Arizpe",
+      "gender": "female",
+      "birthdate": "February, 22, 1970"
+    },
+    {
+      "name": "Miguel Arizpe",
+      "gender": "male",
+      "birthdate": "February, 5, 1971"
+    },
+    {
+      "name": "Omar Arizpe",
+      "gender": "male",
+      "birthdate": "January, 6, 1976"
+    },
+    {
+      "name": "Lizandro Arizpe",
+      "gender": "male",
+      "birthdate": "June, 1, 1982"
+    }
+  ]    
+}
