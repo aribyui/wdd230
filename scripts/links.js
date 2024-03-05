@@ -33,7 +33,7 @@ const displayLinks = (weeks) => {
 
     if (linksLength === 2) {    
       a1.setAttribute("href", `${week.links[i].url}`);
-      a1.textContent = `${week.links[i].title}`;
+      a1.textContent = `${week.links[i].title}`;     
       i++;
       a2.setAttribute("href", `${week.links[i].url}`);
       a2.textContent = `${week.links[i].title}`;
@@ -62,20 +62,25 @@ const displayLinks = (weeks) => {
        
     li.textContent = `${week.lesson} `;
 
-    li.appendChild(a1);
-    li.appendChild(separator1)
-    li.appendChild(a2);
-    // li.appendChild(separator2);
-
     if (linksLength === 2) {
-      li.remove(separator2);
-    } else {
+      li.appendChild(a1);
+      li.appendChild(separator1);
+      li.appendChild(a2);
+    } else if (linksLength === 3) {
+      li.appendChild(a1);
+      li.appendChild(separator1);
+      li.appendChild(a2);
       li.appendChild(separator2);
+      li.appendChild(a3);
+    } else {
+      li.appendChild(a1);
+      li.appendChild(separator1);
+      li.appendChild(a2);
+      li.appendChild(separator2);
+      li.appendChild(a3);
+      li.appendChild(separator3);
+      li.appendChild(a4);
     }
-    
-    li.appendChild(a3)
-    li.appendChild(separator3);
-    li.appendChild(a4);
 
     lessons.appendChild(li);       
   });
