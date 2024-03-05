@@ -1,60 +1,57 @@
 {
   "members": [
     {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
+      "name": "Librerias Gandhi",
+      "address": "Av. Hidalgo #1171",
+      "zip-code": "64000",
+      "phone": "81 5030 2256",
+      "website": "https://www.gandhi.com.mx/",
       "image": "",
-      "membershipLevel": ""
+      "membershipLevel": "Gold"
     },
     {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
+      "name": "Libreria Porrúa",
+      "address": "Av. Hacienda de Peñuelas #6771",
+      "zip-code": "64610",
+      "phone": "81 1095 1313",
+      "website": "https://porrua.mx/",
       "image": "",
-      "membershipLevel": ""
+      "membershipLevel": "Gold"
     },
     {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
+      "name": "PCEL",
+      "address": "Av. Morones Prieto #1101",
+      "zip-code": "64700",
+      "phone": "81 8865 6000",
+      "website": "https://pcel.com/",
       "image": "",
-      "membershipLevel": ""
+      "membershipLevel": "Gold"
     },
     {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
+      "name": "Salud Digna",
+      "address": "Av. Padre Mier #185",
+      "phone": "64000",
+      "website": "https://www.salud-digna.org/monterrey/",
       "image": "",
-      "membershipLevel": ""
+      "membershipLevel": "Gold"
     },
     {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
+      "name": "Steren",
+      "address": " Av. Eugenio Garza Sada #1905",
+      "zip-code": "64860",
+      "phone": "81 8103 0421",
+      "website": "https://www.steren.com.mx/",
       "image": "",
-      "membershipLevel": ""
+      "membershipLevel": "Gold"
     },
     {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
+      "name": "Sushi Express",
+      "address": "Contry Lux, Polux #201",
+      "zip-code": "64860",
+      "phone": "81 8357 7921",
+      "website": "https://sushiexpress.com.mx/#/",
       "image": "",
-      "membershipLevel": ""
-    },
-    {
-      "name": "",
-      "address": "",
-      "phoneNumber": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": ""
+      "membershipLevel": "Silver"
     }
   ]
 }
