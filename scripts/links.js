@@ -25,6 +25,7 @@ const displayLinks = (weeks) => {
     const a4 = document.createElement("a");
     let separator1 = document.createTextNode(" | ");
     let separator2 = document.createTextNode(" | ");
+    let separator3 = document.createTextNode(" | ");
     
     const li = document.createElement("li");
 
@@ -58,44 +59,22 @@ const displayLinks = (weeks) => {
       a4.setAttribute("href", `${week.links[i].url}`);
       a4.textContent = `${week.links[i].title}`;
     }
-    // } else if (linksLength === 3) {
-    //   a1.setAttribute("href", `${week.links[i].url}`);
-    //   a1.textContent = `${week.links[i].title}`;      
-    //   i++;
-    //   a2.setAttribute("href", `${week.links[i].url}`);
-    //   a2.textContent = `${week.links[i].title}`;      
-    //   i++;
-    //   a3.setAttribute("href", `${week.links[i].url}`);
-    //   a3.textContent = `${week.links[i].title}`;
-    // }
-    // } else {
-    //   a1.setAttribute("href", `${week.links[i].url}`);
-    //   a1.textContent = `${week.links[i].title}`;      
-    //   i++;
-    //   a2.setAttribute("href", `${week.links[i].url}`);
-    //   a2.textContent = `${week.links[i].title}`;      
-    //   i++;
-    //   a3.setAttribute("href", `${week.links[i].url}`);
-    //   a3.textContent = `${week.links[i].title}`;
-    //   i++;
-    //   a4.setAttribute("href", `${week.links[i].url}`);
-    //   a4.textContent = `${week.links[i].title}`;
-    // }
-
-    
+       
     li.textContent = `${week.lesson} `;
 
     li.appendChild(a1);
     li.appendChild(separator1)
     li.appendChild(a2);
+    // li.appendChild(separator2);
 
     if (linksLength === 2) {
       li.remove(separator2);
     } else {
       li.appendChild(separator2);
     }
-
+    
     li.appendChild(a3)
+    li.appendChild(separator3);
     li.appendChild(a4);
 
     lessons.appendChild(li);       
