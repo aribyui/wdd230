@@ -17,11 +17,12 @@ const displayLinks = (weeks) => {
     // console.log(week.links[0].url) // test
 
     const linksLength = week.links.length;
-    console.log(linksLength);   
+    // console.log(linksLength);   
 
     const a1 = document.createElement("a");
     const a2 = document.createElement("a");
     const a3 = document.createElement("a");
+    const a4 = document.createElement("a");
     let separator1 = document.createTextNode(" | ");
     let separator2 = document.createTextNode(" | ");
     
@@ -35,6 +36,15 @@ const displayLinks = (weeks) => {
       i++;
       a2.setAttribute("href", `${week.links[i].url}`);
       a2.textContent = `${week.links[i].title}`;
+    } else if (linksLength === 3) {
+      a1.setAttribute("href", `${week.links[i].url}`);
+      a1.textContent = `${week.links[i].title}`;      
+      i++;
+      a2.setAttribute("href", `${week.links[i].url}`);
+      a2.textContent = `${week.links[i].title}`;      
+      i++;
+      a3.setAttribute("href", `${week.links[i].url}`);
+      a3.textContent = `${week.links[i].title}`;
     } else {
       a1.setAttribute("href", `${week.links[i].url}`);
       a1.textContent = `${week.links[i].title}`;      
@@ -44,7 +54,34 @@ const displayLinks = (weeks) => {
       i++;
       a3.setAttribute("href", `${week.links[i].url}`);
       a3.textContent = `${week.links[i].title}`;
+      i++;
+      a4.setAttribute("href", `${week.links[i].url}`);
+      a4.textContent = `${week.links[i].title}`;
     }
+    // } else if (linksLength === 3) {
+    //   a1.setAttribute("href", `${week.links[i].url}`);
+    //   a1.textContent = `${week.links[i].title}`;      
+    //   i++;
+    //   a2.setAttribute("href", `${week.links[i].url}`);
+    //   a2.textContent = `${week.links[i].title}`;      
+    //   i++;
+    //   a3.setAttribute("href", `${week.links[i].url}`);
+    //   a3.textContent = `${week.links[i].title}`;
+    // }
+    // } else {
+    //   a1.setAttribute("href", `${week.links[i].url}`);
+    //   a1.textContent = `${week.links[i].title}`;      
+    //   i++;
+    //   a2.setAttribute("href", `${week.links[i].url}`);
+    //   a2.textContent = `${week.links[i].title}`;      
+    //   i++;
+    //   a3.setAttribute("href", `${week.links[i].url}`);
+    //   a3.textContent = `${week.links[i].title}`;
+    //   i++;
+    //   a4.setAttribute("href", `${week.links[i].url}`);
+    //   a4.textContent = `${week.links[i].title}`;
+    // }
+
     
     li.textContent = `${week.lesson} `;
 
@@ -59,6 +96,7 @@ const displayLinks = (weeks) => {
     }
 
     li.appendChild(a3)
+    li.appendChild(a4);
 
     lessons.appendChild(li);       
   });

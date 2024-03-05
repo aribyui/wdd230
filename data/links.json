@@ -36,6 +36,14 @@
         {
           "url": "https://codepen.io/aribyui/pen/ExMXWpP",
           "title": "Pseudo-Elements"
+        },
+        {
+          "url": "https://codepen.io/aribyui/pen/vYPJBKR",
+          "title": "Responsive Menu"
+        },
+        {
+          "url": "lesson03/chamber-site-plan.html",
+          "title": "Chamber Site Plan"
         }
       ]
     },
@@ -109,6 +117,10 @@
         {
           "url": "lesson08/form-start/index.html",
           "title": "HTML Forms"
+        },
+        {
+          "url": "form.html",
+          "title": "Form Build"
         },
         {
           "url": "chamber/join.html",
