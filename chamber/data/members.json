@@ -30,7 +30,8 @@
     {
       "name": "Salud Digna",
       "address": "Av. Padre Mier #185",
-      "phone": "64000",
+      "zip-code": "64000",
+      "phone": "81 8340 5729",
       "website": "https://www.salud-digna.org/monterrey/",
       "image": "",
       "membershipLevel": "Gold"
