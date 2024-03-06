@@ -1,16 +1,21 @@
 {
   "members": [
     {
-      "name": "Librerias Gandhi",
+      "name": "Librerías Gandhi",
       "address": "Av. Hidalgo 1171",
       "zipcode": "64000",
       "phone": "81 5030 2256",
       "website": "https://www.gandhi.com.mx/",
-      "logo": "images/logo-gandhi.webp",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/images/logo-gandhi.webp",
+          "title": "Librerías Gandhi"
+        }
+      ],
       "membershipLevel": "Gold"
     },
     {
-      "name": "Libreria Porrúa",
+      "name": "Librería Porrúa",
       "address": "Av. Hacienda de Peñuelas 6771",
       "zipcode": "64610",
       "phone": "81 1095 1313",
