@@ -20,7 +20,12 @@
       "zipcode": "64610",
       "phone": "81 1095 1313",
       "website": "https://porrua.mx/",
-      "logo": "",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/porrua.webp",
+          "title": "Librerías Gandhi"
+        }
+      ],
       "membershipLevel": "Gold"
     },
     {
@@ -29,7 +34,12 @@
       "zipcode": "64700",
       "phone": "81 8865 6000",
       "website": "https://pcel.com/",
-      "logo": "",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/pcel.webp",
+          "title": "Librerías Gandhi"
+        }
+      ],
       "membershipLevel": "Gold"
     },
     {
@@ -38,7 +48,12 @@
       "zipcode": "64000",
       "phone": "81 8340 5729",
       "website": "https://www.salud-digna.org/monterrey/",
-      "logo": "",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/salud-digna.svg",
+          "title": "Librerías Gandhi"
+        }
+      ],
       "membershipLevel": "Gold"
     },
     {
@@ -47,7 +62,12 @@
       "zipcode": "64860",
       "phone": "81 8103 0421",
       "website": "https://www.steren.com.mx/",
-      "logo": "",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/steren.webp",
+          "title": "Librerías Gandhi"
+        }
+      ],
       "membershipLevel": "Gold"
     },
     {
@@ -56,17 +76,13 @@
       "zipcode": "64860",
       "phone": "81 8357 7921",
       "website": "https://sushiexpress.com.mx/",
-      "logo": "",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/sushi-express.svg",
+          "title": "Librerías Gandhi"
+        }
+      ],
       "membershipLevel": "Silver"
-    },
-    {
-      "name": "Soporte Técnico Invernadero",
-      "address": "Altavista Invernadero, Rosas 3468",
-      "zipcode": "64770",
-      "phone": "812 755 4911",
-      "website": "https://www.facebook.com/profile.php?id=100045842216031",
-      "logo": "",
-      "membershipLevel": "Non Profit"
     }
   ]
 }
