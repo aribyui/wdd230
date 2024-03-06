@@ -577,6 +577,84 @@ div:nth-child(6) p {
 } 
 /* end thank you page */
 
+/* directory page start */
+.members-menu {
+  margin: 0.5rem;
+  padding: 1rem;  
+  background-color: var(--headerNavFooterBackground);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.members-menu #grid {
+  margin-right: 2rem;
+}
+
+.members-menu #grid, .members-menu #list {
+  color: var(--text1);
+  border: 0;
+  padding: .75rem;
+}
+
+article, article a {
+  color: var(--text1)
+}
+
+article div {
+  position: relative;
+}
+
+article div img {
+  width: 150px;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+}
+
+.grid {
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.grid section {
+  border: 2px solid var(--headerNavFooterBackground);
+  padding: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.grid p:nth-child(1), .grid p:nth-child(2) {
+  display: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 1fr;
+  line-height: 2rem;
+  padding: 1rem;  
+}
+
+
+.list section:nth-child(odd) {
+  background-color: var(--background1);
+}
+
+.list section img {
+  display: none;
+} 
+
+/* end directory-page */
+
 /* footer */
 footer {
   display: flex;
