@@ -26,8 +26,18 @@ async function getMembers() {
 const displayMembers = (members) => {
   members.forEach((member) => {
 
+    // console.log(member.logo[0].title) // se imprime en consola para depurar
+
     const section = document.createElement("section");
-    section.innerHTML = `<p>${member.name}</p><p>${member.membershipLevel} member</p><img src="${member.image}"><p>${member.address}, ${member.zipcode}</p><p>${member.phone}</p><a href="${member.website}" target="_blank">${member.website}</a>`;
+    section.innerHTML = 
+        `<p>${member.name}</p>
+      <p>${member.membershipLevel} member</p>
+      <div>
+      <img src="${member.logo[0].url}" title="${member.logo[0].title}">
+      </div>
+      <p>${member.address}, ${member.zipcode}</p>
+      <p>${member.phone}</p>
+      <a href="${member.website}" target="_blank">${member.website}</a>`;
 
     article.appendChild(section);
   });
