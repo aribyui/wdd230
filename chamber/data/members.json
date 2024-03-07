@@ -83,6 +83,19 @@
         }
       ],
       "membershipLevel": "Silver"
+    },
+    {
+      "name": "Soporte Técnico Invernadero",
+      "address": "Rosas 3468, Altavista Invernadero",
+      "zipcode": "64770",
+      "phone": "812 755 4911",
+      "website": "https://www.facebook.com/profile.php?id=100045842216031",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/sti.webp",
+          "title": "Soporte Técnico Invernadero"
+        }
+      ]
     }
   ]
 }
