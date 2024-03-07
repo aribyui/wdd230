@@ -99,14 +99,17 @@
   .thank-you div {
     padding: 0 0 0 8rem;
   }
-  /* discovery page */
+   /* directory page */
   .members-menu {
-    margin: 0.5rem auto;
-  }
+    margin: 1rem auto;
+    justify-content: start;
+  } 
   .grid, .list {
-    margin: 0;
+    margin: 1rem 0;
+  }  
+  .grid {
+    gap: 1rem;
   }
-  /* directory page */
   .list section {
     display: grid;  
     grid-template-columns: minmax(150px, 180px) 70px minmax(340px, 350px) 150px minmax(300px, 350px);

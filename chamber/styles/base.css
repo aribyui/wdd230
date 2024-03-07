@@ -526,8 +526,6 @@ div:nth-child(6) p {
 .becomeAMemberButton:hover {
   background-color: var(--accent1);
 }
-/* end join page - column 2*/
-/* end join page */
 
 /* thank you page start */
 .thank-you {   
@@ -576,11 +574,10 @@ div:nth-child(6) p {
 .thank-you a:visited {
   color: var(--text1);
 } 
-/* end thank you page */
 
 /* directory page start */
 .members-menu {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0;
   padding: 1rem;  
   background-color: var(--headerNavFooterBackground); 
   display: flex;
@@ -589,7 +586,7 @@ div:nth-child(6) p {
 }
 
 .members-menu #grid {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .members-menu #grid, .members-menu #list {
@@ -610,7 +607,8 @@ article p, article a {
 }
 
 .grid section {
-  padding: 1rem;
+  background-color: var(--background1);
+  padding: 2rem 1rem;
   line-height: 2rem;
   text-align: center;
   border: 2px solid var(--headerNavFooterBackground);
@@ -621,7 +619,7 @@ article p, article a {
   height: 150px;
   display: block;
   margin: 0 auto 1rem auto;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 2px solid var(--headerNavFooterBackground)
 }
 
@@ -638,6 +636,7 @@ article p, article a {
 .list section {
   padding: 1rem;
   line-height: 2rem;
+  /* border: 1px solid red; */
 }
 
 .list section:nth-child(odd) {
