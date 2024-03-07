@@ -36,7 +36,7 @@ const displayMembers = (members) => {
       <p>${member.membershipLevel}</p>
       <p>${member.address}, ${member.zipcode}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">${member.website}</a>`;
+      <a href="${member.website}" target="_blank" loading="lazy">${member.website}</a>`;
 
     article.appendChild(section);
   });
