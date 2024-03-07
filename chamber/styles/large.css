@@ -80,7 +80,6 @@
     transition: 0.5s ease-out;
     border-radius: 3px;    
   }
-  /* end discoger page */
   /* join page */ 
   .membership-container {
     grid-template-columns: 1fr 1fr;
@@ -96,12 +95,22 @@
   .membership-container div:nth-child(2) form fieldset {
     padding: 2rem 3rem 4rem 3rem;
   }  
-  /* end join page  */
   /*  thank you page */
   .thank-you div {
     padding: 0 0 0 8rem;
   }
-
+  /* discovery page */
+  .members-menu {
+    margin: 0.5rem auto;
+  }
+  .grid, .list {
+    margin: 0;
+  }
+  /* directory page */
+  .list section {
+    display: grid;  
+    grid-template-columns: minmax(150px, 180px) 70px minmax(340px, 350px) 150px minmax(300px, 350px);
+  }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

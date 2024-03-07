@@ -2,7 +2,8 @@
   --headerNavFooterBackground: #023E8A;
   --text1: #023E8A;
   --text2: #FFFFFF;
-  --background1: #F6FEFF;
+  --background1: #e4f9fc;  
+  /* --background1: #f6feff;  */
   --background2: #FFFFFF;
   --accent1: #FED906;
   --accent2: #FEE600;
@@ -581,7 +582,7 @@ div:nth-child(6) p {
 .members-menu {
   margin: 0.5rem;
   padding: 1rem;  
-  background-color: var(--headerNavFooterBackground);  
+  background-color: var(--headerNavFooterBackground); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -597,34 +598,31 @@ div:nth-child(6) p {
   padding: .75rem;
 }
 
-article, article a {
+article p, article a {
   color: var(--text1)
-}
+} 
 
-article div {
-  position: relative;
-}
-
-article div img {
-  width: 150px;
-  height: 100%;
-  margin: 0 auto;
-  object-fit: cover;
-  display: block;
-}
-
-.grid {
-  margin: 0.5rem;
+.grid {  
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+  margin: 0.5rem;
 }
 
 .grid section {
-  border: 2px solid var(--headerNavFooterBackground);
   padding: 1rem;
   line-height: 2rem;
   text-align: center;
+  border: 2px solid var(--headerNavFooterBackground);
+}
+
+.grid img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 100%;
+  border: 2px solid var(--headerNavFooterBackground)
 }
 
 .grid p:nth-child(1), .grid p:nth-child(2) {
@@ -634,25 +632,29 @@ article div img {
 .list {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
+  margin: 0.5rem; 
 }
 
 .list section {
-  display: grid;
-  grid-template-columns: 1fr;
+  padding: 1rem;
   line-height: 2rem;
-  padding: 1rem;  
 }
-
 
 .list section:nth-child(odd) {
   background-color: var(--background1);
 }
 
-.list section img {
-  display: none;
-} 
+/* .grid  section p:nth-child(3), .list section p:nth-child(3) {
+  font-weight: 600;
+} */
 
+.list img {
+  display: none;
+}
+
+.list section a {
+  text-decoration: none;
+}
 /* end directory-page */
 
 /* footer */

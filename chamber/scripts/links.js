@@ -30,11 +30,10 @@ const displayMembers = (members) => {
 
     const section = document.createElement("section");
     section.innerHTML = 
-        `<p>${member.name}</p>
-      <p>${member.membershipLevel} member</p>
-      <div>
-      <img src="${member.logo[0].url}" title="${member.logo[0].title}">
-      </div>
+        `<p>${member.name}</p>      
+
+      <img src="${member.logo[0].url}" title="${member.logo[0].title}"></img>
+      <p>${member.membershipLevel}</p>
       <p>${member.address}, ${member.zipcode}</p>
       <p>${member.phone}</p>
       <a href="${member.website}" target="_blank">${member.website}</a>`;
