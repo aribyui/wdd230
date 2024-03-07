@@ -634,7 +634,7 @@ article p, article a {
 }
 
 .list section {
-  padding: 1rem;
+  padding: 2rem 1rem;
   line-height: 2rem;
   /* border: 1px solid red; */
 }
