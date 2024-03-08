@@ -73,7 +73,6 @@ header div:nth-child(2) > p:last-child {
   border: 2px solid var(--background2);
   color: var(--text2);
   font-size: 1.7rem;
-
   width: 2rem;
   height: 2rem;
 }
@@ -584,12 +583,12 @@ div:nth-child(6) p {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
-.members-menu #grid {
+.members-menu #grid, .members-menu #list  {
   margin-right: 1rem;  
-  width: 2.5rem;
-  height: 2.5rem;
+
 }
 
 .borderButton {
