@@ -46,6 +46,21 @@
       "membershipLevel": "Silver"
     },
     {
+      "name": "Innvictus",
+      "address": "Av. Insurgentes 2500",
+      "zipcode": "64620",
+      "phone": "81 1636 1660",
+      "website": "https://www.innvictus.com/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/innvictus.webp",
+          "alt": "Innvictus logo",
+          "title": "Innvictus logo"
+        }
+      ],
+      "membershipLevel": "Silver"
+    },
+    {
       "name": "Librerías Gandhi",
       "address": "Av. Hidalgo 1171",
       "zipcode": "64000",
