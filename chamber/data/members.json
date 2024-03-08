@@ -61,6 +61,21 @@
       "membershipLevel": "Gold"
     },
     {
+      "name": "Pirma",
+      "address": "Av. Francisco I. Madero 712",
+      "zipcode": "64000",
+      "phone": "81 8372 4418",
+      "website": "https://www.charly.com/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/pirma.webp",
+          "alt": "Pirma logo",
+          "title": "Pirma logo"
+        }
+      ],
+      "membershipLevel": "Silver"
+    },
+    {
       "name": "Salud Digna",
       "address": "Av. Padre Mier 185",
       "zipcode": "64000",
@@ -119,21 +134,6 @@
         }
       ],
       "membershipLevel": "Non Profit"
-    },
-    {
-      "name": "Pirma",
-      "address": "Av. Francisco I. Madero 712",
-      "zipcode": "64000",
-      "phone": "81 8372 4418",
-      "website": "https://www.charly.com/",
-      "logo": [
-        {
-          "url": "https://aribyui.github.io/wdd230/chamber/images/pirma.webp",
-          "alt": "Pirma logo",
-          "title": "Pirma logo"
-        }
-      ],
-      "membershipLevel": "Silver"
     }
   ]
 }
