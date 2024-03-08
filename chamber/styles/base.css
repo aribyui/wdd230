@@ -2,9 +2,9 @@
   --headerNavFooterBackground: #023E8A;
   --text1: #023E8A;
   --text2: #FFFFFF;
-  --background1: #e4f9fc;  
-  /* --background1: #f6feff;  */
+  --background1: #e4f9fc;   
   --background2: #FFFFFF;
+  --background3: #f6feff; 
   --accent1: #FED906;
   --accent2: #FEE600;
   --headings: 'Open Sans', sans-serif;
@@ -576,30 +576,33 @@ div:nth-child(6) p {
 } 
 
 /* directory page start */
-.members-menu {
-  margin: 0.5rem 0.5rem 0;
-  padding: 1rem;  
-  background-color: var(--headerNavFooterBackground); 
+.view-container {
+  /* background-color: var(--background1); */
+  margin: 0.5rem
+}
+
+.members-menu { 
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .members-menu #grid, .members-menu #list  {
-  margin-right: 1rem;  
+  margin-right: 1rem;   
 }
 
 .borderButton {
-  border: 2px solid var(--background2);
+  border: 2px solid var(--text1);
+  cursor: pointer;
 }
 
 .borderButtonNoMargin {
   border: 0;
+  cursor: pointer;
 }
 
 .members-menu #grid, .members-menu #list {
-  color: var(--text2);
+  color: var(--text1);
   background-color: transparent;  
   width: 2.5rem;
   height: 2.5rem;
@@ -612,25 +615,25 @@ article p, article a {
 
 .grid {  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 0.5rem;
-  margin: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 0.5rem 0 0;
 }
 
 .grid section {
-  background-color: var(--background1);
-  border: 2px solid var(--headerNavFooterBackground); 
+  background-color: var(--background2);
   padding: 2rem 1rem;
   line-height: 2rem;
   text-align: center;  
   word-break: break-word;
+  box-shadow: var(--ligthHrColor) 0px 5px 8px;
 }
 
 .grid h2 {
   color: var(--text1);
 }
 
-.grid p:first-of-type {
+.grid p:first-of-type, .grid p:nth-child(3) {
   display: none;
 }
 
@@ -639,19 +642,19 @@ article p, article a {
 }
 
 .grid img {
-  width: 150px;
-  height: 150px;
+  display: none;
+  width: 100px;
+  height: 100px;
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0.5rem auto ;
   border-radius: 50%; 
-  margin-top: 1rem;
+  border: 2px solid var(--headerNavFooterBackground);
 }
-
 
 .list {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;  
+  margin: 0.5rem 0 0;  
 }
 
 .list section {
