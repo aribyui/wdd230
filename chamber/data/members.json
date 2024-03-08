@@ -1,6 +1,20 @@
 {
   "members": [
     {
+      "name": "Backstage",
+      "address": "Av. Dr. José Eleuterio González 456 Sur,",
+      "zipcode": "64640",
+      "phone": "81 8333 9400",
+      "website": "https://backstage.mx/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/backstage.webp",
+          "alt": "Backstage logo",
+          "title": "Backstage logo"
+        }
+      ]
+    },
+    {
       "name": "Charly",
       "address": "Lázaro Cárdenas 1000",
       "zipcode": "64750",
@@ -14,6 +28,20 @@
         }
       ],
       "membershipLevel": "Silver"
+    },
+    {
+      "name": "Gama Music",
+      "address": "Rio Mississippi 101-B, Del Valle",
+      "zipcode": "66220",
+      "phone": "81 4170 0750",
+      "website": "https://gamamusic.com/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/gamamusic.webp",
+          "alt": "Gama Music logo",
+          "title": "Gama Music logo"
+        }
+      ]
     },
     {
       "name": "Librerías Gandhi",
