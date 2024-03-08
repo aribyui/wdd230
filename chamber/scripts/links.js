@@ -1,42 +1,44 @@
 const baseURL = "https://aribyui.github.io/wdd230/";
 const linksURL = "https://aribyui.github.io/wdd230/chamber/data/members.json";
 const gridButton = document.querySelector("#grid");
-let gridList = document.querySelector("#list");
-let article = document.querySelector("article");
+const gridListButton = document.querySelector("#list");
+const article = document.querySelector("article");
+const data = null;
 
 gridButton.classList.add("borderButton");
-gridList.classList.add("borderButtonNoMargin");
+gridListButton.classList.add("borderButtonNoMargin");
 
 gridButton.addEventListener("click", () => {
   article.classList.add("grid");
   article.classList.remove("list");
 
-  if (gridList.classList.contains("borderButton")) {
-    gridList.classList.remove("borderButton");
-    gridList.classList.add("borderButtonNoMargin");
+  if (gridListButton.classList.contains("borderButton")) {
+    gridListButton.classList.remove("borderButton");
+    gridListButton.classList.add("borderButtonNoMargin");
     gridButton.classList.remove("borderButtonNoMargin")
     gridButton.classList.add("borderButton");    
   }
 
 });
 
-gridList.addEventListener("click", () => {
+gridListButton.addEventListener("click", () => {
   article.classList.add("list");
   article.classList.remove("grid");
 
   if (gridButton.classList.contains("borderButton")) {
     gridButton.classList.remove("borderButton");
     gridButton.classList.add("borderButtonNoMargin");
-    gridList.classList.remove("borderButtonNoMargin");
-    gridList.classList.add("borderButton"); 
+    gridListButton.classList.remove("borderButtonNoMargin");
+    gridListButton.classList.add("borderButton"); 
   }
 
 });
 
+
 async function getMembers() {
   const response = await fetch(linksURL);
   if (response.ok) {
-    const data = await response.json();
+    data = await response.json();
     console.table(data.members); // se imprime en consola para depurar
     displayMembers(data.members);
   }
