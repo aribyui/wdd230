@@ -1,6 +1,21 @@
 {
   "members": [
     {
+      "name": "Charly",
+      "address": "Lázaro Cárdenas 1000",
+      "zipcode": "64750",
+      "phone": "81 1363 3487",
+      "website": "https://www.charly.com/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/charly.webp",
+          "alt": "Charly logo",
+          "title": "Charly logo"
+        }
+      ],
+      "membershipLevel": "Silver"
+    },
+    {
       "name": "Librerías Gandhi",
       "address": "Av. Hidalgo 1171",
       "zipcode": "64000",
@@ -116,21 +131,6 @@
           "url": "https://aribyui.github.io/wdd230/chamber/images/pirma.webp",
           "alt": "Pirma logo",
           "title": "Pirma logo"
-        }
-      ],
-      "membershipLevel": "Silver"
-    },
-    {
-      "name": "Charly",
-      "address": "Lázaro Cárdenas 1000",
-      "zipcode": "64750",
-      "phone": "81 1363 3487",
-      "website": "https://www.charly.com/",
-      "logo": [
-        {
-          "url": "https://aribyui.github.io/wdd230/chamber/images/charly.webp",
-          "alt": "Charly logo",
-          "title": "Charly logo"
         }
       ],
       "membershipLevel": "Silver"
