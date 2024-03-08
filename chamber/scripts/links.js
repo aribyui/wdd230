@@ -30,13 +30,12 @@ const displayMembers = (members) => {
 
     const section = document.createElement("section");
     section.innerHTML = 
-        `<p>${member.name}</p>      
-
-      <img src="${member.logo[0].url}" title="${member.logo[0].title}"></img>
+      `<p>${member.name}</p>      
+      <img src="${member.logo[0].url}" title="${member.logo[0].title}" width="150" height="150" loading="lazy"></img>
       <p>${member.membershipLevel}</p>
       <p>${member.address}, ${member.zipcode}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank" loading="lazy">${member.website}</a>`;
+      <a href="${member.website}" target="_blank">${member.website}</a>`;
 
     article.appendChild(section);
   });
