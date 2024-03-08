@@ -113,7 +113,7 @@
   .list section {
     display: grid;     
     grid-template-columns: minmax(150px, 180px) 80px minmax(250px, 380px) 150px minmax(300px, 350px);
-    }
+  }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
