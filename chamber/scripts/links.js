@@ -51,7 +51,7 @@ const displayMembers = (members) => {
     section.innerHTML =
       `<h2>${member.name}</h2>
       <p>${member.name}</p>
-      <img src="${member.logo[0].url}" title="${member.logo[0].title}" width="150" height="150" loading="lazy"></img>
+      <img src="${member.logo[0].url}" alt="${member.logo[0].alt}" title="${member.logo[0].title}" width="150" height="150" loading="lazy"></img>
       <p>${member.membershipLevel}</p>
       <p>${member.address}, ${member.zipcode}</p>
       <p>${member.phone}</p>

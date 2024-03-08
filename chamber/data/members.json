@@ -9,6 +9,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/gandhi.webp",
+          "alt": "Librerías Gandhi logo",
           "title": "Librerías Gandhi logo"
         }
       ],
@@ -23,6 +24,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/porrua.webp",
+          "alt": "Librerías Porrúa logo",
           "title": "Librerías Porrúa logo"
         }
       ],
@@ -37,6 +39,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/pcel.webp",
+          "alt": "PCEL logo",
           "title": "PCEL logo"
         }
       ],
@@ -51,6 +54,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/saluddigna.webp",
+          "alt": "Salud Digna logo",
           "title": "Salud Digna logo"
         }
       ],
@@ -65,6 +69,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/steren.webp",
+          "alt": "Steren logo",
           "title": "Steren logo"
         }
       ],
@@ -79,6 +84,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/sushiexpress.webp",
+          "alt": "Sushi Express logo",
           "title": "Sushi Express logo"
         }
       ],
@@ -93,6 +99,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/sti.webp",
+          "alt": "Soporte Técnico Invernadero logo",
           "title": "Soporte Técnico Invernadero logo"
         }
       ],
@@ -107,6 +114,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/pirma.webp",
+          "alt": "Pirma logo",
           "title": "Pirma logo"
         }
       ],
@@ -121,6 +129,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/charly.webp",
+          "alt": "Charly logo",
           "title": "Charly logo"
         }
       ],
