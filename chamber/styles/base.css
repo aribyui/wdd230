@@ -72,7 +72,8 @@ header div:nth-child(2) > p:last-child {
   background-color: transparent;
   border: 2px solid var(--background2);
   color: var(--text2);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+
   width: 2rem;
   height: 2rem;
 }
@@ -604,6 +605,7 @@ div:nth-child(6) p {
   background-color: transparent;  
   width: 2.5rem;
   height: 2.5rem;
+  font-size: 1.7rem;
 }
 
 article p, article a {
