@@ -3,7 +3,7 @@ const linksURL = "https://aribyui.github.io/wdd230/chamber/data/members.json";
 const gridButton = document.querySelector("#grid");
 const gridListButton = document.querySelector("#list");
 const article = document.querySelector("article");
-const data = null;
+let data = null;
 
 gridButton.classList.add("borderButton");
 gridListButton.classList.add("borderButtonNoMargin");
