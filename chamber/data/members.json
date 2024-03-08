@@ -9,7 +9,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/gandhi.webp",
-          "title": "Librerías Gandhi"
+          "title": "Librerías Gandhi logo"
         }
       ],
       "membershipLevel": "Gold"
@@ -23,7 +23,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/porrua.webp",
-          "title": "Librerías Gandhi"
+          "title": "Librerías Porrúa logo"
         }
       ],
       "membershipLevel": "Gold"
@@ -37,7 +37,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/pcel.webp",
-          "title": "Librerías Gandhi"
+          "title": "PCEL logo"
         }
       ],
       "membershipLevel": "Gold"
@@ -51,10 +51,10 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/saluddigna.webp",
-          "title": "Librerías Gandhi"
+          "title": "Salud Digna logo"
         }
       ],
-      "membershipLevel": "Gold"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Steren",
@@ -65,7 +65,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/steren.webp",
-          "title": "Librerías Gandhi"
+          "title": "Steren logo"
         }
       ],
       "membershipLevel": "Gold"
@@ -79,7 +79,7 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/sushiexpress.webp",
-          "title": "Librerías Gandhi"
+          "title": "Sushi Express logo"
         }
       ],
       "membershipLevel": "Silver"
@@ -93,10 +93,38 @@
       "logo": [
         {
           "url": "https://aribyui.github.io/wdd230/chamber/images/sti.webp",
-          "title": "Soporte Técnico Invernadero"
+          "title": "Soporte Técnico Invernadero logo"
         }
       ],
       "membershipLevel": "Non Profit"
+    },
+    {
+      "name": "Pirma",
+      "address": "Av. Francisco I. Madero 712",
+      "zipcode": "64000",
+      "phone": "81 8372 4418",
+      "website": "https://www.charly.com/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/pirma.webp",
+          "title": "Pirma logo"
+        }
+      ],
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Charly",
+      "address": "Lázaro Cárdenas 1000",
+      "zipcode": "64750",
+      "phone": "81 1363 3487",
+      "website": "https://www.charly.com/",
+      "logo": [
+        {
+          "url": "https://aribyui.github.io/wdd230/chamber/images/charly.webp",
+          "title": "Charly logo"
+        }
+      ],
+      "membershipLevel": "Silver"
     }
   ]
 }
