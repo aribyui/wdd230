@@ -644,10 +644,6 @@ article p, article a {
   background-color: var(--background1);
 }
 
-/* .grid  section p:nth-child(3), .list section p:nth-child(3) {
-  font-weight: 600;
-} */
-
 .list img {
   display: none;
 }
