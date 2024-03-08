@@ -110,10 +110,15 @@
   .grid {
     gap: 1rem;
   }
+  .grid section:hover {
+    transform: scale3d(1, 1 ,1);
+    transition: 0.5s ease-in-out;
+  }
   .list section {
     display: grid;     
-    grid-template-columns: minmax(150px, 180px) 80px minmax(250px, 380px) 150px minmax(300px, 350px);
+    grid-template-columns: minmax(150px, 280px) 120px 400px 200px auto;
   }
+  /* footer */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
