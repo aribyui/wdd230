@@ -62,12 +62,14 @@
   /* discover page */
   .discover-section {
     margin: 1rem 0;
+    gap: 1rem;
   }
   aside + div { 
     padding: 2rem 3rem;    
   }   
   aside > div {
     padding: 2rem 3rem;
+    margin-bottom: 1rem;
   }
   aside + div > div figure > picture > img:hover {
     box-shadow: 0 0 20px var(--headerNavFooterBackground);

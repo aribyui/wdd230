@@ -303,8 +303,8 @@ body {
 .discover-section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 1rem;
+  gap: 0.5rem;
+  margin: 0.5rem;
   line-height: 2rem;
   text-align: center;
   color: var(--text1)
@@ -315,7 +315,7 @@ aside > div {
   background-color: var(--headerNavFooterBackground);
   color: var(--text2);
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 aside div > h2, aside div:nth-child(1) h3, aside div:nth-child(2) h3, aside div:nth-child(3) > h3 {
@@ -330,14 +330,6 @@ aside hr {
 aside div:nth-child(1) > h2::before {
   content: "📊 "
 }
-
-/* aside div:nth-child(2) > h2::before {
-  content: "📚 "
-}
-
-aside div:nth-child(3) > h2::before {
-  content: "🏛️ "; 
-} */
 
 aside div:nth-child(3) {
   margin-bottom: 0;
@@ -382,7 +374,6 @@ figcaption, figcaption a  {
   font-style: italic;
 }
 
-
 aside + div  p {
   margin-bottom: 2rem;
 }
@@ -390,7 +381,6 @@ aside + div  p {
 div:nth-child(6) p {
   margin-bottom: 0;
 }
-/* end discoger page */
 
 /* join page start */
 .membership-container {
