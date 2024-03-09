@@ -341,7 +341,7 @@ aside div:nth-child(2) figure img, aside div:nth-child(3) figure img {
   object-fit: cover;
   display: block;
   margin-bottom: 1rem;
-  border: 2px solid var(--headerNavFooterBackground);
+  border: 2px solid var(--accent2);
 } 
 
 /* discoger page - div start*/
