@@ -59,7 +59,7 @@
   .weather {
     padding: 2rem 3rem;
   }
-  /* discoger page */
+  /* discover page */
   .discover-section {
     margin: 1rem 0;
   }
@@ -78,6 +78,7 @@
   .membership-container {
     grid-template-columns: 1fr 1fr;
     margin: 1rem 0;
+    gap: 1rem;
   }
   .becomeAMemberButton {
     width: 92%;
@@ -85,9 +86,11 @@
   }
   .membership-container div:nth-child(1) > div {
     padding: 2rem 3rem;
+    margin-bottom: 1rem;
   }
   .membership-container div:nth-child(2) form fieldset {
     padding: 2rem 3rem 4rem 3rem;
+    margin-bottom: 1rem;
   }  
   /*  thank you page */
   .thank-you div {

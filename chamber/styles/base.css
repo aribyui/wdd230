@@ -396,8 +396,8 @@ div:nth-child(6) p {
 .membership-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 1rem;
+  gap: 0.5rem;
+  margin: 0.5rem;
 }
 
 /* join page - column 1*/
@@ -406,7 +406,7 @@ div:nth-child(6) p {
   color: var(--text2);
   line-height: 2rem;
   padding: 2rem 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .membership-container div:nth-child(1) div > h2,
@@ -470,7 +470,7 @@ div:nth-child(6) p {
 .membership-container div:nth-child(2) form fieldset {
   padding: 2rem 1rem;
   border: 2px solid var(--headerNavFooterBackground);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 } 
 
 .membership-container div:nth-child(2) form fieldset:nth-child(1) label,
