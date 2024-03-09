@@ -55,7 +55,7 @@ const displayMembers = (members) => {
       <p>${member.membershipLevel}</p>
       <img src="${member.logo[0].url}" alt="${member.logo[0].alt}" width="150" height="150" loading="lazy"></img>
       
-      <p>${member.address}, ${member.zipcode}</p>
+      <p>${member.address}</p>
       <p>${member.phone}</p>
       <a href=" ${member.website}" target="_blank">Site</a>`;
 

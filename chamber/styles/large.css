@@ -117,7 +117,7 @@
     background-color: var(--background2);
     cursor: pointer;   
     transform: translateY(-5px);
-    box-shadow: var(--ligthHrColor) 0px 10px 8px;
+    box-shadow: var(--ligthHrColor) 0px 10px 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
   .list section {
