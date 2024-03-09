@@ -56,7 +56,7 @@
       <div>
         <!-- non profit -->
         <div>
-          <h2>Non Profit Membership</h2>
+          <h2>Non Profit</h2>
           <hr>
           <ul>
             <li>Access to resources and tools specific to the non-profit sector.</li>
@@ -66,11 +66,11 @@
             <li>Networking opportunities with similar organizations.</li>
             <li>Personalized support and guidance for projects and campaigns.</li>
           </ul>
-          <h3>$50 per year</h3>
+          <!-- <h3>$50 per year</h3> -->
         </div>
         <!-- bronze -->
         <div>
-          <h2>Bronze Membership</h2>
+          <h2>Bronze</h2>
           <hr>
           <ul>
             <li>Ability to promote the company on the chamber website and social media.</li>
@@ -80,11 +80,11 @@
             <li>Participation in sectoral committees and working groups.</li>
             <li>Perfect for small businesses and startups.</li>
           </ul>
-          <h3>$100 / year</h3>
+          <!-- <h3>$100 / year</h3> -->
         </div>
         <!-- silver -->
         <div>
-          <h2>Silver Membership</h2>
+          <h2>Silver</h2>
           <hr>
           <ul>
             <li>Access to educational sessions and specialized workshops.</li>
@@ -94,11 +94,11 @@
             <li>Invitations to VIP events and exclusive dinners.</li>
             <li>Opportunities for event sponsorship and chamber programs.</li>
           </ul>
-          <h3>$250 / year</h3>
+          <!-- <h3>$250 / year</h3> -->
         </div>
         <!-- gold -->
         <div>
-          <h2>Gold Membership</h2>
+          <h2>Gold</h2>
           <hr>
           <ul>
             <li>All benefits of Silver membership.</li>
@@ -108,7 +108,7 @@
             <li>Special recognition at events and chamber publications.</li>
             <li>The highest level of membership for outstanding companies.</li>
           </ul>
-          <h3>$500 / year</h3>
+          <!-- <h3>$500 / year</h3> -->
         </div>
       </div>
 
@@ -120,20 +120,23 @@
             <label>First name* <input type="text" id="fname" name="fname" required></label>
             <label>Last name* <input type="text" id="lname" name="lname" required></label>
             <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z- ]{7,}" required></label>
-            <label>Email address* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label>Email address* <input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                required></label>
             <label>Mobile phone number* <input type="tel" id="mobile" name="mobile" required></label>
-            <label>Business/organization's name* <input type="text" id="bsorganization" name="bsorganization" required></label>
+            <label>Business/organization's name* <input type="text" id="bsorganization" name="bsorganization"
+                required></label>
           </fieldset>
           <fieldset>
             <h2>Membership Level</h2>
-            <label><input type="radio" name="membership" value="npmembership">Non profit membership</label>
-            <label><input type="radio" name="membership" value="bronzemembership">Bronze membership </label>
-            <label><input type="radio" name="membership" value="silvermembership">Silver membership</label>
-            <label><input type="radio" name="membership" value="goldmembership">Gold membership</label>
+            <label><input type="radio" name="membership" value="npmembership">Non profit membership - $50</label>
+            <label><input type="radio" name="membership" value="bronzemembership">Bronze membership - $100</label>
+            <label><input type="radio" name="membership" value="silvermembership">Silver membership - $250</label>
+            <label><input type="radio" name="membership" value="goldmembership">Gold membership - $500</label>
           </fieldset>
           <fieldset>
             <h2>Business/organization description</h2>
-            <label>Describe your business<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+            <label>Describe your business<textarea name="description" id="description" cols="30"
+                rows="10"></textarea></label>
           </fieldset>
           <input type="hidden" id="date-time" name="datetime">
           <input type="submit" value="Become a Member" class="becomeAMemberButton">
