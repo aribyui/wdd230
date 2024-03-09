@@ -613,8 +613,8 @@ article p, article a {
 .grid {  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 0.5rem 0 0;
+  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .grid section {
