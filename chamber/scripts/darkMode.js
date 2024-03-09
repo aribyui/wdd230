@@ -24,7 +24,7 @@ modeButton.addEventListener("click", () => {
   hr.classList.toggle("dark-mode-hr");
   footer.classList.toggle("dark-mode-backgroundPrimary");
   
-  if (modeButton.textContent.includes("🌞")) {
+  if (modeButton.textContent.includes("🟡")) {
 
     modeButton.textContent = "🌑"; 
 
@@ -96,7 +96,7 @@ modeButton.addEventListener("click", () => {
 
   } else {
 
-    modeButton.textContent = "🌞";   
+    modeButton.textContent = "🟡";   
 
     heroLabel.removeAttribute("id");
 
