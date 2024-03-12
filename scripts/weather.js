@@ -20,41 +20,44 @@ function displayResults(data) {
   let getWords = getCapitalLetters(words);
   // console.log(getWords); // output: ['Overcast', 'Clouds']
 
-  country.textContent = data.name;
-  // Se crea un nuevo elemento de imágen.
+  // Se crean un elemento 'p' y un elemento 'img'
+  let p = document.createElement("p");
   let img = document.createElement("img");
-  // Se asigna el atributo src y se referencia con la variable icon,
-  // esta almacena el icono correspondiente del pronóstico del tiempo
-  // obtenida de la API
+
+  // Al elemento 'img' se le agregan atributos y se les asigna un valor.
   img.setAttribute("src", icon);  
-  // Se asigna el atributo alt en caso de que la icono no aparezca
-  // y se muestre el texto descriptivo del icono del pronóstico del tiempo
   img.setAttribute("alt", data.weather[0].main)
 
-  weather.appendChild(img);
+  // Al elemento country se le asigna el nombre de la ciudad, usando la propiedad textContent
+  // Esta variable fue declarada y referenciada al principio del código.
+  country.textContent = data.name; 
+  // Se agrega texto al elemento 'p' usando innerHTML en lugar de textContent
+  // ya que innerHTML  permite la inserción de contenido HTML.
+  // En este caso es se uso la entidad '&deg' que representa el símbolo de grados (°)
+  p.innerHTML = `${Math.round(data.main.temp)}&degC - `;   
 
   // Itera sobre cada palabra capitalizada en la descripción del clima.
   getWords.forEach(w => {
        
-    // Se imprime para depurar
+    // Se imprime para depurar.
     console.log(w);
     // output: 
     // 'Overcast'
     // 'Clouds'
     
-    // Se crea un nuevo elemento de párrafo.
-    let p = document.createElement("p");    
-
-    // Se asigna la palabra capitalizada como contenido del elemento de párrafo.
-    // Se ha utilizado innerHTML en lugar de textContent, ya que innerHTML 
-    // permite la inserción de contenido HTML. En este caso, se utiliza para agregar
-    // la entidad HTML &nbsp; (espacio no rompible), garantizando su validez
-    // dentro de la estructura HTML.
-    p.innerHTML = `${w}&nbsp;`;
+    // Se crea un nodo de texto.
+    // Lo que esta entre paréntesis y literal strings corresponde al iterador que almacena la palabra,
+    // enseguida se hizo un espacio para que las palabras del arreglo 'getWords' no colisionen
+    // Nota: lo dejare en modo de prueba para ver que sucede cuando el texto del pronóstico del tiempo sea mas de 2 o mas palabras
+    let textNode = document.createTextNode(`${w} `);  
     
-    // Agregar el párrafo al elemento HTML con el id "weather"
-    weather.appendChild(p); 
+    // Se agrega el nodo de texto al párrafo, o elemento 'p'.
+    p.appendChild(textNode);
   }); 
+
+  weather.appendChild(img); 
+  weather.appendChild(p);
+  
 }
 
 function getCapitalLetters(words) {
