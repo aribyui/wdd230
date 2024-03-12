@@ -22,7 +22,7 @@ h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
 }
 
- p, a, ul, button {
+ p, a, ul, button, img {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -205,6 +205,17 @@ main > h2 {
   content: "🔗 "; 
 } */
 
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+#weather img {
+  margin-right: 0.3rem;
+}
+
 /* How to responsive iframes: http://tinyurl.com/3mxvpus6 */ 
 
 .iframe-container {
@@ -230,7 +241,7 @@ main > h2 {
   border: 2px solid var(--textBackground);
 }
 
-#record-message h2, #record-message p{
+#record-message h2, #record-message p {
   margin-bottom: 1rem;
 }
 
