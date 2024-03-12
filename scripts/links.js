@@ -30,8 +30,10 @@ const displayLinks = (weeks) => {
     const li = document.createElement("li");
 
     let i = 0;    
-
-    if (linksLength === 2) {    
+    if (linksLength === 1) {
+      a1.setAttribute("href", `${week.links[i].url}`);
+      a1.textContent = `${week.links[i].title}`;  
+    } else if (linksLength === 2) {    
       a1.setAttribute("href", `${week.links[i].url}`);
       a1.textContent = `${week.links[i].title}`;     
       i++;
@@ -62,7 +64,9 @@ const displayLinks = (weeks) => {
        
     li.textContent = `${week.lesson} `;
 
-    if (linksLength === 2) {
+    if (linksLength === 1) {
+      li.appendChild(a1);   
+    } else if (linksLength === 2) {
       li.appendChild(a1);
       li.appendChild(separator1);
       li.appendChild(a2);
