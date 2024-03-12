@@ -205,6 +205,11 @@ main > h2 {
   content: "🔗 "; 
 } */
 
+.card:nth-of-type(2) > div {
+  /* background-color: red; */
+  padding: 1rem;
+}
+
 #weather {
   display: flex;
   align-items: center;

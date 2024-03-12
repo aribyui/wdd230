@@ -1,4 +1,5 @@
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=25.69&lon=-100.32&units=metric&appid=93ad6ff91162822dfb00dcdea498e2c2";
+const country = document.querySelector("#country");
 const weather = document.querySelector("#weather");
 
 async function getWeather() {
@@ -19,7 +20,7 @@ function displayResults(data) {
   let getWords = getCapitalLetters(words);
   // console.log(getWords); // output: ['Overcast', 'Clouds']
 
-
+  country.textContent = data.name;
   // Se crea un nuevo elemento de imágen.
   let img = document.createElement("img");
   // Se asigna el atributo src y se referencia con la variable icon,
