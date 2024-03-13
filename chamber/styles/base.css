@@ -267,17 +267,19 @@ body {
   color: var(--text1)
 }
 
-.weather h2:nth-child(1) {
+/* .weather h2:nth-child(1) {
   margin-bottom: 2rem;
-}
+} */
 
-.weather h2 + div {
+/* .weather h2 + div {
   aspect-ratio: 1/1;
   background-color: var(--background1);
   border: 1px solid var(--headerNavFooterBackground);
   width: 7rem;
   margin: 0 auto 2rem auto;
-}
+} */
+
+
 
 .weather div:nth-child(3) {
   line-height: 2rem;
