@@ -30,7 +30,7 @@ function displayResults(data) {
 
   // Al elemento country se le asigna el nombre de la ciudad, usando la propiedad textContent
   // Esta variable fue declarada y referenciada al principio del código.
-  country.textContent = data.name; 
+  country.textContent = `${data.name}, ${data.sys.country}`; 
   // Se agrega texto al elemento 'p' usando innerHTML en lugar de textContent
   // ya que innerHTML  permite la inserción de contenido HTML.
   // En este caso es se uso la entidad '&deg' que representa el símbolo de grados (°)
