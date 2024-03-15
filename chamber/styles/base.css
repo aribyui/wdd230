@@ -202,14 +202,19 @@ body {
   color: var(--text2);
 }
 
-.hero-label button {
+.hero-label a {
   background-color: var(--accent2);
   color: var(--text1);
   border: 0;
   padding: 0.7rem 2rem;
+  text-decoration: none;
 }
 
-.hero-label button:hover {
+.hero-label a:visited {
+  color: var(--text1);
+}
+
+.hero-label a:hover {
   background-color: var(--accent1);
   cursor: pointer;
   transition: 0.3s;
