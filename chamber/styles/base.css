@@ -195,7 +195,6 @@ body {
 
 .hero-label p {
   line-height: 2rem;
-  word-break:keep-all;
 }
 
 .hero-label h2, .hero-label p {
