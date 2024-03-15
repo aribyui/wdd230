@@ -7,8 +7,9 @@
     display: none;
   }
   .hero-label {
-    top: 200px;
+    top: 190px;
     left: 50px;    
+  
   }
   .navigation {
     position: inherit;

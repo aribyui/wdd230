@@ -175,20 +175,27 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
-  filter: brightness(0.6);
+  filter: brightness(0.4);
+  background-color: var(--background1);
 }
 
 .hero-label {
   position: absolute;
   top: 0px;
-  left: 0px;
-  background-color: #f6feffcf;
-  padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  left: 0px;  
+  padding: 0.5rem;
+  
+  /* background-color: #f6feff88; */
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+.hero-label p {
+  line-height: 2rem;
+  word-break:keep-all;
 }
 
 .hero-label h2, .hero-label p {
-  color: var(--text1);
+  color: var(--text2);
 }
 
 .hero-label button {
