@@ -33,25 +33,28 @@ a, p, button, img, figcaption, li, label, textarea, input {
   font-size: 1.1rem;
 }
 
-.banner {  
+.banner {    
   background-color: var(--accent2);
   color: var(--text1);
   padding: 1rem;
   text-align: center;  
   line-height: 2rem;  
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .banner p::after {
-  content: ' ⏰';
+  content: ' 🤝🏼💼';
 }
 
 .showBanner {
-  display: block;
+  display: flex;  
 }
 
 .closeBanner {
   display: none;
-}
+} 
 
 header {
   background-color: var(--headerNavFooterBackground);
