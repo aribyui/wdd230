@@ -56,9 +56,6 @@
   .events div + div {     
     margin: 2rem auto;
   }
-  .weather {
-    padding: 2rem 3rem;
-  }
   /* discover page */
   .discover-section {
     margin: 1rem 0;
