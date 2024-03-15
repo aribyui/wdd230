@@ -13,7 +13,7 @@ banner.appendChild(deleteButton);
 const currentDay = new Date().getDay();
 console.log(currentDay);
 
-currentDay === 0 || currentDay === 2 || currentDay === 3 ? banner.classList.toggle("showBanner") : banner.classList.toggle("closeBanner");
+currentDay === 1 || currentDay === 2 || currentDay === 3 ? banner.classList.toggle("showBanner") : banner.classList.toggle("closeBanner");
 
 deleteButton.addEventListener("click", () => {
   banner.classList.toggle("closeBanner");
