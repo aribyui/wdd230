@@ -48,6 +48,11 @@ a, p, button, img, figcaption, li, label, textarea, input {
   content: ' 🤝🏼💼';
 }
 
+.banner span {
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .showBanner {
   display: flex;  
 }
@@ -170,16 +175,16 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
+  filter: brightness(0.6);
 }
 
 .hero-label {
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: #f6feffa8;
+  background-color: #f6feffcf;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
 }
 
 .hero-label h2, .hero-label p {
