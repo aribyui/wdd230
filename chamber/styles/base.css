@@ -44,6 +44,10 @@ a, p, button, img, figcaption, li, label, textarea, input {
   text-align: center;
 }
 
+.banner p {
+  margin-right: 1.5rem;
+}
+
 .banner p::after {
   content: ' 🤝🏼💼';
 }
