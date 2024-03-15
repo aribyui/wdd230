@@ -179,7 +179,7 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   background-color: var(--background1);
 }
 
