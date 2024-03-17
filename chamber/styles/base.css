@@ -179,7 +179,7 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
-  filter: brightness(0.3);
+  filter: brightness(0.7);
   background-color: var(--background1);
 }
 
@@ -187,18 +187,25 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;  
-  padding: 0.5rem;
+
   
-  /* background-color: #f6feff88; */
-  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+
+  background-color: #f6feff88;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0.5rem;
 }
+
+
 
 .hero-label p {
   line-height: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-label h2, .hero-label p {
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .hero-label a {
@@ -207,6 +214,8 @@ body {
   border: 0;
   padding: 0.7rem 2rem;
   text-decoration: none;
+  width: fit-content;
+  
 }
 
 .hero-label a:visited {

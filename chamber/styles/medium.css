@@ -9,7 +9,7 @@
   .hero-label {
     top: 40px;
     left: 25px;
-    padding: 0;
+    padding: 1rem;
   }
   .affiliated-members {
     display: grid;
