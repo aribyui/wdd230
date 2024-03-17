@@ -186,10 +186,7 @@ body {
 .hero-label {
   position: absolute;
   top: 0px;
-  left: 0px;  
-
-  
-
+  left: 0px;   
   background-color: #f6feff88;
   display: flex;
   flex-direction: column;
@@ -197,11 +194,13 @@ body {
   padding: 1rem 0.5rem;
 }
 
-
-
 .hero-label p {
   line-height: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.hero-label h2 {
+  margin-bottom: 0.35rem;
 }
 
 .hero-label h2, .hero-label p {
