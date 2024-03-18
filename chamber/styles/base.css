@@ -538,8 +538,20 @@ div:nth-child(6) p {
   appearance: none;
 }
 
+.membership-container div:nth-child(2) form fieldset:nth-child(2) > label {
+  cursor: pointer;
+}
+
 .membership-container div:nth-child(2) form fieldset:nth-child(2) input[type="radio"] {
   margin-right: 6px;
+}
+
+.membership-container div:nth-child(2) form fieldset:nth-child(2) span {
+  font-weight: 600;
+  background-color: #023E8A;
+  color: var(--text2);
+  padding: 0.33rem 0.5rem;
+  border-radius: 6px;
 }
 
 .membership-container div:nth-child(2) form fieldset:nth-child(3) textarea {
@@ -552,16 +564,6 @@ div:nth-child(6) p {
   color: var(--text1);
   resize: none;
 }
-
-.membership-container div:nth-child(2) form fieldset:nth-child(2) span {
-  cursor: pointer;
-  font-weight: 600;
-  background-color: #023E8A;
-  color: var(--text2);
-  padding: 0.33rem 0.5rem;
-  border-radius: 6px;
-}
-
 
 .becomeAMemberButton {
   border: 0;
