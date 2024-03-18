@@ -57,7 +57,7 @@ const displayMembers = (members) => {
       
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href=" ${member.website}" target="_blank">Site</a>`;
+      <a href=" ${member.website}" target="_blank" style="font-weight:600">Website</a>`;
 
     article.appendChild(section);
   });
