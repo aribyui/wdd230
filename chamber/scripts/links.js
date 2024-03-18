@@ -11,27 +11,11 @@ gridListButton.classList.add("borderButtonNoMargin");
 gridButton.addEventListener("click", () => {
   article.classList.add("grid");
   article.classList.remove("list");
-
-  if (gridListButton.classList.contains("borderButton")) {
-    gridListButton.classList.remove("borderButton");
-    gridListButton.classList.add("borderButtonNoMargin");
-    gridButton.classList.remove("borderButtonNoMargin")
-    gridButton.classList.add("borderButton");    
-  }
-
 });
 
 gridListButton.addEventListener("click", () => {
   article.classList.add("list");
   article.classList.remove("grid");
-
-  if (gridButton.classList.contains("borderButton")) {
-    gridButton.classList.remove("borderButton");
-    gridButton.classList.add("borderButtonNoMargin");
-    gridListButton.classList.remove("borderButtonNoMargin");
-    gridListButton.classList.add("borderButton"); 
-  }
-
 });
 
 async function getMembers() {

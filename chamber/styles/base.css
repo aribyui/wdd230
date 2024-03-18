@@ -653,26 +653,27 @@ div:nth-child(6) p {
   margin-right: 1rem;   
 }
 
-.borderButton {
-  border: 2px solid var(--headerNavFooterBackground);
-  cursor: pointer;
-}
-
-.borderButtonNoMargin {
-  border: 0;
-  cursor: pointer;
+.members-menu #grid[autofocus] {
+  outline: none;
 }
 
 .members-menu #grid, .members-menu #list {
   color: var(--text1);
-  background-color: var(--background2);  
+  background-color: var(--background1);  
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.7rem;
+  border: 2px solid var(--headerNavFooterBackground);
+}
+
+.members-menu #grid:focus, .members-menu #list:focus {
+  /* border: 2px solid var(--headerNavFooterBackground); */
+  background-color: var(--headerNavFooterBackground);
+  color: var(--text2);
 }
 
 article p, article a {
-  color: var(--text1)
+  color: var(--text1);
 } 
 
 .grid {  
