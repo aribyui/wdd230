@@ -175,7 +175,7 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
-  filter: brightness(0.7);
+  filter: brightness(0.8);
   background-color: var(--background1);
 }
 
