@@ -637,11 +637,6 @@ div:nth-child(6) p {
 } 
 
 /* directory page start */
-/* .heading-page {
-  color: var(--text1);
-  margin: 1rem 0;
-} */
-
 .members-menu { 
   display: flex;
   align-items: center;
@@ -667,7 +662,6 @@ div:nth-child(6) p {
 }
 
 .members-menu #grid:focus, .members-menu #list:focus {
-  /* border: 2px solid var(--headerNavFooterBackground); */
   background-color: var(--headerNavFooterBackground);
   color: var(--text2);
 }

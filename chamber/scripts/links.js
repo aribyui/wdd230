@@ -5,9 +5,6 @@ const gridListButton = document.querySelector("#list");
 const article = document.querySelector("article");
 let data = null;
 
-gridButton.classList.add("borderButton");
-gridListButton.classList.add("borderButtonNoMargin");
-
 gridButton.addEventListener("click", () => {
   article.classList.add("grid");
   article.classList.remove("list");
