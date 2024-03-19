@@ -12,7 +12,8 @@
           "title": "Backstage logo"
         }
       ],
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "stars": "⭐⭐⭐"
     },
     {
       "name": "Charly",
@@ -26,7 +27,8 @@
           "title": "Charly logo"
         }
       ],
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "stars": "⭐⭐"
     },
     {
       "name": "Gama Music",
@@ -40,7 +42,8 @@
           "title": "Gama Music logo"
         }
       ],
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "stars": "⭐⭐"
     },
     {
       "name": "Innvictus",
@@ -54,7 +57,8 @@
           "title": "Innvictus logo"
         }
       ],
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "stars": "⭐⭐"
     },
     {
       "name": "Librerías Gandhi",
@@ -68,7 +72,8 @@
           "title": "Librerías Gandhi logo"
         }
       ],
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "stars": "⭐⭐⭐"
     },
     {
       "name": "Librerías Porrúa",
@@ -82,7 +87,8 @@
           "title": "Librerías Porrúa logo"
         }
       ],
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "stars": "⭐⭐⭐"
     },
     {
       "name": "PCEL",
@@ -96,7 +102,8 @@
           "title": "PCEL logo"
         }
       ],
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "stars": "⭐⭐⭐"
     },
     {
       "name": "Pirma",
@@ -110,7 +117,8 @@
           "title": "Pirma logo"
         }
       ],
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "stars": "⭐⭐"
     },
     {
       "name": "Salud Digna",
@@ -124,7 +132,8 @@
           "title": "Salud Digna logo"
         }
       ],
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "stars": "⭐⭐"
     },
     {
       "name": "Steren",
@@ -138,7 +147,8 @@
           "title": "Steren logo"
         }
       ],
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "stars": "⭐⭐⭐"
     },
     {
       "name": "Sushi Express",
@@ -152,7 +162,8 @@
           "title": "Sushi Express logo"
         }
       ],
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "stars": "⭐⭐"
     },
     {
       "name": "ST Invernadero",
@@ -166,7 +177,8 @@
           "title": "Soporte Técnico Invernadero logo"
         }
       ],
-      "membershipLevel": "Non Profit"
+      "membershipLevel": "Non Profit",
+      "stars": "🤝🏽"
     }
   ]
 }

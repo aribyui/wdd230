@@ -230,7 +230,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem
+  gap: 1rem;
 }
 
 .affiliated-members h2, .affiliated-members h3, .affiliated-members p {
@@ -241,34 +241,29 @@ body {
   margin-bottom: 1rem;
 }
 
-.affiliated-members div {
-  background-color: var(--background1);
-  border: 1px solid var(--headerNavFooterBackground);
-  aspect-ratio: 1/1;
-  width: 14rem;
-  margin: 0 auto 1rem auto;
-}
-
-.affiliated-members p {
-  line-height: 2rem;
-}
-
-.affiliated-members p > a {
-  text-decoration: none;
-}
-
-.affiliated-members p > a:hover {
-  text-decoration: underline;
-}
-
-.affiliated-members > section {
+.affiliated-members > section {  
   background-color: var(--background2);
-  /* border: 2px solid var(--ligthHrColor); */
   padding: 2rem 1rem;
   line-height: 2rem;
   box-shadow: var(--ligthHrColor) 0px 5px 8px;
 }
-/* end affiliated members*/
+
+.affiliated-members > section p:first-of-type {
+  font-weight: 600;
+}
+
+.affiliated-members > section > a {
+  color: var(--text1);  
+  text-decoration: none;
+}
+
+.affiliated-members > section a:visited {
+  color: var(--text1);
+}
+
+.affiliated-members > section a:hover {
+  text-decoration: underline;
+}
 
 /* events */
 .events {
