@@ -37,7 +37,7 @@ function displayMembers(members) {
 
     const h3 = document.createElement("h3");
     const img = document.createElement("img");
-    const mLevel = document.querySelector("p");
+    const mLevel = document.createElement("p");
     const address = document.createElement("p");
     const phone = document.createElement("p");    
     const website = document.createElement("a");
