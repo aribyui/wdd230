@@ -268,15 +268,40 @@ body {
 /* events */
 .events {
   background-color: var(--headerNavFooterBackground);
-  padding: 3em 1rem;
+  padding: 3em 0.5rem;
   text-align: center;
   color: var(--text2);
   line-height: 2rem;
 }
 
 .events h2::before {
-  content: '📅 '
+  content: '📅 ';
 }
+
+
+
+
+/* verificar el orden de esta regla */
+.events h2, .events hr, .events span, .events > div h3, .events > div p {
+  margin-bottom: 2rem;
+}
+
+.events hr {
+  border: 1px solid var(--accent2);
+}
+
+.events div > span {
+  font-size: 2.8rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 
 /* weather */
 .weather {  

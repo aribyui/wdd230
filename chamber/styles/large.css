@@ -47,7 +47,23 @@
     box-shadow: var(--ligthHrColor) 0px 5px 8px;
   }
   .events {
-    padding: 3rem 2rem;
+    padding: 3rem;
+  }
+  .events h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;    
+  }
+  .events hr {
+    grid-column: 1/4;
+    grid-row: 2/3;    
+  }
+  .events > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .events > div > div p {
+    margin-bottom: 0;
   }
   /* discover page */
   .discover-section {
