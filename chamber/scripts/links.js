@@ -9,7 +9,7 @@ const article = document.querySelector("article");
 let data = null;
 
 // Este bloque if es detectado automáticamente cuando la página "index.html" se encuentra activa
-if (indexPage.includes("index.html")) {
+if (indexPage.includes("chamber/index.html")) {
 
   async function getMembers() {
     const response = await fetch(linksURL);
