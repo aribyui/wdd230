@@ -14,7 +14,7 @@ async function getMembers() {
 function displayMembers(members) {
 
   // display all members
-  // console.log(members);
+  console.log(members);
 
   // display silver and gold members
   const silverAndGoldMembers = members.filter((member) => member.membershipLevel === "Gold" || member.membershipLevel === "Silver");
@@ -37,6 +37,7 @@ function displayMembers(members) {
 
     const h3 = document.createElement("h3");
     const img = document.createElement("img");
+    const mLevel = document.querySelector("p");
     const address = document.createElement("p");
     const phone = document.createElement("p");    
     const website = document.createElement("a");
@@ -46,7 +47,8 @@ function displayMembers(members) {
     img.setAttribute("alt", members[randomInt].logo[0].alt);
     img.setAttribute("width", "150");
     img.setAttribute("height", "150");
-    img.setAttribute("loading", "lazy");      
+    img.setAttribute("loading", "lazy");  
+    mLevel.textContent = members[randomInt].membershipLevel;    
     address.textContent = members[randomInt].address;
     phone.textContent = members[randomInt].phone;
     website.textContent = "Website";
@@ -54,6 +56,7 @@ function displayMembers(members) {
     
     section.appendChild(h3)
     section.appendChild(img)
+    section.appendChild(mLevel);
     section.appendChild(address);
     section.appendChild(phone);     
     section.appendChild(website)
