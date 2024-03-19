@@ -27,7 +27,7 @@ if (indexPage.includes("index.html")) {
 
     // display silver and gold members
     const silverAndGoldMembers = members.filter((member) => member.membershipLevel === "Gold" || member.membershipLevel === "Silver");
-    console.log(silverAndGoldMembers)
+    // console.log(silverAndGoldMembers)
 
     // display memberArrayLength length
     const memberArrayLength = silverAndGoldMembers.length; 
@@ -40,7 +40,7 @@ if (indexPage.includes("index.html")) {
 
     for (let i = 0; i < 3; i++) {
       let randomInt = Math.floor(Math.random() * memberArrayLength);
-      // console.log(randomInt);  
+      // console.log(randomInt);   
 
       const section = document.createElement("section");
 

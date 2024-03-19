@@ -230,7 +230,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem
+  gap: 1rem
 }
 
 .affiliated-members h2, .affiliated-members h3, .affiliated-members p {
@@ -238,7 +238,7 @@ body {
 }
 
 .affiliated-members h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .affiliated-members div {
@@ -259,6 +259,14 @@ body {
 
 .affiliated-members p > a:hover {
   text-decoration: underline;
+}
+
+.affiliated-members > section {
+  background-color: var(--background2);
+  /* border: 2px solid var(--ligthHrColor); */
+  padding: 2rem 1rem;
+  line-height: 2rem;
+  box-shadow: var(--ligthHrColor) 0px 5px 8px;
 }
 /* end affiliated members*/
 

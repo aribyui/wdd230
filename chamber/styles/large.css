@@ -40,6 +40,11 @@
     grid-column: 3/4;
     grid-row: 2/3;
   }
+  .affiliated-members > section:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+    box-shadow: var(--ligthHrColor) 0px 5px 8px;
+  }
   .events {
     padding: 2rem 3rem;
     display: flex;   
