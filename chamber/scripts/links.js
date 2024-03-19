@@ -76,7 +76,7 @@ if (indexPage.includes("chamber/")) {
 }
 
 // Este bloque if es detectado automáticamente cuando la página "join.html" se encuentra activa
-if (directoryPage.includes("directory.html")) {
+if (directoryPage.includes("chamber/directory.html")) {
   gridButton.addEventListener("click", () => {
     article.classList.add("grid");
     article.classList.remove("list");
