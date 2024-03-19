@@ -270,42 +270,13 @@ body {
   background-color: var(--headerNavFooterBackground);
   padding: 3em 1rem;
   text-align: center;
-}
-
-.events h2, .events p {
   color: var(--text2);
-  margin-bottom: 2rem;
-}
-
-.events p {
   line-height: 2rem;
 }
 
 .events h2::before {
   content: '📅 '
 }
-
-.events button {
-  padding: 0.7rem 2rem;
-  border: 0;
-  background-color: var(--accent2);
-  color: var(--text1);
-  margin-bottom: 2rem; 
-}
-
-.events button:hover {
-  background-color: var(--accent1);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.events div + div {
-  background-color: var(--background1);
-  border: 0;
-  aspect-ratio: 1/1;  
-  width: auto;
-}
-/* end events */
 
 /* weather */
 .weather {  

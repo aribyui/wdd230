@@ -47,22 +47,7 @@
     box-shadow: var(--ligthHrColor) 0px 5px 8px;
   }
   .events {
-    padding: 2rem 3rem;
-    display: flex;   
-    justify-content: space-between;
-    align-items: center;
-  }
-  .events div:nth-child(1) {
-    margin-right: 2rem;
-  }
-  .events button {
-    margin-bottom: 0;    
-  }
-  .events div + div {  /* verificar luego */
-    width: 300%;
-  }
-  .events div + div {     
-    margin: 2rem auto;
+    padding: 3rem 2rem;
   }
   /* discover page */
   .discover-section {

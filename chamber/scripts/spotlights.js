@@ -38,7 +38,7 @@ function displayMembers(members) {
     const h3 = document.createElement("h3");
     const img = document.createElement("img");
     const mLevel = document.createElement("p");
-    const stars = document.createElement("span");
+    // const stars = document.createElement("span");
     const address = document.createElement("p");
     const phone = document.createElement("p");    
     const website = document.createElement("a");
@@ -50,7 +50,7 @@ function displayMembers(members) {
     img.setAttribute("height", "150");
     img.setAttribute("loading", "lazy");  
     mLevel.textContent = members[randomInt].membershipLevel;   
-    stars.textContent = members[randomInt].stars; 
+    // stars.textContent = members[randomInt].stars; 
     address.textContent = members[randomInt].address;
     phone.textContent = members[randomInt].phone;
     website.textContent = "Website";
@@ -60,7 +60,7 @@ function displayMembers(members) {
     section.appendChild(h3)
     section.appendChild(img)
     section.appendChild(mLevel);
-    section.appendChild(stars);
+    // section.appendChild(stars);
     section.appendChild(address);
     section.appendChild(phone);     
     section.appendChild(website)
