@@ -324,8 +324,6 @@ body {
   border: 2px solid var(--headerNavFooterBackground);
 }
 
-/* end weather */
-
 /* discoger page */
 .discover-section {
   display: grid;
