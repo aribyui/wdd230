@@ -40,8 +40,8 @@ if (indexPage.includes("index.html")) {
 
     for (let i = 0; i < 3; i++) {
       let randomInt = Math.floor(Math.random() * memberArrayLength);
-      // console.log(randomInt);  // salida: se obtiene un número random entre el 0 y 11  
-     
+      // console.log(randomInt);  
+
       const section = document.createElement("section");
 
       const h3 = document.createElement("h3");
@@ -69,8 +69,6 @@ if (indexPage.includes("index.html")) {
 
       affiliatedMembers.appendChild(section);
     }
-
-
   }
 
   getMembers();

@@ -314,7 +314,7 @@ body {
 
 .weather > div:nth-child(1), .weather > div:nth-child(2) {
   background-color: var(--background2);
-  padding: 2rem;
+  padding: 3rem 1rem;
   /* border: 2px solid var(--headerNavFooterBackground) */
 }
 

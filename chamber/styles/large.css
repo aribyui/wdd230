@@ -24,7 +24,6 @@
     margin-left: 1rem;
   }
   .affiliated-members {
-    padding: 2rem 3rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .affiliated-members h2 {
