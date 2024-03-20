@@ -249,7 +249,7 @@ body {
   background-color: var(--background2);
   padding: 2rem 1rem;
   line-height: 2rem;
-  /* box-shadow: var(--ligthHrColor) 0px 5px 8px; */
+  box-shadow: var(--ligthHrColor) 0px 5px 8px;
 }
 
 .affiliated-members > section p:first-of-type {
