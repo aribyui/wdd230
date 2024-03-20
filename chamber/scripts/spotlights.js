@@ -46,8 +46,8 @@ function displayMembers(members) {
     h3.textContent = members[randomInt].name;
     img.setAttribute("src", members[randomInt].logo[0].url);
     img.setAttribute("alt", members[randomInt].logo[0].alt);
-    img.setAttribute("width", "150");
-    img.setAttribute("height", "150");
+    img.setAttribute("width", "250");
+    img.setAttribute("height", "250");
     img.setAttribute("loading", "lazy");  
     mLevel.textContent = members[randomInt].membershipLevel;   
     // stars.textContent = members[randomInt].stars; 
