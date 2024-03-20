@@ -25,7 +25,7 @@ function displayMembers(members) {
   // console.log(memberArrayLength) // output: 11
 
   const h2 = document.createElement("h2");
-  h2.textContent = "Affiliated Members";
+  h2.textContent = "Affiliated Members 🤝🏼";
 
   affiliatedMembers.appendChild(h2)
 
@@ -38,7 +38,6 @@ function displayMembers(members) {
     const h3 = document.createElement("h3");
     const img = document.createElement("img");
     const mLevel = document.createElement("p");
-    // const stars = document.createElement("span");
     const address = document.createElement("p");
     const phone = document.createElement("p");    
     const website = document.createElement("a");
@@ -46,11 +45,10 @@ function displayMembers(members) {
     h3.textContent = members[randomInt].name;
     img.setAttribute("src", members[randomInt].logo[0].url);
     img.setAttribute("alt", members[randomInt].logo[0].alt);
-    img.setAttribute("width", "250");
-    img.setAttribute("height", "250");
+    img.setAttribute("width", "200");
+    img.setAttribute("height", "200");
     img.setAttribute("loading", "lazy");  
-    mLevel.textContent = members[randomInt].membershipLevel;   
-    // stars.textContent = members[randomInt].stars; 
+    mLevel.textContent = members[randomInt].membershipLevel;  
     address.textContent = members[randomInt].address;
     phone.textContent = members[randomInt].phone;
     website.textContent = "Website";
@@ -60,7 +58,6 @@ function displayMembers(members) {
     section.appendChild(h3)
     section.appendChild(img)
     section.appendChild(mLevel);
-    // section.appendChild(stars);
     section.appendChild(address);
     section.appendChild(phone);     
     section.appendChild(website)
