@@ -1,7 +1,4 @@
 @media screen and (min-width: 65em) {
-  header {
-    padding: 1rem 3.1rem;
-  }
   #mode {
     text-align: right;
     margin-right: 2.4rem;
