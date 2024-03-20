@@ -36,7 +36,7 @@ function displayMembers(members) {
     const section = document.createElement("section");
 
     const h3 = document.createElement("h3");
-    // const img = document.createElement("img");
+    const img = document.createElement("img");
     const mLevel = document.createElement("p");
     // const stars = document.createElement("span");
     const address = document.createElement("p");
@@ -44,11 +44,11 @@ function displayMembers(members) {
     const website = document.createElement("a");
 
     h3.textContent = members[randomInt].name;
-    // img.setAttribute("src", members[randomInt].logo[0].url);
-    // img.setAttribute("alt", members[randomInt].logo[0].alt);
-    // img.setAttribute("width", "150");
-    // img.setAttribute("height", "150");
-    // img.setAttribute("loading", "lazy");  
+    img.setAttribute("src", members[randomInt].logo[0].url);
+    img.setAttribute("alt", members[randomInt].logo[0].alt);
+    img.setAttribute("width", "150");
+    img.setAttribute("height", "150");
+    img.setAttribute("loading", "lazy");  
     mLevel.textContent = members[randomInt].membershipLevel;   
     // stars.textContent = members[randomInt].stars; 
     address.textContent = members[randomInt].address;
@@ -58,7 +58,7 @@ function displayMembers(members) {
     website.setAttribute("target", "_blank");
     
     section.appendChild(h3)
-    // section.appendChild(img)
+    section.appendChild(img)
     section.appendChild(mLevel);
     // section.appendChild(stars);
     section.appendChild(address);
