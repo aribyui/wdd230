@@ -272,7 +272,7 @@ body {
 /* events */
 .events {
   background-color: var(--background1);
-  border: 2px solid var(--ligthHrColor);
+  border: 2px solid var(--headerNavFooterBackground);
   padding: 2rem 0.5rem; 
   text-align: center;
   color: var(--text1);
