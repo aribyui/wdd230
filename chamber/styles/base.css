@@ -296,17 +296,18 @@ body {
   object-fit: cover;
   display: block;   
   border: 2px solid var(--accent2);
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .events div > div:nth-child(2) h2 {
   color: var(--accent2);
 }
+
 .events div > div:nth-child(2) p {
   color: var(--text2);
 }
 
-.events h2, .events p:first-of-type, .events p:last-of-type  {
+.events h2, .events > div > div picture img, .events p:first-of-type, .events p:last-of-type  {
   margin-bottom: 1rem;
 }
 
@@ -326,7 +327,7 @@ body {
 
 .events a:visited {
   color: var(--text1);
-}
+} 
 
 /* weather */
 .weather {    

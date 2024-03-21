@@ -49,9 +49,9 @@
   .events h2 + div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem
-  }  
-
+    gap: 3rem;
+    padding: 3rem;
+  }
   .events h2 + div div:nth-child(2) {
     /* background-color: red; */
     display: flex;
@@ -59,16 +59,15 @@
     align-items: center;
     padding: 2rem;
   }
-
-  .events a {
-    width: fit-content;
-    margin: 0 auto;
+  .events > div > div picture img {
+    margin-bottom: 0;
   }
-
-  .events h2, .events p:first-of-type, .events p:last-of-type  {
+  .events h2 {
+    margin-bottom: 3rem;
+  }
+  .events p:first-of-type, .events p:last-of-type  {
     margin-bottom: 2rem;
-  }
-  
+  }  
   .events p:first-of-type {
     margin-top: 2rem;
   }
