@@ -31,6 +31,25 @@
     display: block;
     margin-left: 1rem;
   }
+  .hero-label, 
+  .hero-label a, 
+  .navigation a, 
+  .affiliated-members section, 
+  .events > div > div picture img, 
+  .events a, aside div:nth-child(2) figure img, 
+  aside > div,
+  aside div:nth-child(3) figure img,
+  aside + div,
+  aside + div > div figure > picture > img,
+  #grid,
+  #list,
+  .grid section,
+  .membership-container div:nth-child(1) > div,
+  .membership-container div:nth-child(2) form fieldset,
+  .membership-container div:nth-child(2) form input,  
+  .membership-container div:nth-child(2) form fieldset:nth-child(3) textarea {
+    border-radius: 4px;
+  }
   .affiliated-members {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;    

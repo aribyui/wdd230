@@ -569,7 +569,7 @@ div:nth-child(6) p {
   background-color: #023E8A;
   color: var(--text2);
   padding: 0.33rem 0.5rem;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 .membership-container div:nth-child(2) form fieldset:nth-child(3) textarea {
