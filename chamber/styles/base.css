@@ -287,6 +287,7 @@ body {
 .events h2 + div {
   background-color: var(--headerNavFooterBackground);
   padding: 2rem 1rem;
+  box-shadow: var(--ligthHrColor) 0px 5px 8px;
 }
 
 .events > div > div picture img {  
