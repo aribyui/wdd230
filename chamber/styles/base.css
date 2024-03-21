@@ -280,9 +280,9 @@ body {
   color: var(--text1);
 }
 
-.events > h2::after {
+/* .events > h2::after {
   content: " 📆"; 
-}
+} */
 
 .events h2 + div {
   background-color: var(--headerNavFooterBackground);

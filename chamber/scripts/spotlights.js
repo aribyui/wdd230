@@ -25,7 +25,7 @@ function displayMembers(members) {
   // console.log(memberArrayLength) // output: 11
 
   const h2 = document.createElement("h2");
-  h2.textContent = "Affiliated Members 🤝🏼";
+  h2.textContent = "Affiliated Members";
 
   affiliatedMembers.appendChild(h2)
 
