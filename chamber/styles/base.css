@@ -325,6 +325,10 @@ body {
   padding: 0.7rem 2rem;
 }
 
+.events a:hover {
+  background-color: var(--accent1);
+}
+
 .events a:visited {
   color: var(--text1);
 } 

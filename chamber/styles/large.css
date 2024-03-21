@@ -1,4 +1,7 @@
 @media screen and (min-width: 65em) {
+  header {
+    padding: 1rem 3rem;
+  }
   #mode {
     text-align: right;
     margin-right: 2.4rem;
@@ -7,8 +10,12 @@
     display: none;
   }
   .hero-label {
-    top: 180px;
-    left: 48px;   
+    top: 145px; 
+    left: 48px; 
+    padding: 2rem;  
+  }
+  .hero-label h2, .hero-label p {
+    margin-bottom: 1rem;
   }
   .navigation {
     position: inherit;
