@@ -1,4 +1,8 @@
 @media screen and (min-width: 65em) {
+  .banner p {
+    margin-right: 0;
+    margin-left: 2.5rem;
+  }
   header {
     padding: 1rem 3rem;
   }
