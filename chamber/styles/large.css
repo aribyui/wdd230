@@ -31,7 +31,7 @@
     display: block;
     margin-left: 1rem;
   }
-  .hero-label, 
+  /* .hero-label, 
   .hero-label a, 
   .navigation a, 
   .affiliated-members section, 
@@ -49,7 +49,7 @@
   .membership-container div:nth-child(2) form input,  
   .membership-container div:nth-child(2) form fieldset:nth-child(3) textarea {
     border-radius: 4px;
-  }
+  } */
   .affiliated-members {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;    
