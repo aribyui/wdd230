@@ -30,7 +30,12 @@
   <header>
 
     <div class="header-logo">
-      <a href="index.html"><img src="images/logo.webp" alt="Monterrey Chamber of Commerce logo" loading="lazy"></a>
+      <picture>
+        <source media="(max-width: 100px)" srcset="images/logo-small.webp">
+        <source media="(max-width: 150px)" srcset="images/logo-medium.webp">
+        <a href="index.html"><img src="images/logo-large.webp" width="200" height="200"
+            alt="Monterrey Chamber of Commerce logo"></a>
+      </picture>
       <h1>Monterrey<br>Chamber of Commerce</h1>
     </div>
 
@@ -120,20 +125,27 @@
             <label>First name* <input type="text" id="fname" name="fname" required></label>
             <label>Last name* <input type="text" id="lname" name="lname" required></label>
             <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z- ]{7,}" required></label>
-            <label>Email address* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label>Email address* <input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                required></label>
             <label>Mobile phone number* <input type="tel" id="mobile" name="mobile" required></label>
-            <label>Business/organization's name* <input type="text" id="bsorganization" name="bsorganization" required></label>
+            <label>Business/organization's name* <input type="text" id="bsorganization" name="bsorganization"
+                required></label>
           </fieldset>
           <fieldset>
             <h2>Membership Level</h2>
-            <label><input type="radio" name="membership" value="npmembership">Non profit membership - <span>$50</span></label>
-            <label><input type="radio" name="membership" value="bronzemembership">Bronze membership - <span>$100</span></label>
-            <label><input type="radio" name="membership" value="silvermembership">Silver membership - <span>$250</span></label>
-            <label><input type="radio" name="membership" value="goldmembership">Gold membership - <span>$500</span></label>
+            <label><input type="radio" name="membership" value="npmembership">Non profit membership -
+              <span>$50</span></label>
+            <label><input type="radio" name="membership" value="bronzemembership">Bronze membership -
+              <span>$100</span></label>
+            <label><input type="radio" name="membership" value="silvermembership">Silver membership -
+              <span>$250</span></label>
+            <label><input type="radio" name="membership" value="goldmembership">Gold membership -
+              <span>$500</span></label>
           </fieldset>
           <fieldset>
             <h2>Business/organization description</h2>
-            <label>Describe your business<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+            <label>Describe your business<textarea name="description" id="description" cols="30"
+                rows="10"></textarea></label>
           </fieldset>
           <input type="hidden" id="date-time" name="datetime">
           <input type="submit" value="Become a Member" class="becomeAMemberButton">
@@ -146,7 +158,12 @@
   <footer>
     <!-- logo -->
     <div class="footer-logo">
-      <a href="index.html"><img src="images/logo.webp" alt="Monterrey Chamber of Commerce logo" loading="lazy"></a>
+      <picture>
+        <source media="(max-width: 100px)" srcset="images/logo-small.webp">
+        <source media="(max-width: 150px)" srcset="images/logo-medium.webp">
+        <a href="index.html"><img src="images/logo-large.webp" width="200" height="200"
+            alt="Monterrey Chamber of Commerce logo" loading="lazy"></a>
+      </picture>
       <h2>Monterrey<br>Chamber of Commerce</h2>
     </div>
     <!-- address -->

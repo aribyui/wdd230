@@ -31,7 +31,12 @@
   <header>
 
     <div class=" header-logo">
-      <a href="index.html"><img src="images/logo.webp" alt="Monterrey Chamber of Commerce logo" loading="lazy"></a>
+      <picture>
+        <source media="(max-width: 100px)" srcset="images/logo-small.webp">
+        <source media="(max-width: 150px)" srcset="images/logo-medium.webp">
+        <a href="index.html"><img src="images/logo-large.webp" width="200" height="200"
+            alt="Monterrey Chamber of Commerce logo"></a>
+      </picture>
       <h1>Monterrey<br>Chamber of Commerce</h1>
     </div>
 
@@ -54,9 +59,8 @@
     <div class="hero">
       <picture>
         <source media="(max-width: 500px)" srcset="images/clubcampestre-small.webp">
-        <source media="(max-width: 1000px)" srcset="images/clubcampestre-medium.webp">
-        <img src="images/clubcampestre-large.webp" alt="Club Campestre de Monterrey A.C." width="1500" height="844"
-          loading="lazy">
+        <source media="(max-width: 750px)" srcset="images/clubcampestre-medium.webp">
+        <img src="images/clubcampestre-large.webp" alt="Club Campestre de Monterrey A.C." width="1500" height="750">
       </picture>
       <div class="hero-label">
         <h2 class="introductory-message">Enjoy the benefits of being an affiliate!</h2>
@@ -79,10 +83,10 @@
         <div>
           <picture>
             <source media="(max-width: 250px)" srcset="images/conference-small.webp">
-            <source media="(max-width: 500px)" srcset="images/conference-medium.webp">
+            <source media="(max-width: 400px)" srcset="images/conference-medium.webp">
             <img src="images/conference-large.webp"
-              alt="Attendees at an entrepreneur development event, watching the speaker on stage." width="1000"
-              height="1000" loading="lazy">
+              alt="Attendees at an entrepreneur development event, watching the speaker on stage." width="600"
+              height="600" loading="lazy">
           </picture>
         </div>
         <!-- 2 -->
@@ -128,7 +132,12 @@
   <footer>
     <!-- logo -->
     <div class="footer-logo">
-      <a href="index.html"><img src="images/logo.webp" alt="Monterrey Chamber of Commerce logo" loading="lazy"></a>
+      <picture>
+        <source media="(max-width: 100px)" srcset="images/logo-small.webp">
+        <source media="(max-width: 150px)" srcset="images/logo-medium.webp">
+        <a href="index.html"><img src="images/logo-large.webp" width="200" height="200"
+            alt="Monterrey Chamber of Commerce logo" loading="lazy"></a>
+      </picture>
       <h2>Monterrey<br>Chamber of Commerce</h2>
     </div>
     <!-- address -->

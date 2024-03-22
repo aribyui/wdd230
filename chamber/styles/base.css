@@ -72,6 +72,7 @@ header {
   padding: 1rem;
 }
 
+
 .header-logo {
   display: flex;
   align-items: center;
@@ -825,73 +826,3 @@ footer hr {
   background-color: var(--secondaryDark);
   
 }
-
-/* .dark-mode-backgroundPrimary {
-  background-color: var(--mainDark);
-  transition: 0.3s; 
-}
-
-.dark-mode-backgroundSecondary {
-  background-color: var(--secondaryDark);
-  transition: 0.3s; 
-}
-
-.dark-mode-backgroundThird {
-  background-color: var(--thirdDark);
-}
-
-#dark-mode-text-1 {
-  color: var(--mainDark);
-}
-
-#dark-mode-text-2 {
-  color: var(--text2);
-}
-
-#dark-mode-hero-label {
-  background-color: #888888c2;
-}
-
-#dark-mode-hero-button {
-  background-color: var(--mainDark);
-  color: var(--background2);
-  transition: 0.3s; 
-}
-
-#dark-mode-hero-button:hover {
-  background-color: var(--thirdDark);
-}
-
-#dark-mode-event-button {
-  background-color: var(--thirdDark);
-  color: var(--text2);
-}
-
-#dark-mode-event-button:hover {
-  background-color: var(--fourthDark);
-}
-
-.dark-mode-backgroundPrimary .navigation a:hover {
-  background-color: var(--thirdDark);
-  color: var(--text2);
-}
-
-.dark-mode-backgroundPrimary .navigation a:active {
-  background-color: var(--fourthDark);
-  color: var(--text2);
-}
-
-.dark-mode-backgroundPrimary #active {
-  background-color: var(--thirdDark);
-  color: var(--text2);
-  transition: 0.3s; 
-}
-
-.dark-mode-hr {
-  border: 1px solid var(--thirdDark)
-}  */
-
-/* light mode elements */
-/* header, h2, h3, p, body, .navigation, main, .events, hr, footer {
-  transition: 0.3s;
-}  */
