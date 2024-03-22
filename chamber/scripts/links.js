@@ -19,7 +19,7 @@ async function getMembers() {
   const response = await fetch(linksURL);
   if (response.ok) {
     data = await response.json();
-    console.table(data.members); // se imprime en consola para depurar
+    // console.table(data.members); // se imprime en consola para depurar
     displayMembers(data.members);
   }
 }
