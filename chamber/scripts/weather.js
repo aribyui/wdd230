@@ -38,6 +38,8 @@ function displayCurrentWeatherResults(data) {
   
   icon.setAttribute("src", iconURL);
   icon.setAttribute("alt", data.weather[0].description); // dar estilo de color azul al atributo alt en CSS <---
+  icon.setAttribute("width", "200");
+  icon.setAttribute("height", "200");
   
   let getFirstLetter = "";
   let subString = "";

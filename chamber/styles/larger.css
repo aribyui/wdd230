@@ -76,31 +76,25 @@
   }
  .events {
     padding: 3rem 0 0;
-  }
-  .events h2 + div {
+  } 
+  .sub-event-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     padding: 3rem;
   }
-  .events h2 + div div:nth-child(2) {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .sub-event-container > div {   
     padding: 2rem;
   }
-  .events > div > div picture img {
-    margin-bottom: 0;
+  .sub-event-container picture {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
-  .events h2 {
-    margin-bottom: 3rem;
+  .sub-event-container picture img {
+    margin-bottom: 0rem;
   }
-  .events p:first-of-type, .events p:last-of-type  {
-    margin-bottom: 2rem;
-  }  
-  .events p:first-of-type {
-    margin-top: 2rem;
+  .weather > div:nth-child(1) {
+    padding: 3rem 0.5rem
   }
   /* discover page */
   .discover-section {

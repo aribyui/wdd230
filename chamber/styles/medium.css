@@ -42,7 +42,6 @@
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 3rem;
   }
   .weather > div:nth-child(1) h2 {
     grid-column: span 3;
