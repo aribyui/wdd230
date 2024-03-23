@@ -93,7 +93,7 @@
   .sub-event-container picture img {
     margin-bottom: 0rem;
   }
-  .weather > div:nth-child(1) {
+  .weather div:nth-child(1) {
     padding: 3rem 0.5rem
   }
   /* discover page */

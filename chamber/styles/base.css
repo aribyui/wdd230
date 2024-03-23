@@ -341,7 +341,7 @@ body {
   gap: 1rem;
 }
 
-.weather > div:nth-child(1), .weather > div:nth-child(2) {
+.weather div:nth-child(1) {
   padding: 2rem 0.5rem;
 }
 
@@ -362,7 +362,7 @@ body {
   justify-content: space-around; 
 }
 
-.weather > div:nth-child(2) h2 {
+.weather div:nth-child(2) h2 {
   line-height: 2rem;
 }
 
@@ -378,14 +378,14 @@ body {
 }
 
 /* discoger page - aside start */
-aside > div {
+aside div {
   background-color: var(--headerNavFooterBackground);
   color: var(--text2);
   padding: 1rem;
   margin-bottom: 0.5rem;
 }
 
-aside div > h2, aside div:nth-child(1) h3, aside div:nth-child(2) h3, aside div:nth-child(3) > h3 {
+aside div h2, aside div:nth-child(1) h3, aside div:nth-child(2) h3, aside div:nth-child(3) h3 {
   margin-bottom: 1rem;
 } 
 
@@ -394,7 +394,7 @@ aside hr {
   border: 1px solid var(--accent2);
 }
 
-aside div:nth-child(1) > h2::before {
+aside div:nth-child(1) h2::before {
   content: "📊 "
 }
 
@@ -816,6 +816,5 @@ footer hr {
 }
 
 .dark-mode-secondary {
-  background-color: var(--secondaryDark);
-  
+  background-color: var(--secondaryDark);  
 }

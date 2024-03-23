@@ -40,8 +40,8 @@ function displayMembers(members) {
     const mLevel = document.createElement("p");
     const address = document.createElement("p");
     const phone = document.createElement("p");    
-    const website = document.createElement("a");
-
+    const website = document.createElement("a");  
+   
     h3.textContent = members[randomInt].name;
     img.setAttribute("src", members[randomInt].logo[0].url);
     img.setAttribute("alt", members[randomInt].logo[0].alt);
