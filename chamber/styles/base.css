@@ -309,6 +309,11 @@ body {
 
 .sub-event-container span {
   font-size: 2.5rem;
+  /* 
+  Aunque este elemento no tiene texto, me marca un error en la auditoría de CSS overview, 
+  por lo que tuve que agregar esta propiedad aunque no existe texto, sino un emoji. 
+  */
+  color: white;
 }
 
 .sub-event-container a {
