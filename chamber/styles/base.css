@@ -672,7 +672,7 @@ div:nth-child(6) p {
   color: var(--text2);
 }
 
-article p, article a {
+div.grid p, div.grid a, div.list p, div.list a {
   color: var(--text1);
 } 
 
