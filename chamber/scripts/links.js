@@ -2,17 +2,17 @@ const baseURL = "https://aribyui.github.io/wdd230/";
 const linksURL = "https://aribyui.github.io/wdd230/chamber/data/members.json";
 const gridButton = document.querySelector("#grid");
 const gridListButton = document.querySelector("#list");
-const article = document.querySelector("article");
+const div = document.querySelector("div.grid");
 let data = null;
 
 gridButton.addEventListener("click", () => {
-  article.classList.add("grid");
-  article.classList.remove("list");
+  div.classList.add("grid");
+  div.classList.remove("list");
 });
 
 gridListButton.addEventListener("click", () => {
-  article.classList.add("list");
-  article.classList.remove("grid");
+  div.classList.add("list");
+  div.classList.remove("grid");
 });
 
 async function getMembers() {
@@ -40,7 +40,7 @@ const displayMembers = (members) => {
       <p>${member.phone}</p>
       <a href=" ${member.website}" target="_blank">Website</a>`;
 
-    article.appendChild(section);
+    div.appendChild(section);
   });
 }
 
