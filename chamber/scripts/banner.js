@@ -11,7 +11,7 @@ banner.appendChild(bannerMessage);
 banner.appendChild(deleteButton);
 
 const currentDay = new Date().getDay();
-console.log(currentDay);
+// console.log(currentDay);
 
 currentDay === 1 || currentDay === 2 || currentDay === 3 ? banner.classList.toggle("showBanner") : banner.classList.toggle("closeBanner");
 

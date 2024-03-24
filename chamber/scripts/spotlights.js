@@ -6,7 +6,7 @@ async function getMembers() {
   const response = await fetch(linksURL);
   if (response.ok) {
     data = await response.json();
-    console.log(data.members); // se imprime en consola para depurar
+    // console.log(data.members); // se imprime en consola para depurar
     displayMembers(data.members);
   }
 }
@@ -14,7 +14,7 @@ async function getMembers() {
 function displayMembers(members) {
 
   // display all members
-  console.log(members);
+  // console.log(members);
 
   // display silver and gold members
   const silverAndGoldMembers = members.filter((member) => member.membershipLevel === "Gold" || member.membershipLevel === "Silver");

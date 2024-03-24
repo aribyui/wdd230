@@ -68,44 +68,19 @@ function displayCurrentWeatherResults(data) {
 
 getCurrentWeather();
 
-async function getWeatherForecast() {
+// async function getWeatherForecast() {
   
-  const response = await fetch(forecastWeatherURL);
-  if (response.ok) {
-    const data = await response.json();
-    // console.log(data.list[0]);
-    // console.log(data.list[1]);
-    // console.log(data.list[2]);
-    displayWeatherForcast(data.list);
-  }
-}
+//   const response = await fetch(forecastWeatherURL);
+//   if (response.ok) {
+//     const data = await response.json();
+//     // console.log(data.list)
+//     displayWeatherForcast(data.list);
+//   }
+// }
 
-console.log(" ");
+// function displayWeatherForcast(data) {
 
-function displayWeatherForcast(data) {
-
-  // console.log(data);
-
-  // const date = new Date(); 
-  // const today = date.getDay(); 
-  // // console.log(today); // output: 4, corresponde al día jueves (el valor cambia de acuerdo con el día de la semana)
-
-  // let count = 0;
-
-  // for (let i = 0; i < data.length; i++) {
-
-  //   const timestamp = data[i].dt_txt;
-  //   console.log(timestamp);
-
-  //   // const splitDate = timestamp.split(" ");
-  //   // console.log(splitDate);
-    
-  
-
-   
-    
-  // }
-
-}
+ 
+// }
 
 getWeatherForecast();
