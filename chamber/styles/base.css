@@ -224,7 +224,6 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-/* end hero */
 
 /* affiliated members*/
 .affiliated-members {  
@@ -686,7 +685,7 @@ article p, article a {
 .grid {  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
   padding: 0.5rem;
 }
 
