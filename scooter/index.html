@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Lizandro Arizpe">
+  <!-- open graph meta tags -->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <!-- normalize -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Patrick+Hand&family=Protest+Riot&display=swap"
+    rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <title>Scoots | Home</title>
+</head>
+
+<body>
+  <header>
+    <!-- logo -->
+    <div class="header-logo">
+      <a href="index.html"><img src="images/logo.webp" alt="Scoots logo" width="200" height="200"></a>
+      <h1>Scoots&#169</h1>
+    </div>
+    <!-- menu -->
+    <div>
+      <button id="hamburger-button" title="Open menu"></button>
+      <nav class="navigation">
+        <div>
+          <p>Menu</p>
+          <span id="menu-close-button" title="Close menu">X</span>
+        </div>
+        <ul>
+          <li><a id="active" href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+
+    <!-- hero -->
+    <div class="hero">
+      <!-- hero image -->
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/hero-small-2.webp">
+        <source media="(max-width: 1000px)" srcset="images/hero-medium-2.webp">
+        <img src="images/hero-large-2.webp" alt="" width="1500" height="844">
+      </picture>
+      <div class="hero-label">
+        <h2>Explore new horizons, on wheels!</h2>
+        <p>Your perfect getaway starts here</p>
+        <a href="reservations.html">Book Now</a>
+      </div>
+      <!-- <div class="waves">
+        <img src="images/wave1.svg" alt="section separator">
+      </div> -->
+    </div>
+
+    <!-- types of rentals -->
+    <div class="rentals">
+      <h2>Types of Rentals</h2>
+
+      <div>
+
+        <section>
+          <!-- <picture>
+            <source media="(max-width: 400px)" srcset="images/-small.webp">
+            <source media="(max-width:)" srcset="images/-medium.webp">
+            <img src="images/-large.webp" alt="" width="" height="" loading="lazy">
+          </picture> -->
+          <h3>Honda Motors Scooters</h3>
+          <ul class="rentals-list">
+            <li>Honda Metropolitan (49cc) - 1 person</li>
+            <li>Honda Dio (110cc) - 2 person</li>
+            <li>Honda PCX150 (149cc) - 2 person</li>
+          </ul>
+        </section>
+
+        <section>
+          <!-- <picture>
+            <source media="(max-width:)" srcset="images/-small.webp">
+            <source media="(max-width:)" srcset="images/-medium.webp">
+            <img src="images/-large.webp" alt="" width="" height="" loading="lazy">
+          </picture> -->
+          <h3>Side-by-Side ATVs</h3>
+          <ul class="rentals-list">
+            <li>Honda Pioneer 1000 - 4 person</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <!-- <picture>
+            <source media="(max-width:)" srcset="images/-small.webp">
+            <source media="(max-width:)" srcset="images/-medium.webp">
+            <img src="images/-large.webp" alt="" width="" height="" loading="lazy">
+          </picture> -->
+          <h3>Jeeps</h3>
+          <ul class="rentals-list">
+            <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+            <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- <img src="images/wave2.svg" alt="section separator"> -->
+
+    </div>
+
+    <!-- forecast -->
+    <div class="forecast">
+
+      <!-- today forecast -->
+      <div class="today-forecast">
+        <h2>Today Forecast</h2>
+        <div id="today-weather-icon"></div>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+      </div>
+
+      <!-- next day forecast -->
+      <div class="next-day-forecast">
+        <h3>Tomorrow</h3>
+        <div id="next-day-weather-icon"></div>
+        <p id="next-day-temperature"></p>
+        <p id="next-day-description"></p>
+        <p id="next-day-humidity"></p>
+      </div>
+
+    </div>
+
+  </main>
+  <footer>
+
+    <div class="footer-main">
+      <!-- logo -->
+      <div class="footer-logo">
+        <h2>Scoots&#169</h2>
+        <img src="images/logo.webp" alt="" width="200" height="200" loading="lazy">
+      </div>
+      <!-- addresses -->
+      <div class="footer-addresses">
+        <div>
+          <h3>Downtown Cozumel</h3>
+          <address>
+            <p>
+              Main Street, Downtown, Cozumel<br>
+              +52 987 123 4567<br>
+              centro@scoots.com
+            </p>
+          </address>
+        </div>
+        <div>
+          <h3>Terminal Puerta Maya</h3>
+          <address>
+            <p>
+              Costera Sur Avenue, Terminal Puerta Maya, Cozumel<br>
+              +52 987 987 6543<br>
+              puertamaya@scoots.com
+            </p>
+          </address>
+        </div>
+      </div>
+
+    </div>
+    <!-- credits -->
+    <div class="footer-credits">
+      <p id="current-date"></p>
+    </div>
+
+  </footer>
+  <script src="scripts/hamburgerbutton.js"></script>
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/current-date.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+@media screen and (min-width: 65em) {
+  header {
+    justify-content: space-around;
+  }
+  #hamburger-button {
+    display: none;
+  }
+  #menu-close-button {
+    display: none;
+  }
+  .navigation div {
+    display: none;
+  }
+  .navigation {
+    background-color: transparent;
+    position: inherit;       
+  }
+  .navigation a {
+    margin-right: 1rem;
+  }
+  .navigation ul {
+    display: flex;
+  }
+  .navigation p {
+    display: none;
+  }
+  .hero {
+    height: 70vh;
+  }
+  .hero-label {
+    top: 40%;
+  }
+  .hero-label h2, .hero-label p {
+    margin-bottom: 2rem;
+  }
+}
