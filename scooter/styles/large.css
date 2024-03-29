@@ -41,6 +41,9 @@
     margin: 0;
   }  
   /* rentals */
+  .rentals {
+    padding-top: 0;
+  }
   .rentals div {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;    
