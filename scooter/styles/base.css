@@ -226,10 +226,11 @@ body.hidden {
 /* rentals */
 
 .rentals {
-  color: var(--text1);
   background-color: var(--background3);  
+  color: var(--text1);
   text-align: center;
-  /* padding: 2rem 1rem; */
+  padding-top: 3rem; 
+  padding-bottom: 3rem; 
   position: relative; 
 }
 
@@ -247,23 +248,19 @@ body.hidden {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem; 
-  margin-top: 2rem; 
-  /* es temporal, se debe quitar cuando se agrega wave separator*/
-  /* margin-bottom: 2rem;  */
-  padding-bottom: 4rem;
+  
 }
 
 .rentals section {
   background-color: var(--background2); 
-  border: 2px solid var(--background1Transparency);
-  border-radius: var(--borderRadius);
+  border: 2px solid var(--background1);
+  border-radius: var(--borderRadius); 
+  z-index: 1;
   margin: 0 1rem;
 }
 
 .rentals h3 {
   background-color: var(--background1);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   color: var(--text3);
   padding: 0.6rem;
 }
@@ -284,31 +281,31 @@ body.hidden {
   position: absolute;
   width: 100%;
   bottom: 0; 
-  left: 0;  
+  left: 0;    
 }
 
 /* forecast */
 
 .forecast {
-  background-color: var(--accent1);
+  background-color: var(--accent1); 
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem; 
-  padding: 3rem 2rem; 
+  padding: 3rem 1rem; 
 }
 
 .forecast h2 {
-  border-bottom: 3px solid var(--background1);  
+  border-bottom: 3px solid var(--accent2);  
   margin: 0 auto;
 }
 
 .forecast i {
   font-size: 5rem;
-  color: var(--text1);
+  color: var(--accent2);
 }
 
-.today-forecast, .next-day-forecast  {       
+.today-forecast, .next-day-forecast div {       
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,6 +314,13 @@ body.hidden {
 
 .today-forecast  img { 
   display: block;  
+}
+
+.today-forecast, .next-day-forecast {
+  background-color: var(--background2);
+  border: 2px solid var(--background1);
+  border-radius: var(--borderRadius);
+  padding: 2rem;  
 }
 
 /* footer */
