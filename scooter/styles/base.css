@@ -319,7 +319,7 @@ body.hidden {
 .today-forecast p:first-of-type { 
   font-size: 5rem;
   font-weight: 600;
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
 }
 
 .today-forecast, .next-day-forecast {
