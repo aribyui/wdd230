@@ -324,7 +324,7 @@ body.hidden {
 }
 
 .today-forecast, .next-day-forecast {
-  background-color: var(--background2);
+  background-color: var(--accent1);
   border: 3px solid var(--background1);
   border-radius: var(--borderRadius);
   padding: 2rem;  
