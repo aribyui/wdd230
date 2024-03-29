@@ -229,7 +229,7 @@ body.hidden {
   background-color: var(--accent1);  
   color: var(--text1);
   text-align: center;
-  padding-top: 3rem; 
+  padding-top: 0; 
   padding-bottom: 3rem; 
   position: relative; 
 }
