@@ -16,14 +16,14 @@
   --text3: #FFFDF7;
   --headingText: 'Mansalva', sans-serif;
   --contentText: 'Patrick Hand', sans-serif;
-  --borderRadius: 6px;
+  --borderRadius: 8px;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  letter-spacing: 0.2px;
+  /* letter-spacing: 0.2px; */
 }
 
 h1, h2, h3, h4 {
@@ -223,19 +223,14 @@ body.hidden {
   filter: brightness(1); 
 }
 
-/* general margin bottom */
-.rentals h3, .branches h3 {
-  margin-bottom: 1rem;
-}
-
 /* rentals */
 
 .rentals {
   color: var(--text1);
   background-color: var(--background3);  
   text-align: center;
-  padding: 2rem 1rem;
-  /* position: relative; */
+  /* padding: 2rem 1rem; */
+  position: relative; 
 }
 
 .rentals h2 {
@@ -243,36 +238,53 @@ body.hidden {
   margin: 0 auto;
 }
 
+.rentals i {
+  font-size: 5rem;
+  color: var(--accent2);
+}
+
 .rentals div {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem; 
+  margin-top: 2rem; 
+  margin-bottom: 2rem; /* es temporal, se debe quitar cuando se agrega wave separator*/
 }
 
 .rentals section {
   background-color: var(--background2); 
   border: 1px solid var(--background1Transparency);
   border-radius: var(--borderRadius);
-  padding: 2rem 1rem;  
+  margin: 0 1rem;
+}
+
+
+.rentals h3 {
+  background-color: var(--background1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: var(--text3);
+  padding: 0.6rem;
 }
 
 .rentals-list {
   list-style-position: inside;   
   line-height: 2.5rem;
+  padding: 1rem;
 }
 
 .rentals-list li::marker {
-  content: "‣ ";
+  content: "▶ ";
   color: var(--accent2);
   font-weight: 600;
 }
 
-/* .rentals img {
+.rentals img {
   position: absolute;
   width: 100%;
   bottom: 0; 
   left: 0;
-} */
+}
 
 /* branches */
 

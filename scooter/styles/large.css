@@ -25,11 +25,14 @@
     display: none;
   }
   .hero {
-    height: 89vh;
+    height: 100vh;
   }
   .hero-label {
-    left: 34%;
+    left: 39%;
     text-align: left;
+  }
+  .hero-label h2 {
+    font-size: 4rem;
   }
   .hero-label h2, .hero-label p {
     margin-bottom: 2rem;
@@ -37,26 +40,37 @@
   .hero-label a {
     margin: 0;
   } 
-  .rentals {
-    /* padding: 2rem 10rem */
+  .rentals {  
+    height: 100vh;
   }
   .rentals div {
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   .rentals h2 {
     grid-column: 1/4;
     grid-row: 1/2;
   }
-  .rentals section:nth-child(1) {
+  .rentals i {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  .rentals section {
+    margin: 0;
+  }
+  #atvs {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
-  .rentals section:nth-child(2) {
+  #jeeps {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
-  .rentals section:nth-child(3) {
+  #scooters {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
 }
