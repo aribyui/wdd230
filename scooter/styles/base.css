@@ -248,16 +248,17 @@ body.hidden {
   grid-template-columns: 1fr;
   gap: 2rem; 
   margin-top: 2rem; 
-  margin-bottom: 2rem; /* es temporal, se debe quitar cuando se agrega wave separator*/
+  /* es temporal, se debe quitar cuando se agrega wave separator*/
+  /* margin-bottom: 2rem;  */
+  padding-bottom: 4rem;
 }
 
 .rentals section {
   background-color: var(--background2); 
-  border: 1px solid var(--background1Transparency);
+  border: 2px solid var(--background1Transparency);
   border-radius: var(--borderRadius);
   margin: 0 1rem;
 }
-
 
 .rentals h3 {
   background-color: var(--background1);
@@ -283,24 +284,8 @@ body.hidden {
   position: absolute;
   width: 100%;
   bottom: 0; 
-  left: 0;
+  left: 0;  
 }
-
-/* branches */
-
-.branches {
-  background-color: var(--accent1);   
-  text-align: center;
-  /* position: relative; */
-}
-
-/* .wave3 img {
-  position: absolute;
-  border: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 0rem;
-} */
 
 /* forecast */
 
@@ -309,27 +294,33 @@ body.hidden {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem; 
+  padding: 3rem 2rem; 
 }
 
-.today-forecast, .next-day-forecast {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 2rem;
+.forecast h2 {
+  border-bottom: 3px solid var(--background1);  
+  margin: 0 auto;
 }
 
-#temperature {
-  font-size: 4rem;
-  font-weight: 600;
+.forecast i {
+  font-size: 5rem;
+  color: var(--text1);
 }
 
-#next-day-temperature {
-  font-size: 2rem;
-  font-weight: 600;
+.today-forecast, .next-day-forecast  {       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5rem; 
+}
+
+.today-forecast  img { 
+  display: block;  
 }
 
 /* footer */
+
 footer {
   background-color: var(--background1); 
   color: var(--text3);
@@ -339,7 +330,7 @@ footer {
 }
 
 .footer-main {
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 .footer-logo h2 {
@@ -351,6 +342,7 @@ footer {
   height: 150px; 
   border: 3px solid var(--accent2);
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .footer-addresses {
