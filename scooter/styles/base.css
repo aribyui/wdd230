@@ -226,7 +226,7 @@ body.hidden {
 /* rentals */
 
 .rentals {
-  background-color: var(--background3);  
+  background-color: var(--accent1);  
   color: var(--text1);
   text-align: center;
   padding-top: 3rem; 
@@ -288,7 +288,7 @@ body.hidden {
 /* forecast */
 
 .forecast {
-  background-color: var(--accent1); 
+  background-color: var(--background2); 
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
