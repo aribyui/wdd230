@@ -68,7 +68,7 @@
   }
   /* forecast */
   .forecast {             
-    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-columns: 1fr 500px 1fr;    
     /* border: 2px dashed var(--accent2); */
   }
   .forecast h2 {
@@ -103,5 +103,34 @@
   }
   .next-day-forecast p {
     margin-right: 2rem;    
+  }
+  /* footer */ 
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding: 1rem; */
+  }
+  .footer-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  } 
+  .footer-logo h2 {
+    margin-left: 1rem;
+  }
+  #address-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 0;    
+  }
+  #address-2 {
+    grid-column: 3/4;
+    grid-row: 1/2;    
+  }
+  .footer-credits {
+    grid-column: 1/4;
   }
 }
