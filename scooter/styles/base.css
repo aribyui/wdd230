@@ -312,8 +312,14 @@ body.hidden {
   line-height: 2.5rem; 
 }
 
-.today-forecast  img { 
+.today-forecast img, .next-day-forecast img { 
   display: block;  
+}
+
+.today-forecast p:first-of-type { 
+  font-size: 5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 .today-forecast, .next-day-forecast {
