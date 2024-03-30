@@ -3,6 +3,7 @@ const lat = (Math.round(20.4239112071267 * 100) / 100).toString();
 const lon = (Math.round(-86.91923927089651 * 100) / 100).toString();
 const currentForecastURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
 const nextDayForecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
+const tempMax = document.querySelector("#temp-max");
 const todayWeatherIcon = document.querySelector("#today-weather-icon");
 const temperature = document.querySelector("#temperature");
 const description = document.querySelector("#description");
@@ -17,7 +18,7 @@ async function getCurrentForecast() {
     const response = await fetch(currentForecastURL);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data);
+      // console.log(data);  
       displayCurrentForecast(data);
     } else {
       throw Error (await response.text());
@@ -36,7 +37,9 @@ function displayCurrentForecast(data) {
   img.setAttribute("alt", getCapitalLetters(arrayDescription));
   img.setAttribute("width", "200");
   img.setAttribute("height", "200");
-  img.setAttribute("loading", "lazy")
+  img.setAttribute("loading", "lazy");  
+
+  tempMax.textContent = (data.main.temp_max).toFixed();
 
   todayWeatherIcon.appendChild(img);
   temperature.innerHTML = `${(data.main.temp).toFixed()}&deg;C`;
@@ -127,4 +130,6 @@ function getCapitalLetters (array) {
 getCurrentForecast();
 
 getNextDayForecast();
+
+
 
