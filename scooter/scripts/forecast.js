@@ -31,16 +31,16 @@ async function getCurrentForecast() {
 function displayCurrentForecast(data) {
   const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
   const img = document.createElement("img");
-  const arrayDescription = data.weather[0].description.split(" ");
+  const arrayDescription = data.weather[0].description.split(" "); 
+ 
+  tempMax.innerHTML = `${(data.main.temp_max).toFixed()}&deg;C`;
 
   img.setAttribute("src", iconUrl)
   img.setAttribute("alt", getCapitalLetters(arrayDescription));
   img.setAttribute("width", "200");
   img.setAttribute("height", "200");
-  img.setAttribute("loading", "lazy");  
-
-  tempMax.textContent = (data.main.temp_max).toFixed();
-
+  img.setAttribute("loading", "lazy");   
+  
   todayWeatherIcon.appendChild(img);
   temperature.innerHTML = `${(data.main.temp).toFixed()}&deg;C`;
   description.textContent = getCapitalLetters(arrayDescription);

@@ -41,17 +41,19 @@ h3 {
   font-size: 2.25rem;
 }
 
+/* banner message */
+
 .high-temperature-message {
   display: flex;
   justify-content: space-between;
   background-color: var(--accent1);
-  color: var(--text1);
-  padding: 0.5rem 1rem;  
+  color: var(--text1);   
+  padding: 0.5rem 1rem;
 }
 
 .close-banner {
   cursor: pointer;
-  font-weight: 600;  
+  font-weight: 600; 
 }
 
 .hide-banner {
@@ -173,7 +175,7 @@ body.hidden {
 /* hero */
 
 .hero {  
-  height: 80vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -235,22 +237,23 @@ body.hidden {
 }
 
 .waves img {
+  display: block;
   filter: brightness(1); 
 }
 
 /* rentals */
 
-.rentals {
-  background-color: var(--accent1);  
+.rentals {  
+  background-color: var(--accent1);
+  border-bottom: 3px solid var(--accent2);  
   color: var(--text1);
   text-align: center;
   padding-top: 3rem; 
   padding-bottom: 3rem; 
-  position: relative; 
+  position: relative;  
 }
 
 .rentals h2 {
-  /* color: var(--text3); */
   border-bottom: 3px solid var(--accent2);  
   margin: 0 auto;
 }
@@ -296,7 +299,7 @@ body.hidden {
 .rentals img {
   position: absolute;
   width: 100%;
-  bottom: 0; 
+  top: 0; 
   left: 0;    
 }
 

@@ -24,9 +24,7 @@
   .navigation p {
     display: none;
   }
-  .hero {
-    height: 100vh;
-  }
+  /* hero  */
   .hero-label {
     left: 39%;
     text-align: left;
@@ -40,7 +38,7 @@
   .hero-label a {
     margin: 0;
   }  
-  /* rentals */
+  /* rentals */ 
   .rentals div {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;    
@@ -68,7 +66,7 @@
   }
   /* forecast */
   .forecast {             
-    grid-template-columns: 1fr 550px 1fr;    
+    grid-template-columns: 550px 1fr 1fr;    
     /* border: 2px dashed var(--accent2); */
   }
   .forecast h2 {
@@ -80,7 +78,7 @@
     grid-row: 2/3;
   }
   .today-forecast {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -97,8 +95,9 @@
     padding-bottom: 0;
   }
   .next-day-forecast {
-    grid-column: 2/3;
-    grid-row: 4/5;
+    grid-column: 1/2;
+    grid-row: 4/5;    
+    
   }
   .next-day-forecast div {
     flex-direction: row;
@@ -107,10 +106,10 @@
   .next-day-forecast p {
     margin-right: 2rem;    
   }
-  .photo {
+  /* .photo {
     grid-column: 3/4;
     grid-row: 3/5;
-  }
+  } */
   /* footer */ 
   .footer-main {
     display: grid;
@@ -119,12 +118,14 @@
   }
   .footer-logo {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 1/2;   
+  } 
+  .footer-logo div {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-  } 
+  }
   .footer-logo h2 {
     margin-left: 1rem;
   }
