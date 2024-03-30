@@ -68,6 +68,11 @@ header {
   height: 80px; 
   border: 3px solid var(--accent2);
   border-radius: 50%;
+  
+}
+
+.header-logo img:hover {
+  box-shadow: 0 0 10px var(--accent2);
 }
 
 #hamburger-button, #menu-close-button {
@@ -137,7 +142,7 @@ body.hidden {
 }
 
 .navigation a:hover {
-  border-bottom: 3px solid var(--accent2);     
+  border-bottom: 3px solid var(--accent2);   
 } 
 
 #active { 
@@ -350,6 +355,10 @@ footer {
   height: 120px; 
   border: 3px solid var(--accent2);
   border-radius: 50%;
+}
+
+.footer-logo img:hover {
+  box-shadow: 0 0 10px var(--accent2);
 }
 
 .footer-credits {
