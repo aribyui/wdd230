@@ -8,15 +8,13 @@
   --accent1: #31C4C5;
   --accent1hover: #0194AB; 
   --accent2: #FF0054;
-  --accent2hover: #D80757;
-  --accent3: #FAFF00;
-  --accent3hover: #EEF202;
+  --accent3: #D80757; 
   --text1: #02020A;
   --text2: #303030;
   --text3: #FFFDF7;
   --headingText: 'Mansalva', sans-serif;
   --contentText: 'Patrick Hand', sans-serif;
-  --borderRadius: 8px;
+  --borderRadius: 10px; 
 }
 
 * {
@@ -40,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 /* header */
@@ -150,12 +148,6 @@ body.hidden {
   top: 0;
 }
 
-/* main */
-/* main h2 {
-  border-bottom: 1px solid var(--background1);
-  width: fit-content;
-} */
-
 /* hero */
 
 .hero {  
@@ -200,11 +192,12 @@ body.hidden {
   text-decoration: none;
   width: fit-content;
   margin: 0 auto;
-  /* box-shadow: 0 6px 12px var(--background1); */
+  /* box-shadow: 0 8px 10px var(--background1); */
 }
 
 .hero-label a:hover {
-  background-color: var(--accent2hover);
+  /* background-color: var(--accent3); */
+  box-shadow: 0 0 10px var(--accent2);
 }
 
 .hero-label a:visited {
@@ -287,13 +280,15 @@ body.hidden {
 
 /* forecast */
 
-.forecast {
-  background-color: var(--background2); 
+.forecast {   
+  background-image: url("../images/background-doddle.webp");
+  background-color: var(--background3);
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem; 
-  padding: 3rem 1rem; 
+  gap: 2rem;
+  padding: 3rem 1rem;
+  position: relative;
 }
 
 .forecast h2 {
@@ -317,8 +312,8 @@ body.hidden {
   display: block;  
 }
 
-.today-forecast p:first-of-type { 
-  font-size: 4rem;
+#temperature { 
+  font-size: 5rem;
   font-weight: 600;
   padding-bottom: 1rem;
 }

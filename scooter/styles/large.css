@@ -41,9 +41,6 @@
     margin: 0;
   }  
   /* rentals */
-  .rentals {
-    padding-top: 0;
-  }
   .rentals div {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;    
@@ -71,7 +68,7 @@
   }
   /* forecast */
   .forecast {             
-    grid-template-columns: 1fr 500px 1fr;    
+    grid-template-columns: 1fr 550px 1fr;    
     /* border: 2px dashed var(--accent2); */
   }
   .forecast h2 {
@@ -96,6 +93,9 @@
     grid-column: 1/2;
     grid-row: 2/3;
   }
+  #temperature {
+    padding-bottom: 0;
+  }
   .next-day-forecast {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -106,6 +106,10 @@
   }
   .next-day-forecast p {
     margin-right: 2rem;    
+  }
+  .photo {
+    grid-column: 3/4;
+    grid-row: 3/5;
   }
   /* footer */ 
   .footer-main {
