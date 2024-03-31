@@ -85,7 +85,7 @@ function displayNextDayForecast(data) {
     // Obtener la humedad del pronóstico del tiempo actual
     const hum = data[i].main.humidity;
     // Obtener los iconos que representan las condiciones meteorológicas del pronóstico del tiempo
-    const iconUrl = `https://openweathermap.org/img/wn/${data[i].weather[0].icon}@2x.png`;
+    const iconUrl = `https://openweathermap.org/img/wn/${data[i].weather[0].icon}@4x.png`;
 
     // Verificar si el día del pronóstico del tiempo es igual al día siguiente calculado
     // y si la hora del pronóstico del tiempo es 12:00 PM

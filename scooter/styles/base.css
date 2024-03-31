@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
   font-family: var(--headingText);
 }
 
-a, li, p, span, #hamburger-button {
+a, li, p, span, #hamburger-button, figcaption {
   font-family: var(--contentText);
   font-size: 1.7rem;
 }
@@ -49,6 +49,7 @@ h3 {
   background-color: var(--accent1);
   color: var(--text1);   
   padding: 0.5rem 1rem;
+  z-index: 1;
 }
 
 .close-banner {
@@ -244,8 +245,7 @@ body.hidden {
 /* rentals */
 
 .rentals {  
-  background-color: var(--accent1);
-  border-bottom: 3px solid var(--accent2);  
+  background-color: var(--accent1);   
   color: var(--text1);
   text-align: center;
   padding-top: 3rem; 
@@ -266,7 +266,7 @@ body.hidden {
 .rentals div {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem; 
+  gap: 1rem; 
   
 }
 
@@ -303,30 +303,46 @@ body.hidden {
   left: 0;    
 }
 
+.wave-separator {
+  position: absolute;
+  width: 100%;
+  transform: rotate(180deg);
+  top: 0;
+  left: 0;
+}
+
 /* forecast */
 
 .forecast {   
   background-image: url("../images/background-doddle.webp");
   background-color: var(--background3);
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
   padding: 3rem 1rem;
-  position: relative;
+  position: relative; 
 }
 
 .forecast h2 {
-  border-bottom: 3px solid var(--accent2);  
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
+  border-bottom: 3px solid var(--accent2);
+  width: fit-content;
 }
 
 .forecast i {
   font-size: 5rem;
   color: var(--accent2);
+  margin-bottom: 2rem;
 }
 
-.today-forecast, .next-day-forecast div {       
+.forecast-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.today-forecast p:first-of-type, .next-day-forecast p:first-of-type {
+  margin-bottom: 1rem;    
+}
+
+.today-forecast div, .next-day-forecast div {       
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,17 +353,31 @@ body.hidden {
   display: block;  
 }
 
-#temperature { 
-  font-size: 5rem;
+#temperature, #next-day-temperature { 
+  font-size: 4rem;
   font-weight: 600;
-  padding-bottom: 1rem;
 }
 
 .today-forecast, .next-day-forecast {
   background-color: var(--accent1);
   border: 3px solid var(--background1);
   border-radius: var(--borderRadius);
-  padding: 2rem;  
+  padding: 1rem;  
+}
+
+.forecast-image-content-1, .forecast-image-content-2 {
+  position: relative;
+  padding: 1rem 1rem 7.5rem 1rem; 
+  background-color: var(--background3);
+  border: 3px solid var(--background1);
+}
+
+.forecast-image-content-1 img, .forecast-image-content-2 img  {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  margin-bottom: 1rem;  
 }
 
 /* footer */

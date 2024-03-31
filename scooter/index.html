@@ -113,30 +113,68 @@
     </div>
 
     <!-- forecast -->
-    <div class=" forecast">
-      <!-- wave separator -->
-      <!-- <img src="images/wave2.svg" alt="" style="position: absolute; top:0; left: 0; width: 100%;"> -->
+    <div class="forecast">
+
+      <!-- forecast title -->
+
       <h2>Weather</h2>
-      <i class="fa-solid fa-temperature-high"></i>
-      <!-- today forecast -->
-      <div class="today-forecast">
-        <h3>Today</h3>
-        <div id="today-weather-icon"></div>
-        <p id="temperature">
-        <p id="description"></p>
-        <p id="humidity"></p>
+      <i class="fa-solid fa-temperature-three-quarters"></i>
+
+
+      <!-- wave separator -->
+      <img class="wave-separator" src="images/wave-1.webp" alt="Wave separator">
+
+      <!-- forecast-content -->
+      <div class="forecast-content">
+
+        <!-- today forecast -->
+        <div class="today-forecast">
+          <h3>Today</h3>
+          <div>
+            <div id="today-weather-icon"></div>
+            <p id="temperature">
+            <p id="description"></p>
+            <p id="humidity"></p>
+          </div>
+        </div>
+
+
+
+        <!-- next day forecast -->
+        <div class="next-day-forecast">
+          <h3>Tomorrow</h3>
+          <div>
+            <div id="next-day-weather-icon"></div>
+            <p id="next-day-temperature"></p>
+            <p id="next-day-description"></p>
+            <p id="next-day-humidity"></p>
+          </div>
+        </div>
+
+
       </div>
 
-      <!-- next day forecast -->
-      <div class="next-day-forecast">
-        <h3>Tomorrow</h3>
-        <div>
-          <div id="next-day-weather-icon"></div>
-          <p id="next-day-temperature"></p>
-          <p id="next-day-description"></p>
-          <p id="next-day-humidity"></p>
-        </div>
-      </div>
+      <!-- polaroid 2 -->
+      <!-- <div class="forecast-image-content-2">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/man-ride-atv-at-sand-small.webp">
+          <source media="(max-width: 600px)" srcset="images/man-ride-atv-at-sand-medium.webp">
+          <img src="images/man-ride-atv-at-sand-large.webp" alt="Man ride an atv at sand" width="800" height="800"
+            loading="lazy">
+        </picture>
+        <figcaption>Discover the adrenaline in the sand dunes!</figcaption>
+      </div> -->
+
+      <!-- polaroid 1 -->
+      <!-- <div class="forecast-image-content-1">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/people-having-fun-at-beach-small.webp">
+          <source media="(max-width: 600px)" srcset="images/people-having-fun-at-beach-medium.webp">
+          <img src="images/people-having-fun-at-beach-large.webp" alt="People having fun at beach" width="800"
+            height="800" loading="lazy">
+        </picture>
+        <figcaption>Snapshot of tomorrow!</figcaption>
+      </div> -->
 
     </div>
 
