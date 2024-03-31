@@ -87,8 +87,7 @@ header {
   width: 80px;
   height: 80px; 
   border: 3px solid var(--accent2);
-  border-radius: 50%;
-  
+  border-radius: 50%;  
 }
 
 .header-logo img:hover {
@@ -128,8 +127,12 @@ header {
 #menu-close-button { 
   display: block;
   border: 3px solid var(--accent2);  
-  color: var(--accent2); 
-    
+  color: var(--accent2);     
+}
+
+#facebook-logo {
+  width: 40px;
+  height: 40px;
 }
 
 body.hidden {
@@ -153,7 +156,7 @@ body.hidden {
 }
 
 .navigation li {
-  padding: 1rem;
+  padding: 1rem;  
 }
 
 .navigation a {
@@ -164,6 +167,11 @@ body.hidden {
 .navigation a:hover {
   border-bottom: 3px solid var(--accent2);   
 } 
+
+.navigation li:last-of-type a:hover {
+  border-bottom: none; 
+  
+}
 
 #active { 
   border-bottom: 3px solid var(--accent2);  
