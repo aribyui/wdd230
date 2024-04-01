@@ -73,13 +73,15 @@
   .adventures {
     padding: 12rem 0;
   }
+  .rentals i, .adventures i, .weather i {
+    margin-bottom: 4rem;
+  }
   .adventures-content {   
     max-width: 1200px;
     margin: 0 auto;   
     display: grid;
     grid-template-columns: 1fr 1fr;  
   }
-
   .adventures-image-content-1 {
     transform: rotate(-3deg); 
     grid-column: 1/2; 

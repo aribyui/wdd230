@@ -61,7 +61,7 @@ h3 {
   z-index: 1;
   position: absolute;
   width: 100%;
-  text-align: center;
+  text-align: center;  
 }
 
 .close-banner {
@@ -106,10 +106,13 @@ header {
 }
 
 #hamburger-button, #menu-close-button {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: var(--borderRadius);
   cursor: pointer;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hamburger-button {
@@ -263,6 +266,7 @@ body.hidden {
   text-align: center;
   padding: 3rem 1rem; 
   position: relative;  
+  z-index: -1;
 }
 
 .rentals i {
