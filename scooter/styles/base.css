@@ -30,20 +30,25 @@ h1, h2, h3, h4 {
 
 a, li, p, span, #hamburger-button, figcaption {
   font-family: var(--contentText); 
-  /* font-size: 1.6rem; */
+  /* font-size: 1.5rem; */
 }
 
- /* h1 {
+a, li, p, span, #hamburger-button, figcaption {
+  font-family: var(--contentText); 
+  font-size: 1.8rem;
+}
+
+h1 {
   font-size: 2.5rem;
 }
 
- h2 {
+h2 {
   font-size: 3rem;
 }
 
 h3 {
-  font-size: 2.5rem;
-}   */
+  font-size: 2rem;
+} 
 
 /* banner message */
 
@@ -52,10 +57,11 @@ h3 {
   justify-content: space-between;
   background-color: var(--accent1);
   color: var(--text1);   
-  padding: 1rem;
+  padding: 0.5rem;
   z-index: 1;
   position: absolute;
   width: 100%;
+  text-align: center;
 }
 
 .close-banner {
@@ -190,7 +196,7 @@ body.hidden {
 
 .hero {  
   position: relative;
-  /* height: 50vh; */
+  height: 50vh;
 }
 
 .hero img {
@@ -211,6 +217,7 @@ body.hidden {
   gap: 1rem;
   padding: 1rem ;
   width: 100%;
+  text-align: center;
 }
 
 .hero-label h2, .hero-label p, .hero-label a {  
@@ -223,6 +230,7 @@ body.hidden {
   padding: 0.6rem 2rem;
   text-decoration: none;
   width: fit-content;  
+  margin: 0 auto;
 }
 
 .hero-label a:hover {  

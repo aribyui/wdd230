@@ -27,12 +27,16 @@
   }
   /* hero  */
   .hero {
-    height: 80vh;
+    height: 90vh;
   }
-   .hero-label {
+  .hero-label {
     left: 33%;
     width: fit-content;
+    text-align: left;
   }  
+  .hero-label a {
+    margin: 0;
+  }
   /* rentals */ 
   /* .rentals {
     padding: 0 1rem;    
