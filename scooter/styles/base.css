@@ -1,7 +1,7 @@
 :root {
   --background1: #02020A;
   --background1Transparency: #02020A22;
-  --background2: #ECECEC;
+  --background2: #DADADA;
   --background3: #FFFDF7;
   --border1: #1414b841;
   --border2: #FFFDF7;
@@ -309,7 +309,7 @@ body.hidden {
 
 .adventures {   
   background-image: url("../images/background-doddle.webp");
-  background-color: var(--background3);
+  background-color: var(--background2);
   text-align: center;
   padding: 3rem 1rem;
   position: relative; 
@@ -363,6 +363,16 @@ body.hidden {
 .polaroid-1 hr, .polaroid-2 hr {
   border: 2px solid var(--accent2);
   margin-bottom: 1rem;
+}
+
+/* weather */
+.weather {
+  background-color: var(--accent1);
+  padding: 3rem 1rem;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  line-height: 2.5rem;
 }
 
 /* footer */
