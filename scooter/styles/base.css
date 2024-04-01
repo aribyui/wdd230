@@ -1,7 +1,7 @@
 :root {
   --background1: #02020A;
   --background1Transparency: #02020A22;
-  --background2: #DADADA;
+  --background2: #ECECEC;
   --background3: #FFFDF7;
   --border1: #1414b841;
   --border2: #FFFDF7;
@@ -261,8 +261,7 @@ body.hidden {
 .rentals div {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem; 
-  
+  gap: 1rem;   
 }
 
 .rentals section {
@@ -310,7 +309,7 @@ body.hidden {
 
 .adventures {   
   background-image: url("../images/background-doddle.webp");
-  background-color: var(--background2);
+  background-color: var(--background3);
   text-align: center;
   padding: 3rem 1rem;
   position: relative; 

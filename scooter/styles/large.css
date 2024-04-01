@@ -32,9 +32,11 @@
    .hero-label {
     left: 33%;
     width: fit-content;
-  }
-  
+  }  
   /* rentals */ 
+  /* .rentals {
+    padding: 0 1rem;    
+  } */
   .rentals div {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;    
@@ -61,6 +63,9 @@
     margin: 0;
   }
   /* adventures */
+  .adventures {
+    padding-top: 12rem;
+  }
   .adventures-content {   
     max-width: 1200px;
     margin: 0 auto;   
