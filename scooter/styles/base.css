@@ -1,7 +1,7 @@
 :root {
   --background1: #02020A;
   --background1Transparency: #02020A22;
-  --background2: #DADADA;
+  --background2: #E3E3E3;
   --background3: #FFFDF7;
   --border1: #1414b841;
   --border2: #FFFDF7;
@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
 
 a, li, p, span, #hamburger-button, figcaption {
   font-family: var(--contentText); 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -232,15 +232,16 @@ body.hidden {
 
 /* waves */
 
-.waves {
+.wave-separator-1 {
   position: absolute;
   width: 100%;
   bottom: 0; 
+  display: block;
 }
 
-.waves img {
+.wave-separator-1 img {
   display: block;
-  filter: brightness(1); 
+  filter: brightness(1);   
 }
 
 /* rentals */
@@ -249,7 +250,7 @@ body.hidden {
   background-color: var(--accent1);   
   color: var(--text1);
   text-align: center;
-  padding: 3rem 0; 
+  padding: 3rem 1rem; 
   position: relative;  
 }
 
@@ -290,19 +291,15 @@ body.hidden {
   font-weight: 600;
 }
 
-.rentals img {
+.wave-separator-2 {
   position: absolute;
   width: 100%;
-  top: 0; 
-  left: 0;    
-}
-
-.wave-separator {
-  position: absolute;
-  width: 100%;
-  transform: rotate(180deg);
   top: 0;
   left: 0;
+}
+
+.wave-separator-2 img {
+  display: block;
 }
 
 /* adventures */
@@ -365,14 +362,46 @@ body.hidden {
   margin-bottom: 1rem;
 }
 
+.wave-separator-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 /* weather */
 .weather {
   background-color: var(--accent1);
   padding: 3rem 1rem;
   text-align: center;
-  display: grid;
-  gap: 2rem;
   line-height: 2.5rem;
+}
+
+.weather h2 {
+  margin-bottom: 1rem;
+}
+
+.weather i {
+  font-size: 5rem;
+  color: var(--accent2);
+  margin-bottom: 2rem;
+}
+
+.weather-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;  
+}
+
+#temperature, #next-day-temperature {
+  font-size: 2.5rem;
+  font-weight: 600
+}
+
+.today-forecast, .next-day-forecast {
+  /* background-color: var(--background2); */
+  /* border: 3px solid var(--background1); */
+  border-radius: var(--borderRadius); 
 }
 
 /* footer */

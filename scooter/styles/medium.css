@@ -27,11 +27,25 @@
     grid-row: 4/5;
     margin: 0 1rem 0 0;
   }
+  .adventures-image-content-2 {
+    z-index: 1;
+  }
   .polaroid-1 div, .polaroid-2 div {
     display: flex;
     justify-content: center;
   }
   .polaroid-1 span, .polaroid-2 span {
     margin-left: 0.5rem;
+  }
+  .today-forecast div, .next-day-forecast div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .today-forecast p:nth-last-child(2), .today-forecast p:last-child, 
+  .next-day-forecast p:nth-last-child(2), .next-day-forecast p:last-child
+  {
+    margin-left: 1rem;
   }
 }

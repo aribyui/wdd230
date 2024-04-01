@@ -64,7 +64,7 @@
   }
   /* adventures */
   .adventures {
-    padding-top: 12rem;
+    padding: 12rem 0;
   }
   .adventures-content {   
     max-width: 1200px;
@@ -103,7 +103,16 @@
   .polaroid-1 hr, .polaroid-2 hr {
     width: 100%;
   }
-     
+  /* weather */
+  .weather-content {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .today-forecast, .next-day-forecast {
+    border: 3px solid var(--background1);
+    padding: 1rem;
+  }  
   /* footer */ 
   .footer-main {
     display: grid;

@@ -18,7 +18,7 @@ async function getCurrentForecast() {
     const response = await fetch(currentForecastURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);  
+      // console.log(data);  
       displayCurrentForecast(data);
     } else {
       throw Error (await response.text());
@@ -93,6 +93,8 @@ function displayNextDayForecast(data) {
       // Establecer el atributo 'src' de la etiqueta de imagen con la URL del icono del clima
       img.setAttribute("src", iconUrl);
       img.setAttribute("alt", getCapitalLetters(arrayDescription));
+      img.setAttribute("width", "200");
+      img.setAttribute("height", "200");
       img.setAttribute("loading", "lazy");
       // Adjuntar la imagen del icono del clima al contenedor 'nextDayWeatherIcon' en el DOM
       nextDayWeatherIcon.appendChild(img)
