@@ -183,12 +183,7 @@ body.hidden {
 } 
 
 .navigation li:last-of-type a:hover {
-  border-bottom: none; 
-  
-}
-
-#active { 
-  border-bottom: 3px solid var(--accent2);  
+  border-bottom: none;   
 }
 
 .open {
