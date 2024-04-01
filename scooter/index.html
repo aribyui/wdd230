@@ -57,7 +57,8 @@
           <li><a href="rentals.html">Rentals</a></li>
           <li><a href="reservations.html">Reservations</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.facebook.com/"><img id="facebook-logo" src="images/facebook-logo.webp" alt="Facebook logo"></a></li>
+          <li><a href="https://www.facebook.com/"><img id="facebook-logo" src="images/facebook-logo.webp"
+                alt="Facebook logo"></a></li>
         </ul>
       </nav>
     </div>
@@ -116,67 +117,67 @@
 
     </div>
 
-    <!-- forecast -->
-    <div class="forecast">
+    <!-- adventures -->
+    <div class="adventures">
 
-      <!-- forecast title -->
+      <!-- adventures title -->
 
-      <h2>Weather</h2>
-      <i class="fa-solid fa-temperature-three-quarters"></i>
-
+      <h2>Island Adventures</h2>
+      <i class="fa-solid fa-compass"></i>
+      <!-- <hr style="border: 2px solid var(--accent2); margin-bottom: 2rem;"> -->
 
       <!-- wave separator -->
       <img class="wave-separator" src="images/wave-1.webp" alt="Wave separator">
 
-      <!-- forecast-content -->
-      <div class="forecast-content">
+      <!-- adventures-content -->
+      <div class="adventures-content">
 
-        <!-- today forecast -->
-        <div class="today-forecast">
-          <h3>Today</h3>
-          <div>
-            <div id="today-weather-icon"></div>
-            <p id="temperature">
-            <p id="description"></p>
-            <p id="humidity"></p>
-          </div>
+        <!-- polaroid 1 -->
+        <div class="adventures-image-content-1">
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/man-ride-atv-at-sand-small.webp">
+            <source media="(max-width: 600px)" srcset="images/man-ride-atv-at-sand-medium.webp">
+            <img src="images/man-ride-atv-at-sand-large.webp" alt="Man ride an atv at sand" width="800" height="800"
+              loading="lazy">
+          </picture>
+          <figcaption>Discover the adrenaline in the sand dunes!</figcaption>
         </div>
 
-        <!-- next day forecast -->
-        <div class="next-day-forecast">
-          <h3>Tomorrow</h3>
+        <div class="polaroid-1">
           <div>
-            <div id="next-day-weather-icon"></div>
-            <p id="next-day-temperature"></p>
-            <p id="next-day-description"></p>
-            <p id="next-day-humidity"></p>
+            <h3>Island escapes!</h3>
+            <span>🛵☀️🌴</span>
           </div>
+          <hr>
+          <p>"Experience the thrill of exploring the island's wild nature! With golden sandy beaches and breathtaking
+            landscapes, every corner is an adventure waiting to be discovered. Join us and create unforgettable moments
+            under the sun".</p>
+        </div>
+
+        <!-- polaroid 2 -->
+        <div class="adventures-image-content-2">
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/people-having-fun-at-beach-small.webp">
+            <source media="(max-width: 600px)" srcset="images/people-having-fun-at-beach-medium.webp">
+            <img src="images/people-having-fun-at-beach-large.webp" alt="People having fun at beach" width="800"
+              height="800" loading="lazy">
+          </picture>
+          <figcaption>Snapshot of tomorrow!</figcaption>
+        </div>
+
+        <div class="polaroid-2">
+          <div>
+            <h3>Discover thrills!</h3>
+            <span>🌊🤩🎉</span>
+          </div>
+          <hr>
+          <p>"Get ready for a journey into the future with our exciting island activities. From thrilling ATV rides to
+            relaxing sunset beach walks, each day is filled with exciting possibilities. Pack your bags and join the
+            fun!"
+          </p>
         </div>
 
       </div>
-
-      <!-- polaroid 2 -->
-      <!-- <div class="forecast-image-content-2">
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/man-ride-atv-at-sand-small.webp">
-          <source media="(max-width: 600px)" srcset="images/man-ride-atv-at-sand-medium.webp">
-          <img src="images/man-ride-atv-at-sand-large.webp" alt="Man ride an atv at sand" width="800" height="800"
-            loading="lazy">
-        </picture>
-        <figcaption>Discover the adrenaline in the sand dunes!</figcaption>
-      </div> -->
-
-      <!-- polaroid 1 -->
-      <!-- <div class="forecast-image-content-1">
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/people-having-fun-at-beach-small.webp">
-          <source media="(max-width: 600px)" srcset="images/people-having-fun-at-beach-medium.webp">
-          <img src="images/people-having-fun-at-beach-large.webp" alt="People having fun at beach" width="800"
-            height="800" loading="lazy">
-        </picture>
-        <figcaption>Snapshot of tomorrow!</figcaption>
-      </div> -->
-
     </div>
 
   </main>
@@ -225,7 +226,7 @@
   <script src="https://kit.fontawesome.com/c61ce8d6ca.js" crossorigin="anonymous"></script>
   <script src="scripts/banner.js"></script>
   <script src="scripts/hamburgerbutton.js"></script>
-  <script src="scripts/forecast.js"></script>
+  <script src="scripts/adventures.js"></script>
   <script src="scripts/current-date.js"></script>
 </body>
 

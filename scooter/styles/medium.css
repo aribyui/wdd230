@@ -27,9 +27,11 @@
     grid-row: 4/5;
     margin: 0 1rem 0 0;
   }
-  /* forecast */
-  .forecast-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .polaroid-1 div, .polaroid-2 div {
+    display: flex;
+    justify-content: center;
+  }
+  .polaroid-1 span, .polaroid-2 span {
+    margin-left: 0.5rem;
   }
 }

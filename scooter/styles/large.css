@@ -26,19 +26,14 @@
     display: none;
   }
   /* hero  */
+  .hero {
+    height: 80vh;
+  }
    .hero-label {
-    left: 39%;
-    text-align: left;
+    left: 33%;
+    width: fit-content;
   }
-  .hero-label h2 {
-    font-size: 4rem;
-  }
-  .hero-label h2, .hero-label p {
-    margin-bottom: 2rem;
-  }
-  .hero-label a {
-    margin: 0;
-  }  
+  
   /* rentals */ 
   .rentals div {
     grid-template-columns: 1fr 1fr 1fr;
@@ -65,51 +60,45 @@
     grid-row: 3/4;
     margin: 0;
   }
-  /* forecast */
-  .forecast {
-    padding: 6rem;     
-  }
-  .forecast-content {  
-    /* border: 3px dashed red; */
+  /* adventures */
+  .adventures-content {   
     max-width: 1200px;
     margin: 0 auto;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
   }
-  .today-forecast div, .next-day-forecast div {
-    flex-direction: row;    
+  .adventures-image-content-1 {
+    transform: rotate(-3deg); 
+    grid-column: 1/2; 
+    grid-row: 1/2;     
   }
-  .today-forecast p:first-of-type, .next-day-forecast p:first-of-type {
-    margin-bottom: 0; 
-    margin-right: 1rem;   
-  }
-
-  
-  
-  
-
- 
-
-  .forecast-image-content-1 {
-    transform: rotate(-3deg);       
-  }
-  .forecast-image-content-2 {
+  .adventures-image-content-2 {
     transform: rotate(3deg); 
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
-  .forecast-image-content-1, .forecast-image-content-2 {
+  .adventures-image-content-1, .adventures-image-content-2 {
     cursor: pointer; 
-    width: 400px;
-    height: 500px;
+    width: 450px;
+    height: 550px;
     margin: 0 auto;
+    box-shadow: 8px 8px 10px var(--accent1);
   }
-  .forecast-image-content-1:hover, .forecast-image-content-2:hover {
+  .adventures-image-content-1:hover, .adventures-image-content-2:hover {
+    box-shadow: none;
     transition: 0.5s ease-in-out; 
-    box-shadow: 10px 10px 10px var(--accent1);
     transform: rotate(0);
   }   
-  
+  .polaroid-1, .polaroid-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .polaroid-1 hr, .polaroid-2 hr {
+    width: 100%;
+  }
+     
   /* footer */ 
   .footer-main {
     display: grid;

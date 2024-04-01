@@ -1,7 +1,7 @@
 :root {
   --background1: #02020A;
   --background1Transparency: #02020A22;
-  --background2: #ECECEC;
+  --background2: #DADADA;
   --background3: #FFFDF7;
   --border1: #1414b841;
   --border2: #FFFDF7;
@@ -29,8 +29,8 @@ h1, h2, h3, h4 {
 }
 
 a, li, p, span, #hamburger-button, figcaption {
-  font-family: var(--contentText);
-  font-size: 1.7rem;
+  font-family: var(--contentText); 
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 /* banner message */
@@ -184,8 +184,8 @@ body.hidden {
 /* hero */
 
 .hero {  
-  height: 90vh;
   position: relative;
+  height: 50vh;
 }
 
 .hero img {
@@ -196,40 +196,33 @@ body.hidden {
   filter: brightness(0.5);
 }
 
-.hero-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero-label { 
+  /* border: 2px solid white;
+  border-radius: var(--borderRadius);  */
   position: absolute;
-  text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem ;
+  width: 100%;
 }
 
-.hero-label h2 {
-  margin-bottom: 1rem;
+.hero-label h2, .hero-label p, .hero-label a {  
   color: var(--text3);  
-}
-
-.hero-label p {
-  color: var(--text3);
-  margin-bottom: 1rem;
 }
 
 .hero-label a {
   background-color: var(--accent2);
-  color: var(--text3);
   border-radius: 6px;
-  padding: 0.8rem 3rem;
+  padding: 0.6rem 2rem;
   text-decoration: none;
-  width: fit-content;
-  margin: 0 auto;
-  /* box-shadow: 0 8px 10px var(--background1); */
+  width: fit-content;  
 }
 
-.hero-label a:hover {
-  /* background-color: var(--accent3); */
+.hero-label a:hover {  
   box-shadow: 0 0 10px var(--accent2);
 }
 
@@ -256,14 +249,8 @@ body.hidden {
   background-color: var(--accent1);   
   color: var(--text1);
   text-align: center;
-  padding-top: 3rem; 
-  padding-bottom: 3rem; 
+  padding: 3rem 0; 
   position: relative;  
-}
-
-.rentals h2 {
-  border-bottom: 3px solid var(--accent2);  
-  margin: 0 auto;
 }
 
 .rentals i {
@@ -319,73 +306,64 @@ body.hidden {
   left: 0;
 }
 
-/* forecast */
+/* adventures */
 
-.forecast {   
+.adventures {   
   background-image: url("../images/background-doddle.webp");
-  background-color: var(--background3);
+  background-color: var(--background2);
   text-align: center;
   padding: 3rem 1rem;
   position: relative; 
 }
 
-.forecast h2 {
-  margin: 0 auto 2rem auto;
-  border-bottom: 3px solid var(--accent2);
-  width: fit-content;
+.adventures h2 {
+  margin-bottom: 1rem;
 }
 
-.forecast i {
+.adventures i {
   font-size: 5rem;
   color: var(--accent2);
   margin-bottom: 2rem;
 }
 
-.forecast-content {
+.adventures-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-}
-.today-forecast p:first-of-type, .next-day-forecast p:first-of-type {
-  margin-bottom: 1rem;    
-}
-
-.today-forecast div, .next-day-forecast div {       
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 2rem;
   line-height: 2.5rem; 
- }
-
-.today-forecast img, .next-day-forecast img { 
-  display: block;  
 }
 
-#temperature, #next-day-temperature { 
-  font-size: 4rem;
-  font-weight: 600;
-}
-
-.today-forecast, .next-day-forecast {
-  background-color: var(--accent1);
-  border: 3px solid var(--background1);
-  border-radius: var(--borderRadius);
-  padding: 1rem;  
-}
-
-.forecast-image-content-1, .forecast-image-content-2 {
+.adventures-image-content-1, .adventures-image-content-2 {
   position: relative;
   padding: 1rem 1rem 7.5rem 1rem; 
   background-color: var(--background3);
   border: 3px solid var(--background1);
 }
 
-.forecast-image-content-1 img, .forecast-image-content-2 img  {
+.adventures-image-content-1 img, .adventures-image-content-2 img  {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover; 
   margin-bottom: 1rem;  
+}
+
+.polaroid-1 div h3, .polaroid-2 div h3 {
+  margin-bottom: 1rem;
+}
+
+.polaroid-1 div, .polaroid-2 div {
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+} 
+
+.polaroid-1 span, .polaroid-2 span {
+  font-size: 2.5rem;
+}
+
+.polaroid-1 hr, .polaroid-2 hr {
+  border: 2px solid var(--accent2);
+  margin-bottom: 1rem;
 }
 
 /* footer */
