@@ -48,6 +48,9 @@
   .rentals i {
     grid-column: 1/4;
   }
+  /* .rentals-list {
+    text-align: left;
+  } */
   #atvs {
     grid-column: 1/2;
     margin: 0;
@@ -72,6 +75,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;  
   }
+
   .adventures-image-content-1 {
     transform: rotate(-3deg); 
     grid-column: 1/2; 
@@ -109,10 +113,10 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  .today-forecast, .next-day-forecast {
+  /* .today-forecast, .next-day-forecast {
     border: 3px solid var(--background1);
     padding: 1rem;
-  }  
+  }   */
   /* footer */ 
   .footer-main {
     display: grid;

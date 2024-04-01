@@ -30,16 +30,20 @@ h1, h2, h3, h4 {
 
 a, li, p, span, #hamburger-button, figcaption {
   font-family: var(--contentText); 
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 
-h2 {
+ /* h1 {
+  font-size: 2.5rem;
+}
+
+ h2 {
   font-size: 3rem;
 }
 
 h3 {
   font-size: 2.5rem;
-}
+}   */
 
 /* banner message */
 
@@ -48,8 +52,10 @@ h3 {
   justify-content: space-between;
   background-color: var(--accent1);
   color: var(--text1);   
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   z-index: 1;
+  position: absolute;
+  width: 100%;
 }
 
 .close-banner {
@@ -78,8 +84,7 @@ header {
 }
 
 .header-logo h1 {
-  margin-left: 0.8rem;
-  font-size: 2.5rem;
+  margin-left: 0.8rem;    
 }
 
 .header-logo img {
@@ -185,7 +190,7 @@ body.hidden {
 
 .hero {  
   position: relative;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .hero img {
@@ -197,8 +202,6 @@ body.hidden {
 }
 
 .hero-label { 
-  /* border: 2px solid white;
-  border-radius: var(--borderRadius);  */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -270,7 +273,7 @@ body.hidden {
   border: 3px solid var(--background1);
   border-radius: var(--borderRadius); 
   z-index: 1;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 }
 
 .rentals h3 {
