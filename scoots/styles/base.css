@@ -153,7 +153,7 @@ body.hidden {
   overflow: hidden;
 }
 
-.navigation {  
+.navigation {    
   background-color: var(--background1);
   position: absolute;
   top: -100%;  
@@ -380,6 +380,7 @@ body.hidden {
 }
 
 /* weather */
+
 .weather {
   background-color: var(--accent1);
   padding: 3rem 1rem;
@@ -412,6 +413,23 @@ body.hidden {
   /* background-color: var(--background2); */
   /* border: 3px solid var(--background1); */
   border-radius: var(--borderRadius); 
+}
+
+/* prices */
+
+.prices {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.table {
+  border: 1px solid red;
+  border-radius: var(--borderRadius);
+  line-height: 2.5rem;
+  padding: 1rem;
+
 }
 
 /* footer */
