@@ -83,7 +83,7 @@ function displayRentals(data) {
       <figcaption>${d.rental_type}</figcaption>      
     `;
 
-    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a>Make a Reservation</a>`;
+    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a>Make a Reservation&nbsp;&nbsp;<i class="fa fa-calendar-plus"></i></a>`;
 
     scooters.appendChild(scooterElement);
     scooters.appendChild(descriptionElement);

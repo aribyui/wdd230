@@ -14,14 +14,14 @@
   --text3: #FFFDF7;
   --headingText: 'Mansalva', sans-serif;
   --contentText: 'Patrick Hand', sans-serif;
-  --borderRadius: 10px; 
+  --borderRadius: 8px; 
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* letter-spacing: 0.2px; */
+  letter-spacing: 0.25px;
 }
 
 h1, h2, h3, h4 {
@@ -423,10 +423,11 @@ body.hidden {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem;
   text-align: center;  
   background-image: url("../images/background-doddle.webp");
-  background-color: var(--background2); 
+  background-color: var(--background3); 
+  position: relative;
 }
 
 /* Esta regla es para centrar en large view */
@@ -445,29 +446,29 @@ body.hidden {
   color: var(--text3); 
 }
 
-.rentals-prices tr:nth-child(2) th, 
-.rentals-prices tr:nth-child(3) th
-{
-  background-color: var(--accent1);
-  border-bottom: 2px solid var(--background1);
-  border-right: 2px solid var(--background1);
-}
+  .rentals-prices tr:nth-child(2) th, 
+  .rentals-prices tr:nth-child(3) th
+  {
+    background-color: var(--accent1);
+    border-bottom: 2px solid var(--background1);
+    border-right: 2px solid var(--background1);
+  }
 
-.rentals-prices tr:nth-child(2) th:last-child,
-.rentals-prices tr:nth-child(3) th:last-child 
-{
-  border-right: 0;
-}
+  .rentals-prices tr:nth-child(2) th:last-child,
+  .rentals-prices tr:nth-child(3) th:last-child 
+  {
+    border-right: 0;
+  }
 
-.rentals-prices td:nth-child(1),
-.rentals-prices td:nth-child(2),
-.rentals-prices td:nth-child(3),
-.rentals-prices td:nth-child(4),
-.rentals-prices td:nth-child(5),
-.rentals-prices td:nth-child(6) {  
-  border-right: 2px solid var(--background1);
-  border-bottom: 2px solid var(--background1);
-}
+  .rentals-prices td:nth-child(1),
+  .rentals-prices td:nth-child(2),
+  .rentals-prices td:nth-child(3),
+  .rentals-prices td:nth-child(4),
+  .rentals-prices td:nth-child(5),
+  .rentals-prices td:nth-child(6) {  
+    border-right: 2px solid var(--background1);
+    border-bottom: 2px solid var(--background1);
+  }
 
 .rentals-prices td:nth-child(6) {
   border-right: 0;  
@@ -529,6 +530,14 @@ body.hidden {
 .scooter-description {
   padding: 1rem;
   line-height: 2.5rem;
+  background-color: var(--background2);
+  border-radius: var(--borderRadius);
+  border: 3px solid var(--background1);
+  /* border-bottom-right-radius: 10px;*/
+}
+
+.scooter-description i:nth-child() {
+  color: var(--accent2);
 }
 
 .scooter-description hr {

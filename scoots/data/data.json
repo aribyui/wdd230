@@ -23,7 +23,8 @@
           "alt": "Honda Metro Scooter"
         }        
       ],
-      "description": "The Honda Metro Scooter is a compact and agile vehicle, perfect for efficient urban commuting. With a sleek and modern design, it offers reliable and economical performance, ideal for getting around the city with ease and style."
+      "description": "The Honda Metro Scooter is a compact and agile vehicle, perfect for efficient urban commuting. With a sleek and modern design, it offers reliable and economical performance, ideal for getting around the city with ease and style.",
+      "logo": "https://aribyui.github.io/wdd230/scoots/images/logo.webp"
     },
     {
       "rental_type": "Honda Dio Scooter",
@@ -48,7 +49,8 @@
           "alt": "Honda Dio Scooter"
         }        
       ],
-      "description": "The Honda Dio Scooter is a versatile and fun scooter designed for those seeking a practical and exciting mode of transportation. With an efficient engine and nimble handling, the Dio provides a dynamic and comfortable riding experience, perfect for exploring the city in style."
+      "description": "The Honda Dio Scooter is a versatile and fun scooter designed for those seeking a practical and exciting mode of transportation. With an efficient engine and nimble handling, the Dio provides a dynamic and comfortable riding experience, perfect for exploring the city in style.",
+      "logo": "https://aribyui.github.io/wdd230/scoots/images/logo.webp"
     },
     {
       "rental_type": "Honda PCX150 Scooter",
@@ -73,7 +75,8 @@
           "alt": "Honda PCX150 Scooter"
         }        
       ],
-      "description": "The Honda PCX150 Scooter combines style, performance, and comfort in a versatile package. With its powerful engine and aerodynamic design, the PCX150 offers smooth and efficient riding both in the city and on the highway, making it an excellent choice for those looking for a premium scooter."
+      "description": "The Honda PCX150 Scooter combines style, performance, and comfort in a versatile package. With its powerful engine and aerodynamic design, the PCX150 offers smooth and efficient riding both in the city and on the highway, making it an excellent choice for those looking for a premium scooter.",
+      "logo": "https://aribyui.github.io/wdd230/scoots/images/logo.webp"
     },
     {
       "rental_type": "Honda Pionner ATV",
@@ -98,7 +101,8 @@
           "alt": "Honda Pionner ATV"
         }        
       ],
-      "description": "The Honda Pioneer ATV is a rugged and durable all-terrain vehicle, designed for off-road adventures. With four-wheel drive and robust suspension, the Pioneer offers exceptional performance on a variety of terrains, from rocky trails to muddy paths, providing confidence and control on every journey."
+      "description": "The Honda Pioneer ATV is a rugged and durable all-terrain vehicle, designed for off-road adventures. With four-wheel drive and robust suspension, the Pioneer offers exceptional performance on a variety of terrains, from rocky trails to muddy paths, providing confidence and control on every journey.",
+      "logo": "https://aribyui.github.io/wdd230/scoots/images/logo.webp"
     },
     {
       "rental_type": "Jeep Wrangler - 4 door with a/c",
@@ -123,7 +127,8 @@
           "alt": "Jeep Wrangler - 4 door with a/c"
         }        
       ],
-      "description": "The Jeep Wrangler 4-door with air conditioning combines Jeep's legendary off-road capability with modern comforts. With space for up to five passengers and an iconic design, this Wrangler strikes the perfect balance between adventure and comfort, allowing you to explore the toughest trails in style and comfort."
+      "description": "The Jeep Wrangler 4-door with air conditioning combines Jeep's legendary off-road capability with modern comforts. With space for up to five passengers and an iconic design, this Wrangler strikes the perfect balance between adventure and comfort, allowing you to explore the toughest trails in style and comfort.",
+      "logo": "https://aribyui.github.io/wdd230/scoots/images/logo.webp"
     },
     {
       "rental_type": "Jeep Wrangler - 2 door",
@@ -148,7 +153,8 @@
           "alt": "Jeep Wrangler - 2 door"
         }        
       ],
-      "description": "The Jeep Wrangler 2-door is the epitome of pure off-road adventure. With its rugged design and unmatched capability, this Wrangler takes you places that other vehicles can only dream of. With seating for four passengers and legendary performance, it's the perfect companion for exploring challenging terrain and enjoying the great outdoors."
+      "description": "The Jeep Wrangler 2-door is the epitome of pure off-road adventure. With its rugged design and unmatched capability, this Wrangler takes you places that other vehicles can only dream of. With seating for four passengers and legendary performance, it's the perfect companion for exploring challenging terrain and enjoying the great outdoors.",
+      "logo": "https://aribyui.github.io/wdd230/scoots/images/logo.webp"
     }
   ]
 }
