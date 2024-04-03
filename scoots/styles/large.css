@@ -127,25 +127,22 @@
   .rentals-prices th,  .rentals-prices td  {
     padding: 0.9rem;
   }
+
+  .scooters {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   /* .scooter {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
   .scooter h2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+   
   }
   .scooter img {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  
   }
-  .scooter p {
-    border: 1px solid red;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+  .scooter p {   
+
+  }
   /* footer */ 
   .footer-main {
     display: grid;

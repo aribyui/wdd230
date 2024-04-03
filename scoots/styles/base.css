@@ -525,12 +525,13 @@ table caption {
  
 .scooter {
   background-color: var(--background3);
-  border: 3px solid var(--background1);
-  border-radius: var(--borderRadius);
+  /* border: 3px solid var(--background1); */
+  /* border-radius: var(--borderRadius); */
   padding: 1rem;  
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  line-height: 2.5rem;
 }
 
 .scooter img {
