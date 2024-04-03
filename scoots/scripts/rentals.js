@@ -19,14 +19,7 @@ async function getRentals() {
 }
 
 function displayRentals(data) {
-  // agregar tbody, tfoot, caption
-
   const thead = document.createElement("thead");
-  // const caption = document.createElement("caption");
-
-  // caption.textContent = "*HD: half day, FD: full day";
-
-  // table.appendChild(caption);
 
   thead.innerHTML = ` 
   <tr>
@@ -50,7 +43,7 @@ function displayRentals(data) {
   const tbody = document.createElement("tbody");
 
   data.forEach((d) => {
-    // console.log(d);
+    console.log(d);
 
     // table
     const tr = document.createElement("tr");
@@ -74,13 +67,14 @@ function displayRentals(data) {
     const descriptionElement = document.createElement("div");
     descriptionElement.classList.add("scooter-description");
 
-    scooterElement.innerHTML = `         
+    scooterElement.innerHTML = `           
       <figure>
         <source media="(max-width: 400px)" srcet="${d.images[0].small}">
         <source media="(max-width: 600px)" srcet="${d.images[0].medium}">
         <img src="${d.images[0].large}" alt="${d.rental_type}">
       </figure>
-      <figcaption>${d.rental_type}</figcaption>      
+      <!-- <figcaption>${d.rental_type}</figcaption> -->
+      <!-- <img id="scooter-element-logo" src="${d.logo}" alt="" width="" height=""> -->
     `;
 
     descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a>Make a Reservation&nbsp;&nbsp;<i class="fa fa-calendar-plus"></i></a>`;
