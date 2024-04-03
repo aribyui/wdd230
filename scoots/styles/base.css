@@ -457,14 +457,19 @@ body.hidden {
 .rentals-prices td:nth-child(2),
 .rentals-prices td:nth-child(3),
 .rentals-prices td:nth-child(4),
-.rentals-prices td:nth-child(5) {  
+.rentals-prices td:nth-child(5),
+.rentals-prices td:nth-child(6) {  
   border-right: 2px solid var(--background1);
   border-bottom: 2px solid var(--background1);
 }
 
 .rentals-prices td:nth-child(6) {
-  border-bottom: 2px solid var(--background1);
+  border-right: 0;  
 }
+/* .rentals-prices tr:last-child td {
+  border-bottom: 0;
+} */
+
 
 
 /* How to add border radius on table row */
@@ -492,7 +497,7 @@ body.hidden {
 }
 
 .rentals-prices tr:nth-child(even) {
-  background-color: var(--accent2);
+  background-color: var(--background2);
   color: var(--text1);
 }
 
