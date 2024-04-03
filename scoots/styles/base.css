@@ -228,7 +228,9 @@ body.hidden {
   padding: 0.6rem 2rem;
   text-decoration: none;
   width: fit-content;  
-  margin: 0 auto;
+  margin: 0 auto;  
+  box-shadow: 4px 4px 10px var(--background1);
+
 }
 
 .hero-label a:hover {  
@@ -545,11 +547,11 @@ body.hidden {
   border-radius: var(--borderRadius);
   padding: 0.6rem 2rem;
   cursor: pointer;
+  box-shadow: 4px 4px 10px var(--background1);
 }
 
 .scooter-description a:hover {
   background-color: var(--accent3);
-  /* box-shadow: 0 0 10px var(--accent2); */
 }
 
 /* footer */
