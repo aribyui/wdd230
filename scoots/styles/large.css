@@ -124,10 +124,8 @@
     padding: 1rem;
   }   */
   /* prices */
-  /* Esta regla es para centrar en large view */
-  .centered-container {
-    max-width: 1200px;
-    margin: 0 auto; 
+  .rentals-prices th,  .rentals-prices td  {
+    padding: 0.9rem;
   }
   /* .scooter {
     grid-template-columns: 1fr 1fr;

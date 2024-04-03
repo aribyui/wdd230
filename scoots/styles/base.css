@@ -413,47 +413,115 @@ body.hidden {
 
 /* prices */
 
-/* .table-container {
- 
-} */
-
 .prices {  
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;  
   background-image: url("../images/background-doddle.webp");
   background-color: var(--background2);
 }
 
-table { 
+/* Esta regla es para centrar en large view */
+.centered-container {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.rentals-prices { 
   border-collapse: collapse;
   text-align: center;
 }
 
-table th {
+.rentals-prices tr:first-child th:first-child {
   background-color: var(--background1);
   color: var(--text3); 
-  }
-
-table th, table td {
-  border: 1px solid var(--background1);
 }
 
-table td {
-  background-color: var(--background3);  
+.rentals-prices tr:nth-child(2) th, 
+.rentals-prices tr:nth-child(3) th
+{
+  background-color: var(--accent1);
+  border-bottom: 2px solid var(--background1);
+  border-right: 2px solid var(--background1);
 }
- 
-.scooters > div {  
+
+.rentals-prices tr:nth-child(2) th:last-child,
+.rentals-prices tr:nth-child(3) th:last-child 
+{
+  border-right: 0;
+}
+
+.rentals-prices td:nth-child(1),
+.rentals-prices td:nth-child(2),
+.rentals-prices td:nth-child(3),
+.rentals-prices td:nth-child(4),
+.rentals-prices td:nth-child(5) {  
+  border-right: 2px solid var(--background1);
+  border-bottom: 2px solid var(--background1);
+}
+
+.rentals-prices td:nth-child(6) {
+  border-bottom: 2px solid var(--background1);
+}
+
+
+/* How to add border radius on table row */
+/* https://tinyurl.com/3vtbnct8 */
+.rentals-prices tr:first-child th:first-child {
+  border-top-left-radius: var(--borderRadius);
+}
+
+.rentals-prices tr:first-child th:last-child {
+  border-top-right-radius: var(--borderRadius);
+}
+
+.rentals-prices tr:last-child td:first-child {
+  border-bottom-left-radius: var(--borderRadius);
+}
+
+.rentals-prices tr:last-child td:last-child {  
+  border-bottom-right-radius: var(--borderRadius);
+}
+
+/* Franjas de colores */
+.rentals-prices tr:nth-child(odd) {
+  background-color: var(--background3);
+  color: var(--text1);
+}
+
+.rentals-prices tr:nth-child(even) {
+  background-color: var(--accent2);
+  color: var(--text1);
+}
+
+/* table tr:nth-child(2) th:nth-child(3), 
+table tr:nth-child(2) th:nth-child(4), 
+table tr:nth-child(2) th:nth-child(5),
+table tr:nth-child(2) th:nth-child(6)
+{
+  background-color: red;
+} */
+
+table caption {
+  caption-side: bottom;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.scooters {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;  
+  gap: 1rem;
 }
-
+ 
 .scooter {
   background-color: var(--background3);
   border: 3px solid var(--background1);
+  border-radius: var(--borderRadius);
   padding: 1rem;  
   display: grid;
   grid-template-columns: 1fr;
@@ -466,7 +534,6 @@ table td {
   display: block;
   object-fit: cover; 
 }
-
 
 /* footer */
 
