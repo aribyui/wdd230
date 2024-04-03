@@ -6,11 +6,13 @@ const nextDayForecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat
 const tempMax = document.querySelector("#temp-max");
 const todayWeatherIcon = document.querySelector("#today-weather-icon");
 const temperature = document.querySelector("#temperature");
-const description = document.querySelector("#description");
+const weatherDescription = document.querySelector("#description");
 const humidity = document.querySelector("#humidity");
 const nextDayTemperature = document.querySelector("#next-day-temperature");
 const nextDayWeatherIcon = document.querySelector("#next-day-weather-icon");
-const nextDayWeatherDesciption = document.querySelector("#next-day-description");
+const nextDayWeatherDesciption = document.querySelector(
+  "#next-day-description"
+);
 const nextDayHumidity = document.querySelector("#next-day-humidity");
 
 async function getCurrentForecast() {
@@ -18,10 +20,10 @@ async function getCurrentForecast() {
     const response = await fetch(currentForecastURL);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data);  
+      // console.log(data);
       displayCurrentForecast(data);
     } else {
-      throw Error (await response.text());
+      throw Error(await response.text());
     }
   } catch (error) {
     console.log(error);
@@ -31,19 +33,19 @@ async function getCurrentForecast() {
 function displayCurrentForecast(data) {
   const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
   const img = document.createElement("img");
-  const arrayDescription = data.weather[0].description.split(" "); 
- 
-  tempMax.innerHTML = `${(data.main.temp_max).toFixed()}&deg;C`;
+  const arrayDescription = data.weather[0].description.split(" ");
 
-  img.setAttribute("src", iconUrl)
+  tempMax.innerHTML = `${data.main.temp_max.toFixed()}&deg;C`;
+
+  img.setAttribute("src", iconUrl);
   img.setAttribute("alt", getCapitalLetters(arrayDescription));
   img.setAttribute("width", "200");
   img.setAttribute("height", "200");
-  img.setAttribute("loading", "lazy");   
-  
+  img.setAttribute("loading", "lazy");
+
   todayWeatherIcon.appendChild(img);
-  temperature.innerHTML = `${(data.main.temp).toFixed()}&deg;C`;
-  description.textContent = getCapitalLetters(arrayDescription);
+  temperature.innerHTML = `${data.main.temp.toFixed()}&deg;C`;
+  weatherDescription.textContent = getCapitalLetters(arrayDescription);
   humidity.textContent = `Humidity: ${data.main.humidity}%`;
 }
 
@@ -55,7 +57,7 @@ async function getNextDayForecast() {
       // console.log(data.list);
       displayNextDayForecast(data.list);
     } else {
-      throw Error (await response.json());
+      throw Error(await response.json());
     }
   } catch (error) {
     console.log(error);
@@ -63,7 +65,6 @@ async function getNextDayForecast() {
 }
 
 function displayNextDayForecast(data) {
-
   const img = document.createElement("img");
 
   // Obtener la fecha del primer elemento de los datos del pronóstico del tiempo
@@ -97,26 +98,27 @@ function displayNextDayForecast(data) {
       img.setAttribute("height", "200");
       img.setAttribute("loading", "lazy");
       // Adjuntar la imagen del icono del clima al contenedor 'nextDayWeatherIcon' en el DOM
-      nextDayWeatherIcon.appendChild(img)
+      nextDayWeatherIcon.appendChild(img);
       // Mostrar el día y la temperatura del pronóstico del tiempo en la consola
       // console.log("Day: " + day + " Temperature: " + temperature + " Hour: " + hours);
       nextDayTemperature.innerHTML = `${temperature}&degC`;
       // Mostramos la descripción del pronóstico del tiempo en formato de palabras capitalizadas
       // utilizando la función 'getCapitalLetters', a la cual le pasamos el parámetro 'description'.
-      nextDayWeatherDesciption.textContent = getCapitalLetters(arrayDescription);
-      nextDayHumidity.textContent = `Humidity: ${hum}%`
+      nextDayWeatherDesciption.textContent =
+        getCapitalLetters(arrayDescription);
+      nextDayHumidity.textContent = `Humidity: ${hum}%`;
     }
   }
 }
 
-function getCapitalLetters (array) {
+function getCapitalLetters(array) {
   const capitalLetters = [];
 
-  array.forEach(word => {
+  array.forEach((word) => {
     const firstLetter = word[0].toUpperCase();
     const subString = word.slice(1);
     const newWord = firstLetter + subString;
-    capitalLetters.push(newWord)
+    capitalLetters.push(newWord);
   });
 
   // Devuelve una cadena creada a partir de las palabras capitalizadas en el array 'capitalLetters'
@@ -126,12 +128,9 @@ function getCapitalLetters (array) {
   // Después, se utiliza el método 'replaceAll()' para reemplazar todas las comas (',') por espacios en blanco.
   // Para obtener más información sobre el método 'replaceAll()', consultar la documentación de JavaScript: https://tinycurrentForecastURL.com/3z52hz6k
   //  description.textContent = capitalLetters.toString().replaceAll(",", " ");
-  return capitalLetters.toString().replaceAll(",", " ")
+  return capitalLetters.toString().replaceAll(",", " ");
 }
 
 getCurrentForecast();
 
 getNextDayForecast();
-
-
-

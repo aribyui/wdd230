@@ -1,7 +1,7 @@
 :root {
   --background1: #02020A;
   --background1Transparency: #02020A22;
-  --background2: #E3E3E3;
+  --background2: #d1d1d1d1;
   --background3: #FFFDF7;
   --border1: #1414b841;
   --border2: #FFFDF7;
@@ -466,11 +466,6 @@ body.hidden {
 .rentals-prices td:nth-child(6) {
   border-right: 0;  
 }
-/* .rentals-prices tr:last-child td {
-  border-bottom: 0;
-} */
-
-
 
 /* How to add border radius on table row */
 /* https://tinyurl.com/3vtbnct8 */
@@ -501,14 +496,6 @@ body.hidden {
   color: var(--text1);
 }
 
-/* table tr:nth-child(2) th:nth-child(3), 
-table tr:nth-child(2) th:nth-child(4), 
-table tr:nth-child(2) th:nth-child(5),
-table tr:nth-child(2) th:nth-child(6)
-{
-  background-color: red;
-} */
-
 table caption {
   caption-side: bottom;
   font-style: italic;
@@ -520,14 +507,13 @@ table caption {
 .scooters {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
  
 .scooter {
   background-color: var(--background3);
-  /* border: 3px solid var(--background1); */
-  /* border-radius: var(--borderRadius); */
-  padding: 1rem;  
+  border: 3px solid var(--background1);  
+  padding: 1rem 1rem 7.5rem 1rem; 
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -539,6 +525,11 @@ table caption {
   height: 100%;
   display: block;
   object-fit: cover; 
+  background-color: var(--background2);   
+}
+
+.scooter-description {
+  line-height: 2.5rem;
 }
 
 /* footer */

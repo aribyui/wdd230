@@ -119,30 +119,31 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  /* .today-forecast, .next-day-forecast {
-    border: 3px solid var(--background1);
-    padding: 1rem;
-  }   */
-  /* prices */
-  .rentals-prices th,  .rentals-prices td  {
-    padding: 0.9rem;
+  /* prices */  
+  .prices {
+    padding: 3rem 1rem;
   }
-
+  .rentals-prices th,  .rentals-prices td  {
+    padding: 0.8rem;
+  }  
   .scooters {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 5rem;
   }
-  /* .scooter {
-    grid-template-columns: 1fr 1fr;
-  } */
-  .scooter h2 {
-   
+  .scooter {    
+    /* box-shadow: 8px 8px 10px var(--accent1); */
   }
-  .scooter img {
-  
+  .scooter-description:nth-child(2),
+  .scooter-description:nth-child(4),
+  .scooter-description:nth-child(6),
+  .scooter-description:nth-child(8),
+  .scooter-description:nth-child(10),
+  .scooter-description:nth-child(12)
+  {
+    grid-column: 2/4;    
   }
-  .scooter p {   
-
-  }
+ 
   /* footer */ 
   .footer-main {
     display: grid;

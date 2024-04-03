@@ -19,13 +19,73 @@
     grid-column: 1/2;
     grid-row: 4/5;/
   }
+  /* adventures */
+  .polaroid-1 div h3, .polaroid-2 div h3 {
+    margin-bottom: 0;
+  }
   /* prices */
   .rentals-prices th,  .rentals-prices td  {
     padding: 0.5rem;
   }
-  #scooters {
+  .scooters {
+    grid-template-columns: 1fr 1fr
+  }
+  .scooter:nth-child(1) {    
+    grid-column: 1/2;
+    grid-row: 1/2;    
+  }
+  .scooter:nth-child(3) {    
+    grid-column: 1/2;
+    grid-row: 2/3;   
+  }
+  .scooter:nth-child(5) {    
+    grid-column: 1/2;
+    grid-row: 3/4;    
+  }
+  .scooter:nth-child(7) {    
+    grid-column: 1/2;
+    grid-row: 4/5;    
+  }
+  .scooter:nth-child(9) {    
+    grid-column: 1/2;
+    grid-row: 5/6;    
+  }
+  .scooter:nth-child(11) {    
+    grid-column: 1/2;
+    grid-row: 6/7;    
+  }
+  .scooter-description {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .scooter-description h3 {
+    margin-bottom: 1rem;
+  }
+  .scooter-description:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .scooter-description:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .scooter-description:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .scooter-description:nth-child(8) {
     grid-column: 2/3;
     grid-row: 4/5;
+  }
+  .scooter-description:nth-child(10) {
+    grid-column: 2/3;
+    grid-row: 5/6;    
+  }
+  .scooter-description:nth-child(12) {
+    grid-column: 2/3;
+    grid-row: 6/7;    
   }
   /* weather */
   .adventures-image-content-2 {
