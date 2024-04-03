@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 } 
 
 /* banner message */
@@ -177,6 +177,10 @@ body.hidden {
 .navigation a:hover {
   border-bottom: 3px solid var(--accent2);   
 } 
+
+.navigation li:focus {
+  background-color: red;
+}
 
 .navigation li:last-of-type a:hover {
   border-bottom: none;   
@@ -420,7 +424,7 @@ body.hidden {
   padding: 1rem;
   text-align: center;  
   background-image: url("../images/background-doddle.webp");
-  background-color: var(--background2);
+  background-color: var(--background2); 
 }
 
 /* Esta regla es para centrar en large view */
@@ -496,14 +500,6 @@ body.hidden {
   color: var(--text1);
 }
 
-table caption {
-  caption-side: bottom;
-  font-style: italic;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  text-align: left;
-}
-
 .scooters {
   display: grid;
   grid-template-columns: 1fr;
@@ -529,7 +525,31 @@ table caption {
 }
 
 .scooter-description {
+  padding: 1rem;
   line-height: 2.5rem;
+}
+
+.scooter-description hr {
+  border: 2px solid var(--accent2);
+  margin: 1rem 0;
+  width: auto;
+}
+
+.scooter-description p {
+  margin-bottom: 1rem;
+}
+
+.scooter-description a {
+  color: var(--text3);
+  background-color: var(--accent2);  
+  border-radius: var(--borderRadius);
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+}
+
+.scooter-description a:hover {
+  background-color: var(--accent3);
+  /* box-shadow: 0 0 10px var(--accent2); */
 }
 
 /* footer */

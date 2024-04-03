@@ -97,7 +97,7 @@
     width: 450px;
     height: 550px;
     margin: 0 auto;
-    box-shadow: 8px 8px 10px var(--accent1);
+    box-shadow: 8px 8px 10px var(--background1);
   }
   .adventures-image-content-1:hover, .adventures-image-content-2:hover {
     box-shadow: none;
@@ -131,8 +131,12 @@
     gap: 2rem;
     margin-top: 5rem;
   }
-  .scooter {    
-    /* box-shadow: 8px 8px 10px var(--accent1); */
+  .scooter {
+    box-shadow: 8px 8px 10px var(--background1);
+  }
+  .scooter:hover {
+    transform: scale(1.02) rotate(-3deg);
+    transition: 0.3s ease-in-out;
   }
   .scooter-description:nth-child(2),
   .scooter-description:nth-child(4),
@@ -142,6 +146,9 @@
   .scooter-description:nth-child(12)
   {
     grid-column: 2/4;    
+  }
+  .scooter-description {
+    padding: 3rem;
   }
  
   /* footer */ 

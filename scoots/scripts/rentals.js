@@ -74,17 +74,16 @@ function displayRentals(data) {
     const descriptionElement = document.createElement("div");
     descriptionElement.classList.add("scooter-description");
 
-    scooterElement.innerHTML = `
-      <!-- <h2>${d.rental_type}</h2> -->      
+    scooterElement.innerHTML = `         
       <figure>
         <source media="(max-width: 400px)" srcet="${d.images[0].small}">
         <source media="(max-width: 600px)" srcet="${d.images[0].medium}">
         <img src="${d.images[0].large}" alt="${d.rental_type}">
       </figure>
-      <p>${d.rental_type}</p>      
+      <figcaption>${d.rental_type}</figcaption>      
     `;
 
-    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><p>${d.description}</p>`;
+    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a>Make a Reservation</a>`;
 
     scooters.appendChild(scooterElement);
     scooters.appendChild(descriptionElement);

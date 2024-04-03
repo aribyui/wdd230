@@ -60,8 +60,8 @@
     align-items: center;
     justify-content: center;
   }
-  .scooter-description h3 {
-    margin-bottom: 1rem;
+  .scooter-description hr {
+    width: 100%;
   }
   .scooter-description:nth-child(2) {
     grid-column: 2/3;
