@@ -43,7 +43,7 @@ function displayRentals(data) {
   const tbody = document.createElement("tbody");
 
   data.forEach((d) => {
-    console.log(d);
+    // console.log(d);
 
     // table
     const tr = document.createElement("tr");
@@ -73,11 +73,10 @@ function displayRentals(data) {
         <source media="(max-width: 600px)" srcet="${d.images[0].medium}">
         <img src="${d.images[0].large}" alt="${d.rental_type}">
       </figure>
-      <!-- <figcaption>${d.rental_type}</figcaption> -->
-      <!-- <img id="scooter-element-logo" src="${d.logo}" alt="" width="" height=""> -->
+      <figcaption>${d.rental_type}</figcaption>
     `;
 
-    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a>Make a Reservation&nbsp;&nbsp;<i class="fa fa-calendar-plus"></i></a>`;
+    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a href="reservations.html">Make a Reservation&nbsp;&nbsp;<i class="fa fa-calendar-plus"></i></a>`;
 
     scooters.appendChild(scooterElement);
     scooters.appendChild(descriptionElement);

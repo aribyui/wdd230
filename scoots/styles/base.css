@@ -514,11 +514,7 @@ body.hidden {
 .scooter {
   background-color: var(--background3);
   border: 3px solid var(--background1);  
-  padding: 1rem 1rem 7.5rem 1rem; 
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  line-height: 2.5rem;
+  padding: 1rem 1rem 5rem 1rem; 
 }
 
 .scooter img {
@@ -526,7 +522,8 @@ body.hidden {
   height: 100%;
   display: block;
   object-fit: cover; 
-  background-color: var(--background2);   
+  background-color: var(--background2); 
+  margin-bottom: 1rem;  
 }
 
 .scooter-description {
@@ -559,17 +556,16 @@ body.hidden {
   padding: 0.6rem 2rem;
   cursor: pointer;
   box-shadow: 4px 4px 10px var(--background1);
+  text-decoration: none;
 }
 
 .scooter-description a:hover {
   background-color: var(--accent3);
 }
 
-
-
-
-
-
+.scooter-description a:visited {
+  color: var(--text);
+}
 
 /* footer */
 
