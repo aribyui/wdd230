@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
 
 a, li, p, span, #hamburger-button, figcaption, table, form {
   font-family: var(--contentText); 
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 h1 {
