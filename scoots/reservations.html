@@ -60,8 +60,6 @@
 
     <div class="reservations">
 
-
-
       <div class="reservations-content centered-container">
 
         <div class="reservation-title">
@@ -73,14 +71,14 @@
           <h3>Agreement Information</h3>
           <ul>
             <li>A $50 security deposit is required to confirm reservations.</li>
-            <li>A valid drivers license is required in hand at the time of rental.</li>
-            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>A valid drivers license is required in hand at the time ofrental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride onthe scooters.</li>
             <li>Fuel charge is not included.</li>
             <li>Unlimited mileage.</li>
             <li>Liability insurance is included.</li>
             <li>Damage insurance is available for purchase.</li>
             <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debitcard, or venmo.</li>
             <li>Rentals may be returned to either physical location.</li>
           </ul>
         </div>
@@ -89,16 +87,17 @@
           <form method="get">
             <fieldset>
               <h3>User contract</h3>
-              <label>Name*<input type="text" required></label>
-              <label>Phone*<input type="tel" required></label>
-              <label>Email*<input type="email" required></label>
-              <label>Country*<input type="text" required></label>
-              <label>Cruise<input type="text"></label>
-              <label>Rental type*<input type="text" required></label>
-              <label>Date*<input type="date" required></label>
-              <label>Period*<input type="date" required></label>
-              <label>Number*<input type="number" min="0" max="6" required></label>
-              <label>Comments<textarea name="comments" id="comments" cols="27" rows="10"></textarea></label>
+              <label>Name*<input type="text" id="uname" name="uname" required></label>
+              <label>Phone*<input type="tel" id="uphone" name="uphone" required></label>
+              <label>Email*<input type="email" id="uemail" name="uemail" required placeholder="john@email.com"></label>
+              <label>Country*<input type="text" id="contry" name="contry" required></label>
+              <label>Cruise<input type="text" id="cruise" name="cruise"></label>
+              <label>Rental type*<input type="text" id="rentaltype" name="rentaltype" required></label>
+              <label>Date*<input type="date" id="date" name="date" required></label>
+              <label>Period*<input type="date" id="period" name="date" required></label>
+              <label>Number*<input type="number" min="0" max="6" id="numberpersons" name="numberpersons"
+                  required></label>
+              <label>Comments<textarea name="comments" id="comments" cols="24" rows="10"></textarea></label>
             </fieldset>
             <input type="submit" value="Make a Reservation" class="make-a-reservation-button">
           </form>

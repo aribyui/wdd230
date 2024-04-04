@@ -1,4 +1,9 @@
 @media screen and (min-width: 32.5em) {  
+  a, li, p, span, #hamburger-button, figcaption, table, form {
+    font-family: var(--contentText); 
+    font-size: 1.5rem;
+  }
+ 
   /* rentals */
   .rentals div {
     grid-template-columns: 1fr 1fr;   
