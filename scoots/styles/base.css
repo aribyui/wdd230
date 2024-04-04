@@ -574,7 +574,7 @@ body.hidden {
 .reservations {
   background-image: url("../images/background-doddle.webp");
   background-color: var(--background3); 
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
  .reservation-title {
