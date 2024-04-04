@@ -1,8 +1,7 @@
 :root {
-  --background1: #02020A;
-  --background1Transparency: #02020A22;
-  --background2: #E6E6E6;
-  --background3: #FFFDF7;
+  --background1: #02020A;  
+  --background2: #DADADA;
+  --background3: #FFFDF7;  
   --border1: #1414b841;
   --border2: #FFFDF7;
   --accent1: #31C4C5;
@@ -419,8 +418,6 @@ body.hidden {
 
 /* prices */
 
-/* prices */
-
 .prices {  
   display: grid;
   grid-template-columns: 1fr;
@@ -444,7 +441,7 @@ body.hidden {
 }
 
 .rentals-prices, .rentals-prices th, .rentals-prices td {
-  border: 2px solid var(--background1)
+  border: 3px solid var(--background1)
 }
 
 .rentals-prices tr:first-child th:first-child {
@@ -455,8 +452,8 @@ body.hidden {
   .rentals-prices tr:nth-child(2) th, 
   .rentals-prices tr:nth-child(3) th
   {
-    background-color: var(--accent1);
-    color: var(--text1);
+    background-color:var(--background1);
+    color: var(--text3);
     /* border-bottom: 2px solid var(--background1);
     border-right: 2px solid var(--background1); */
   }
@@ -506,7 +503,7 @@ body.hidden {
 }
 
 .rentals-prices tr:nth-child(even) {
-  background-color: var(--background2);
+  background-color: var(--accent1);
   color: var(--text1);
 }
 
