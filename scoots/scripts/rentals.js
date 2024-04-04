@@ -61,25 +61,25 @@ function displayRentals(data) {
     table.appendChild(tbody);
 
     // scooters
-    const scooterElement = document.createElement("div");
-    scooterElement.classList.add("scooter");
+    // const scooterElement = document.createElement("div");
+    // scooterElement.classList.add("scooter");
 
-    const descriptionElement = document.createElement("div");
-    descriptionElement.classList.add("scooter-description");
+    // const descriptionElement = document.createElement("div");
+    // descriptionElement.classList.add("scooter-description");
 
-    scooterElement.innerHTML = `           
-      <figure>
-        <source media="(max-width: 400px)" srcet="${d.images[0].small}">
-        <source media="(max-width: 600px)" srcet="${d.images[0].medium}">
-        <img src="${d.images[0].large}" alt="${d.rental_type}">
-      </figure>
-      <figcaption>${d.rental_type}</figcaption>
-    `;
+    // scooterElement.innerHTML = `
+    //   <figure>
+    //     <source media="(max-width: 400px)" srcet="${d.images[0].small}">
+    //     <source media="(max-width: 600px)" srcet="${d.images[0].medium}">
+    //     <img src="${d.images[0].large}" alt="${d.rental_type}">
+    //   </figure>
+    //   <figcaption>${d.rental_type}</figcaption>
+    // `;
 
-    descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a href="reservations.html">Make a Reservation&nbsp;&nbsp;<i class="fa fa-calendar-plus"></i></a>`;
+    // descriptionElement.innerHTML = `<h3>${d.rental_type}</h3><hr><p>${d.description}</p><a href="reservations.html">Make a Reservation&nbsp;&nbsp;<i class="fa fa-calendar-plus"></i></a>`;
 
-    scooters.appendChild(scooterElement);
-    scooters.appendChild(descriptionElement);
+    // scooters.appendChild(scooterElement);
+    // scooters.appendChild(descriptionElement);
   });
 }
 

@@ -1,7 +1,7 @@
 :root {
   --background1: #02020A;
   --background1Transparency: #02020A22;
-  --background2: #d1d1d1d1;
+  --background2: #E6E6E6;
   --background3: #FFFDF7;
   --border1: #1414b841;
   --border2: #FFFDF7;
@@ -425,10 +425,10 @@ body.hidden {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  padding: 1rem 1rem 3rem;
+  padding: 1rem 0.5rem;
   text-align: center;  
-  background-image: url("../images/background-doddle.webp");
-  background-color: var(--background3); 
+  background-image: url("../images/background-doddle.webp"); 
+  background-color: var(--background2); 
   position: relative;
 }
 
@@ -443,6 +443,10 @@ body.hidden {
   text-align: center;
 }
 
+.rentals-prices, .rentals-prices th, .rentals-prices td {
+  border: 2px solid var(--background1)
+}
+
 .rentals-prices tr:first-child th:first-child {
   background-color: var(--background1);
   color: var(--text3); 
@@ -452,11 +456,12 @@ body.hidden {
   .rentals-prices tr:nth-child(3) th
   {
     background-color: var(--accent1);
-    border-bottom: 2px solid var(--background1);
-    border-right: 2px solid var(--background1);
+    color: var(--text1);
+    /* border-bottom: 2px solid var(--background1);
+    border-right: 2px solid var(--background1); */
   }
 
-  .rentals-prices tr:nth-child(2) th:last-child,
+  /* .rentals-prices tr:nth-child(2) th:last-child,
   .rentals-prices tr:nth-child(3) th:last-child 
   {
     border-right: 0;
@@ -474,11 +479,11 @@ body.hidden {
 
 .rentals-prices td:nth-child(6) {
   border-right: 0;  
-}
+} */
 
 /* How to add border radius on table row */
 /* https://tinyurl.com/3vtbnct8 */
-.rentals-prices tr:first-child th:first-child {
+/* .rentals-prices tr:first-child th:first-child {
   border-top-left-radius: var(--borderRadius);
 }
 
@@ -492,7 +497,7 @@ body.hidden {
 
 .rentals-prices tr:last-child td:last-child {  
   border-bottom-right-radius: var(--borderRadius);
-}
+} */
 
 /* Franjas de colores */
 .rentals-prices tr:nth-child(odd) {
