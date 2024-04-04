@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Explore the beautiful island of Cozumel on an ATV, jeep, or scooter. Enjoy an exciting experience whether you're alone, with friends, or with family. Visit us today, no appointment necessary!">
+  <meta name="author" content="Lizandro Arizpe">
+  <!-- open graph meta tags -->
+  <meta property="og:title" content="Lizandro Arizpe - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://aribyui.github.io/wdd230/scooter/images/open-graph-image.webp">
+  <meta property="og:url" content="https://aribyui.github.io/wdd230/scooter">
+  <!-- normalize -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Patrick+Hand&family=Protest+Riot&display=swap"
+    rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <title>Scoots | Reservations</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- logo -->
+    <div class="header-logo">
+      <a href="index.html"><img src="images/logo.webp" alt="Scoots logo" width="200" height="200"></a>
+      <h1>Scoots&#169;</h1>
+    </div>
+    <!-- menu -->
+    <div>
+      <button id="hamburger-button" title="Open menu"></button>
+      <nav class="navigation">
+        <div>
+          <p>Menu</p>
+          <span id="menu-close-button" title="Close menu">X</span>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.facebook.com/"><img id="facebook-logo" src="images/facebook-logo.webp"
+                alt="Facebook logo"></a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+
+    <div class="reservations">
+
+
+
+      <div class="reservations-content centered-container">
+
+        <div class="reservation-title">
+          <h2>Reservations</h2>
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+
+        <div class="agreement-information">
+          <h3>Agreement Information</h3>
+          <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+          </ul>
+        </div>
+
+        <div class="user-contract">
+          <form method="get">
+            <fieldset>
+              <h3>User contract</h3>
+              <label>Name*<input type="text" required></label>
+              <label>Phone*<input type="tel" required></label>
+              <label>Email*<input type="email" required></label>
+              <label>Country*<input type="text" required></label>
+              <label>Cruise<input type="text"></label>
+              <label>Rental type*<input type="text" required></label>
+              <label>Date*<input type="date" required></label>
+              <label>Period*<input type="date" required></label>
+              <label>Number*<input type="number" min="0" max="6" required></label>
+              <label>Comments<textarea name="comments" id="comments" cols="27" rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Make a Reservation" class="make-a-reservation-button">
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+  <footer>
+
+    <div class="footer-main">
+      <!-- logo -->
+      <div class="footer-logo">
+        <div>
+          <h2>Scoots&#169;</h2>
+          <img src="images/logo.webp" alt="Scoots logo" width="200" height="200" loading="lazy">
+        </div>
+      </div>
+
+      <!-- address 1 -->
+      <div id="address-1">
+        <h3>Downtown Cozumel</h3>
+        <address>
+          <p>
+            Main Street, Downtown, Cozumel<br>
+            +52 987 123 4567<br>
+            centro@scoots.com
+          </p>
+        </address>
+      </div>
+      <!-- address 2 -->
+      <div id="address-2">
+        <h3>Terminal Puerta Maya</h3>
+        <address>
+          <p>
+            Costera Sur Avenue, Terminal Puerta Maya, Cozumel<br>
+            +52 987 987 6543<br>
+            puertamaya@scoots.com
+          </p>
+        </address>
+      </div>
+    </div>
+
+    <!-- credits -->
+    <div class="footer-credits">
+      <p id="current-date"></p>
+    </div>
+
+  </footer>
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/c61ce8d6ca.js" crossorigin="anonymous"></script>
+  <script src="scripts/hamburgerbutton.js"></script>
+  <script src="scripts/current-date.js"></script>
+</body>
+
+</html>
