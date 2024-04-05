@@ -158,23 +158,25 @@
     text-align: left;    
   }
   /* reservations */
-  .reservations {
+  .reservations, .contact {
     padding: 3rem 1rem;    
   }
-  .reservations-content {
+  .reservations-content, .contact-content {
     grid-template-columns: 1fr 1fr; 
     gap: 2rem;     
   }
-  .reservation-title {
+  .reservation-title, .contact-title {
     grid-column: 1/3;
     grid-row: 1/2;    
     flex-direction: row;
   }
+  /* PENDIENTE */
   .reservation-title h2 {
     margin-right: 1rem;
   }
-  .reservations p {
+  .reservations p, .contact p {
     grid-column: 1/3;
+    grid-row: 2/3;
   }
   .agreement-information {
     grid-column: 2/3;
@@ -182,7 +184,7 @@
   }
   .user-contract {
     grid-column: 1/2;
-    grid-row: 3/6; 
+    grid-row: 3/5; 
   }  
   .user-contract fieldset:nth-child(1), 
   .user-contract fieldset:nth-child(2)
@@ -190,11 +192,26 @@
     margin-bottom: 2rem;
   }
 
-  .agreement-information, .user-contract fieldset {
+  .agreement-information, 
+  .user-contract fieldset,
+  .get-in-touch fieldset,
+  .contact-information
+  {
     padding: 2rem 3rem;
   }
-  .make-a-reservation-button {       
+  .make-a-reservation-button,
+  .send-a-message-button
+  {       
     margin: 1rem auto 0 3rem;    
+  }
+  /* contact */
+  .get-in-touch {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .contact-information {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
   /* footer */ 
   .footer-main {

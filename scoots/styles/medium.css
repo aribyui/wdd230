@@ -1,5 +1,5 @@
 @media screen and (min-width: 32.5em) {  
-  a, li, p, span, #hamburger-button, figcaption, table, form {
+  a, li, p, span, #hamburger-button, figcaption, table, form, .make-a-reservation-button, .send-a-message-button {
     font-family: var(--contentText); 
     font-size: 1.5rem;
   }

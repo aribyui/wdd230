@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
   font-family: var(--headingText);
 }
 
-a, li, p, span, #hamburger-button, figcaption, table, form {
+a, li, p, span, #hamburger-button, figcaption, table, form, .make-a-reservation-button, .send-a-message-button {
   font-family: var(--contentText); 
   font-size: 1.3rem;
 }
@@ -579,23 +579,23 @@ body.hidden {
 
 /* reservations */
 
-.reservations {
+.reservations, .contact {
   background-image: url("../images/background-doddle.webp");
   background-color: var(--background4); 
   padding: 0.5rem; 
 }
 
-.reservation-title {
+.reservation-title, .contact-title {
   text-align: left;   
   display: flex; 
   align-items: center;
 }
 
-.reservation-title h2 {
+.reservation-title h2, .contact-title h2 {
   margin-right: 1rem;
 }
 
-.reservation-title i { 
+.reservation-title i, .contact-title i { 
   color: var(--accent2); 
 }
 
@@ -603,24 +603,29 @@ body.hidden {
   line-height: 2.4rem;
 }
 
-.reservations-content {
+.reservations-content, .contact-content {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
 }
 
-.agreement-information {
+.agreement-information, .contact-information {
   background-color: var(--accent1);  
   line-height: 2.5rem;
 }
 
 .agreement-information h3 span,
-.user-contract h3 span
+.user-contract h3 span,
+.get-in-touch h3 span,
+.contact-information h3 span
 {  
   font-size: 1.8rem;
 }
 
-.agreement-information hr {
+/* PENDIENTE */
+.agreement-information hr, 
+.contact-information hr
+{
   margin: 1.5rem 0;
   border: 2px solid var(--accent2);
   width: 100%;
@@ -636,7 +641,9 @@ body.hidden {
   color: var(--accent2);
 }
 
-.user-contract fieldset {
+.user-contract fieldset, 
+.get-in-touch fieldset 
+{
   background-color: var(--background3);  
 }
 
@@ -646,13 +653,19 @@ body.hidden {
   margin-bottom: 1rem;
 }
 
-.agreement-information, .user-contract fieldset { 
+.agreement-information, 
+.user-contract fieldset,
+.get-in-touch fieldset,
+.contact-information
+{ 
   border-radius: var(--borderRadius);
   border: 3px solid var(--background1);
   padding: 2rem 1rem;
 }
 
-.user-contract fieldset label {
+.user-contract fieldset label,
+.get-in-touch fieldset label
+{
   display: block;
   margin-top: 1.7rem;
 }
@@ -665,7 +678,10 @@ body.hidden {
 .user-contract fieldset input[type="tel"],
 .user-contract fieldset input[type="email"],
 .user-contract fieldset input[type="date"],
-.user-contract fieldset input[type="number"] {
+.user-contract fieldset input[type="number"],
+.get-in-touch fieldset input[type="text"],
+.get-in-touch fieldset input[type="email"] 
+{
   display: block;
   padding: .75rem;
   margin-top: 0.5rem;
@@ -696,7 +712,11 @@ body.hidden {
   border: 3px solid var(--background1); 
 }
 
-.user-contract fieldset textarea {
+/* PENDIENTE */
+.user-contract fieldset textarea,
+.get-in-touch fieldset textarea
+{
+  display: block;
   border: 3px solid var(--background1);
   border-radius: var(--borderRadius);
   margin-top: 0.5rem;
@@ -706,7 +726,8 @@ body.hidden {
   resize: none;
 }
 
-.make-a-reservation-button {
+.make-a-reservation-button, 
+.send-a-message-button {
   cursor: pointer;
   border: 0;
   border-radius: var(--borderRadius);
@@ -719,13 +740,57 @@ body.hidden {
   box-shadow: 0px 8px 10px var(--accent4);
 }
 
-.make-a-reservation-button:hover {
+.make-a-reservation-button:hover,
+.send-a-message-button:hover
+{
   background-color: var(--accent3);
   transform: scale(0.99); 
 }
 
 .push-button-effect.make-a-reservation-button {
   transform: scale(0.98);
+} 
+
+/* contact */
+
+.get-in-touch fieldset h3
+{
+  margin-bottom: 1rem;
+}
+
+.contact-content fieldset input[type="text"],
+.contact-content fieldset input[type="email"]
+{
+  border: 3px solid var(--background1)
+}
+
+.locations {
+  border-radius: var(--borderRadius);    
+  /* padding: 1rem; */
+}
+
+
+.locations p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.locations:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.map {  
+  border-radius: var(--borderRadius);
+  border: 3px solid var(--background1);
+  position: relative;
+  height: 20vh;
+}
+
+.locations iframe {
+  display: block;  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--borderRadius);
 } 
 
 /* footer */
