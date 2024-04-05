@@ -52,8 +52,8 @@ h3 {
   background-color: var(--accent1);
   color: var(--text1);   
   padding: 0.5rem;
-  z-index: 1;
-  position: absolute;
+  /* z-index: 1;
+  position: absolute; */
   width: 100%;
   text-align: center;  
 }
