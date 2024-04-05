@@ -8,6 +8,7 @@
   --accent1hover: #0194AB; 
   --accent2: #FF0054;
   --accent3: #D80757; 
+  --accent4: #910030;
   --text1: #02020A;
   --text2: #303030;
   --text3: #FFFDF7;
@@ -693,6 +694,7 @@ body.hidden {
 }
 
 .make-a-reservation-button {
+  cursor: pointer;
   border: 0;
   border-radius: var(--borderRadius);
   background-color: var(--accent2);
@@ -701,12 +703,17 @@ body.hidden {
   width: 96%;
   max-width: 400px;
   margin: 1rem 2% 0 2%;
-  box-shadow: 8px 8px 10px var(--background1);
+  box-shadow: 0px 8px 10px var(--accent4);
 }
 
 .make-a-reservation-button:hover {
   background-color: var(--accent3);
+  transform: scale(0.99); 
 }
+
+.push-button-effect.make-a-reservation-button {
+  transform: scale(0.98);
+} 
 
 /* footer */
 
