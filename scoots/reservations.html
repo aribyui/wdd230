@@ -95,18 +95,21 @@
           <form method="get">
             <fieldset>
               <h3>Personal Information <span>🔒</span></h3>
-              <label>Name*<input type="text" id="uname" name="uname" required></label>
-              <label>Phone*<input type="tel" id="uphone" name="uphone" required></label>
-              <label>Email*<input type="email" id="uemail" name="uemail" required placeholder="john@email.com"></label>
-              <label>Country*<input type="text" id="contry" name="contry" required></label>
-              <label>Date*<input type="date" id="date" name="date" required></label>
-              <label>Period*<input type="date" id="period" name="date" required></label>
-              <label>Number of persons*<input type="number" min="0" id="numberpersons" name="numberpersons"
-                  required></label>
+              <label>Name <sup>required</sup><input type="text" id="uname" name="uname" required></label>
+              <label>Phone <sup>required<input type="tel" id="uphone" name="uphone" required></label>
+              <label>Email <sup>required<input type="email" id="uemail" name="uemail" required
+                    placeholder="john@email.com"></label>
+              <label>Country <sup>required<input type="text" id="contry" name="contry" required></label>
+
               <label>Cruise (optional)<input type="text" id="cruise" name="cruise"></label>
             </fieldset>
             <fieldset>
-              <h3>Rental Selection <span>🏷️</span></h3>
+              <h3>Rental Reservation <span>📆</span></h3>
+              <label>Date <sup>required</sup><input type="date" id="date" name="date" required></label>
+              <label>Period <sup>required</sup><input type="date" id="period" name="date" required></label>
+              <label>Number of persons <sup>required</sup><input type="number" min="0" id="numberpersons"
+                  name="numberpersons" required></label>
+              <label>Wheels select <sup>required</sup></label>
               <label><input type="checkbox" id="honda-metro-scooter" name="honda-metro-scooter"> Honda Metro
                 Scooter</label>
               <label><input type="checkbox" id="honda-dio-scooter" name="honda-dio-scooter"> Honda Dio Scooter</label>
@@ -177,6 +180,7 @@
   <script src="https://kit.fontawesome.com/c61ce8d6ca.js" crossorigin="anonymous"></script>
   <script src="scripts/hamburgerbutton.js"></script>
   <script src="scripts/current-date.js"></script>
+
 </body>
 
 </html>

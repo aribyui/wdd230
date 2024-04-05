@@ -647,6 +647,10 @@ body.hidden {
   margin-top: 1.7rem;
 }
 
+.user-contract fieldset  sup {
+  color: var(--accent2)
+}
+
 .user-contract fieldset input[type="text"],
 .user-contract fieldset input[type="tel"],
 .user-contract fieldset input[type="email"],
@@ -681,7 +685,6 @@ body.hidden {
 .user-contract fieldset input[type="text"]:optional {  
   border: 3px solid var(--background1); 
 }
-
 
 .user-contract fieldset textarea {
   border: 3px solid var(--background1);
