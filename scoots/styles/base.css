@@ -1,7 +1,8 @@
 :root {
-  --background1: #02020A;  
-  --background2: #DADADA;
-  --background3: #FFFDF7;  
+  --background1: #02020A; 
+  --background2: #A2A2A2 ;
+  --background3: #DADADA;
+  --background4: #FFFDF7;   
   --border1: #1414b841;
   --border2: #FFFDF7;
   --accent1: #31C4C5;
@@ -275,7 +276,7 @@ body.hidden {
 }
 
 .rentals section {
-  background-color: var(--background2); 
+  background-color: var(--background3); 
   border: 3px solid var(--background1);
   border-radius: var(--borderRadius); 
   z-index: 1;
@@ -315,7 +316,7 @@ body.hidden {
 
 .adventures {   
   background-image: url("../images/background-doddle.webp");
-  background-color: var(--background2);
+  background-color: var(--background3);
   text-align: center;
   padding: 3rem 1rem;
   position: relative; 
@@ -341,7 +342,7 @@ body.hidden {
 .adventures-image-content-1, .adventures-image-content-2 {
   position: relative;
   padding: 1rem 1rem 7.5rem 1rem; 
-  background-color: var(--background3);
+  background-color: var(--background4);
   border: 3px solid var(--background1);
 }
 
@@ -409,7 +410,7 @@ body.hidden {
 }
 
 .today-forecast, .next-day-forecast {
-  /* background-color: var(--background2); */
+  /* background-color: var(--background3); */
   /* border: 3px solid var(--background1); */
   border-radius: var(--borderRadius); 
 }
@@ -423,7 +424,7 @@ body.hidden {
   padding: 1rem 0.5rem;
   text-align: center;  
   background-image: url("../images/background-doddle.webp"); 
-  background-color: var(--background2); 
+  background-color: var(--background3); 
   position: relative;
 }
 
@@ -496,7 +497,7 @@ body.hidden {
 
 /* Franjas de colores */
 .rentals-prices tr:nth-child(odd) {
-  background-color: var(--background3);
+  background-color: var(--background4);
   color: var(--text1);
 }
 
@@ -512,7 +513,7 @@ body.hidden {
 }
  
 .scooter {
-  background-color: var(--background3);
+  background-color: var(--background4);
   border: 3px solid var(--background1);  
   padding: 1rem 1rem 5rem 1rem; 
 }
@@ -522,14 +523,14 @@ body.hidden {
   height: 100%;
   display: block;
   object-fit: cover; 
-  background-color: var(--background2); 
+  background-color: var(--background3); 
   margin-bottom: 1rem;  
 }
 
 .scooter-description {
   padding: 1rem;
   line-height: 2.5rem;
-  background-color: var(--background2);
+  background-color: var(--background3);
   border-radius: var(--borderRadius);
   border: 3px solid var(--background1);
   /* border-bottom-right-radius: 10px;*/
@@ -627,7 +628,7 @@ body.hidden {
 }
 
 .user-contract fieldset {
-  background-color: var(--background2);  
+  background-color: var(--background3);  
 }
 
 .user-contract fieldset:nth-child(1), 
@@ -648,7 +649,7 @@ body.hidden {
 }
 
 .user-contract fieldset  sup {
-  color: var(--accent2)
+  font-weight: 600;
 }
 
 .user-contract fieldset input[type="text"],
