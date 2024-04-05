@@ -3,7 +3,12 @@
     font-family: var(--contentText); 
     font-size: 1.5rem;
   }
- 
+  h2, i {
+    font-size: 3rem;
+  }  
+  h3 {
+    font-size: 2.25rem;
+  } 
   /* rentals */
   .rentals div {
     grid-template-columns: 1fr 1fr;   
@@ -115,7 +120,7 @@
     margin-left: 1rem;
   }
   /* reservations */
-  /* .reservations {
-    grid-template-columns: 1fr 1fr;
-  } */
+  .make-a-reservation-button {       
+    margin: 1rem 1rem 0 1rem;    
+  }
 }

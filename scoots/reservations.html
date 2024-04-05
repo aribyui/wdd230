@@ -64,11 +64,19 @@
 
         <div class="reservation-title">
           <h2>Reservations</h2>
-          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-regular fa-calendar"></i>
         </div>
 
+        <p>You're one step away from starting your adventure in Cozumel with us! Please
+          complete the following form with
+          your booking details and you'll soon be ready to explore the island on one of our ATVs, jeeps or motor
+          scooters.
+          If you have any questions or need assistance during the booking process, our team is here to help. Thank you
+          for choosing us for your rental experience in Cozumel!"</p>
+
         <div class="agreement-information">
-          <h3>Agreement Information</h3>
+          <h3>Rental Details <span>📑</span></h3>
+          <hr>
           <ul>
             <li>A $50 security deposit is required to confirm reservations.</li>
             <li>A valid drivers license is required in hand at the time ofrental.</li>
@@ -86,18 +94,34 @@
         <div class="user-contract">
           <form method="get">
             <fieldset>
-              <h3>User contract</h3>
+              <h3>Personal Information <span>🔒</span></h3>
               <label>Name*<input type="text" id="uname" name="uname" required></label>
               <label>Phone*<input type="tel" id="uphone" name="uphone" required></label>
               <label>Email*<input type="email" id="uemail" name="uemail" required placeholder="john@email.com"></label>
               <label>Country*<input type="text" id="contry" name="contry" required></label>
-              <label>Cruise<input type="text" id="cruise" name="cruise"></label>
-              <label>Rental type*<input type="text" id="rentaltype" name="rentaltype" required></label>
               <label>Date*<input type="date" id="date" name="date" required></label>
               <label>Period*<input type="date" id="period" name="date" required></label>
-              <label>Number*<input type="number" min="0" max="6" id="numberpersons" name="numberpersons"
+              <label>Number of persons*<input type="number" min="0" id="numberpersons" name="numberpersons"
                   required></label>
-              <label>Comments<textarea name="comments" id="comments" cols="24" rows="10"></textarea></label>
+              <label>Cruise (optional)<input type="text" id="cruise" name="cruise"></label>
+            </fieldset>
+            <fieldset>
+              <h3>Rental Selection <span>🏷️</span></h3>
+              <label><input type="checkbox" id="honda-metro-scooter" name="honda-metro-scooter"> Honda Metro
+                Scooter</label>
+              <label><input type="checkbox" id="honda-dio-scooter" name="honda-dio-scooter"> Honda Dio Scooter</label>
+              <label><input type="checkbox" id="honda-pcx150-scooter" name="honda-pcx150-scooter"> Honda PCX150
+                Scooter</label>
+              <label><input type="checkbox" id="honda-pionner-atv" name="honda-pionner-atv"> Honda Pionner ATV</label>
+              <label><input type="checkbox" id="jeep-wrangler-4-door" name="jeep-wrangler-4-door"> Jeep Wrangler - 4
+                door with a/c</label>
+              <label><input type="checkbox" id="jeep-wrangler-2-door" name="jeep-wrangler-2-door"> Jeep Wrangler - 2
+                door</label>
+            </fieldset>
+            <fieldset>
+              <h3>Comments <span>💬</span></h3>
+              <label>Additional instructions or requests</label>
+              <textarea name="comments" id="comments" cols="24" rows="10"></textarea>
             </fieldset>
             <input type="submit" value="Make a Reservation" class="make-a-reservation-button">
           </form>

@@ -33,7 +33,7 @@ a, li, p, span, #hamburger-button, figcaption, table, form {
 }
 
 h2, i {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -566,7 +566,7 @@ body.hidden {
   color: var(--text);
 }
 
-/* user-contract */
+/* reservations */
 
 .reservations {
   background-image: url("../images/background-doddle.webp");
@@ -588,6 +588,10 @@ body.hidden {
   color: var(--accent2); 
 }
 
+.reservations p {  
+  line-height: 2.4rem;
+}
+
 .reservations-content {
   display: grid;
   gap: 1rem;
@@ -599,8 +603,16 @@ body.hidden {
   line-height: 2.5rem;
 }
 
-.agreement-information h3 {
-  margin-bottom: 1rem;
+.agreement-information h3 span,
+.user-contract h3 span
+{  
+  font-size: 1.8rem;
+}
+
+.agreement-information hr {
+  margin: 1.5rem 0;
+  border: 2px solid var(--accent2);
+  width: 100%;
 }
 
 .agreement-information ul {
@@ -614,7 +626,13 @@ body.hidden {
 }
 
 .user-contract fieldset {
-  background-color: var(--background2);
+  background-color: var(--background2);  
+}
+
+.user-contract fieldset:nth-child(1), 
+.user-contract fieldset:nth-child(2)
+{
+  margin-bottom: 1rem;
 }
 
 .agreement-information, .user-contract fieldset { 
@@ -623,24 +641,46 @@ body.hidden {
   padding: 2rem 1rem;
 }
 
-.user-contract fieldset label, 
-.user-contract fieldset input, 
-.user-contract fieldset textarea {
-  display: block;
-}
-
 .user-contract fieldset label {
+  display: block;
   margin-top: 1.7rem;
 }
 
-.user-contract fieldset input {
+.user-contract fieldset input[type="text"],
+.user-contract fieldset input[type="tel"],
+.user-contract fieldset input[type="email"],
+.user-contract fieldset input[type="date"],
+.user-contract fieldset input[type="number"] {
+  display: block;
   padding: .75rem;
   margin-top: 0.5rem;
   width: 100%;
-  max-width: 400px;
-  border: 3px solid var(--background1);
+  max-width: 400px;  
   border-radius: var(--borderRadius);
 }
+
+.user-contract fieldset input[type="text"]:required,
+.user-contract fieldset input[type="tel"]:required,
+.user-contract fieldset input[type="email"]:required,
+.user-contract fieldset input[type="date"]:required,
+.user-contract fieldset input[type="number"]:required {
+  border: 3px solid var(--accent2);
+  appearance: none;
+}
+
+.user-contract fieldset input[type="text"]:valid,
+.user-contract fieldset input[type="tel"]:valid,
+.user-contract fieldset input[type="email"]:valid,
+.user-contract fieldset input[type="date"]:valid,
+.user-contract fieldset input[type="number"]:valid {
+  border: 3px solid var(--accent1);
+  appearance: none;
+}
+
+.user-contract fieldset input[type="text"]:optional {  
+  border: 3px solid var(--background1); 
+}
+
 
 .user-contract fieldset textarea {
   border: 3px solid var(--background1);
@@ -649,11 +689,7 @@ body.hidden {
   padding: 1rem;
   width: 100%;
   max-width: 400px;
-}
-
-.user-contract input:required {
-  border: 3px solid var(--accent2);
-  appearance: none;
+  resize: none;
 }
 
 .make-a-reservation-button {
