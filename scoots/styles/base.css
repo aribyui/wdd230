@@ -42,8 +42,6 @@ h3 {
   font-size: 2rem;
 }
 
-
-
 /* banner message */
 
 .high-temperature-message {
@@ -769,6 +767,9 @@ body.hidden {
   /* padding: 1rem; */
 }
 
+.locations p:first-of-type {
+  font-weight: 600;
+}
 
 .locations p:last-of-type {
   margin-bottom: 1rem;
