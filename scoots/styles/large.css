@@ -123,6 +123,9 @@
   .prices {
     padding: 3rem 1rem;
   }
+  .prices h2 {    
+    margin-bottom: 2rem;
+  }
   .rentals-prices th,  .rentals-prices td  {
     padding: 0.8rem;
   }  

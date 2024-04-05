@@ -420,12 +420,21 @@ body.hidden {
 .prices {  
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem 0.5rem;
   text-align: center;  
   background-image: url("../images/background-doddle.webp"); 
-  background-color: var(--background3); 
+  background-color: var(--background4); 
   position: relative;
+}
+
+.prices h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.prices h2 span {
+  color: var(--accent2);
 }
 
 /* Esta regla es para centrar en large view */
