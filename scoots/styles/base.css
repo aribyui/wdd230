@@ -673,7 +673,7 @@ body.hidden {
   margin-top: 1.7rem;
 }
 
-.user-contract fieldset  sup {
+.user-contract fieldset sup {
   font-weight: 600;
 }
 
@@ -682,6 +682,7 @@ body.hidden {
 .user-contract fieldset input[type="email"],
 .user-contract fieldset input[type="date"],
 .user-contract fieldset input[type="number"],
+.user-contract fieldset select, 
 .get-in-touch fieldset input[type="text"],
 .get-in-touch fieldset input[type="email"] 
 {
@@ -697,7 +698,9 @@ body.hidden {
 .user-contract fieldset input[type="tel"]:required,
 .user-contract fieldset input[type="email"]:required,
 .user-contract fieldset input[type="date"]:required,
-.user-contract fieldset input[type="number"]:required {
+.user-contract fieldset input[type="number"]:required,
+.user-contract fieldset select:required 
+{
   border: 3px solid var(--accent2);
   appearance: none;
 }
@@ -706,7 +709,9 @@ body.hidden {
 .user-contract fieldset input[type="tel"]:valid,
 .user-contract fieldset input[type="email"]:valid,
 .user-contract fieldset input[type="date"]:valid,
-.user-contract fieldset input[type="number"]:valid {
+.user-contract fieldset input[type="number"]:valid,
+.user-contract fieldset select:valid
+{
   border: 3px solid var(--accent1);
   appearance: none;
 }
