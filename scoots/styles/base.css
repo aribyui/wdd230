@@ -175,8 +175,8 @@ body.hidden {
   border-bottom: 3px solid var(--accent2);   
 } 
 
-.navigation li:focus {
-  background-color: red;
+.active {
+  border-bottom: 3px solid var(--accent2);   
 }
 
 .navigation li:last-of-type a:hover {
